@@ -1,0 +1,37 @@
+name: DMFF's python tests.
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: [3.9]
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install Dependencies
+        run: |
+          source $CONDA/bin/activate
+          conda create -n dmff -y python=${{ matrix.python-version }} numpy openmm==7.7.0 pytest rdkit openbabel mdtraj ambertools -c conda-forge
+          conda activate dmff
+          pip install --upgrade pip
+          pip install jax jaxlib jaxopt networkx parmed pymbar==4.0.1 optax tqdm
+      - name: Install DMFF
+        run: |
+          source $CONDA/bin/activate dmff && pip install .
+      - name: Run Tests
+        run: |
+          source $CONDA/bin/activate dmff
+          pytest -vs tests/test_classical/test_*
+          pytest -vs tests/test_common/test_*
+          pytest -vs tests/test_admp/test_*
+          pytest -vs tests/test_utils.py
+          pytest -vs tests/test_mbar/test_* 
+          pytest -vs tests/test_sgnn/test_*
