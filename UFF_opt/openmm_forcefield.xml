@@ -1,0 +1,19 @@
+
+<ForceField>
+    <AtomTypes>
+        <Type name="Al" class="Al" element="Al"/>
+        <Type name="C" class="C" element="C"/>
+        <Type name="H" class="H" element="H"/>
+        <Type name="O" class="O" element="O"/>
+        <Type name="O_co2" class="O_co2" element="O"/>
+        <Type name="C_co2" class="C_co2" element="C"/>
+    </AtomTypes>
+    <NonbondedForce coulomb14scale="0.833333" lj14scale="0.5">
+        <Atom type="Al" charge="0.0" sigma="4.0082" epsilon="254.152"/>
+        <Atom type="C" charge="0.0" sigma="3.4309" epsilon="52.8435"/>
+        <Atom type="H" charge="0.0" sigma="2.5711" epsilon="22.1439"/>
+        <Atom type="O" charge="0.0" sigma="3.1181" epsilon="30.1963"/>
+        <Atom type="O_co2" charge="0.0" sigma="3.05" epsilon="79.0"/>
+        <Atom type="C_co2" charge="0.0" sigma="2.80" epsilon="27.0"/>
+    </NonbondedForce>
+</ForceField>
