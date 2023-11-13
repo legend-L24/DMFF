@@ -1,9 +1,29 @@
 <ForceField>
+    <AtomTypes>
+		<Type class="Al" element="Al" mass="12.010" name="Al"/>
+		<Type class="C" element="C" mass="12.010" name="C"/>
+		<Type class="H" element="H" mass="1.008" name="H"/>
+		<Type class="O" element="O" mass="1.008" name="O"/>
+        <Type class="C" element="C" mass="12.010" name="C_co2"/>
+        <Type class="O" element="O" mass="1.008" name="O_co2"/>
+	</AtomTypes>
+    <Residues>
+		<Residue name="MOL">
+			<Atom name="Al" type="Al"/>
+			<Atom name="C" type="C"/>
+			<Atom name="H" type="H"/>
+			<Atom name="O" type="O"/>
+		</Residue>
+        <Residue name="GAS">
+			<Atom name="C" type="C_co2"/>
+            <Atom name="O" type="O_co2"/>
+		</Residue>
+	</Residues>
     <LennardJonesForce lj14scale="0.50000">
-        <Atom epsilon="2.1019" sigma="0.40082" type="Al_"/>
-        <Atom epsilon="0.44" sigma="0.34309" type="C_"/>
-        <Atom epsilon="0.1841" sigma="0.25711" type="H_"/>
-        <Atom epsilon="0.2513" sigma="0.31181" type="O_"/>
+        <Atom epsilon="2.1019" sigma="0.40082" type="Al"/>
+        <Atom epsilon="0.44" sigma="0.34309" type="C"/>
+        <Atom epsilon="0.1841" sigma="0.25711" type="H"/>
+        <Atom epsilon="0.2513" sigma="0.31181" type="O"/>
         <Atom epsilon="0.6577" sigma="0.305" type="O_co2"/>
         <Atom epsilon="0.2249" sigma="0.28" type="C_co2"/>
     </LennardJonesForce>
