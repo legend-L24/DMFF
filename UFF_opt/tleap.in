@@ -1,0 +1,10 @@
+source leaprc.protein.ff14SB
+
+# Load the molecule
+molecule = loadMol2 output.mol2
+
+# Load the parameters
+loadAmberParams output.frcmod
+
+# Save the topology
+saveAmberParm molecule output.top output.crd

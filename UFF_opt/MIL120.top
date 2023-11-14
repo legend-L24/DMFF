@@ -1,0 +1,48 @@
+[ defaults ]
+; nbfunc        comb-rule       gen-pairs       fudgeLJ fudgeQQ
+1               2               yes             0.5     0.8333
+
+[ atomtypes ]
+;name  bond_type    mass    charge   ptype          sigma      epsilon
+c3            c3      0.0000  0.0000  A   3.39967e-01  4.57730e-01
+h1            h1      0.0000  0.0000  A   2.47135e-01  6.56888e-02
+oh            oh      0.0000  0.0000  A   3.06647e-01  8.80314e-01
+ha            ha      0.0000  0.0000  A   2.59964e-01  6.27600e-02
+ca            ca      0.0000  0.0000  A   3.39967e-01  3.59824e-01
+ho            ho      0.0000  0.0000  A   0.00000e+00  0.00000e+00
+
+
+[ atomtypes ]
+;name  bond_type    mass    charge   ptype          sigma      epsilon
+c3            c3      0.0000  0.0000  A   3.39967e-01  4.57730e-01
+h1            h1      0.0000  0.0000  A   2.47135e-01  6.56888e-02
+oh            oh      0.0000  0.0000  A   3.06647e-01  8.80314e-01
+ha            ha      0.0000  0.0000  A   2.59964e-01  6.27600e-02
+ca            ca      0.0000  0.0000  A   3.39967e-01  3.59824e-01
+ho            ho      0.0000  0.0000  A   0.00000e+00  0.00000e+00
+
+[ moleculetype ]
+; Name        nrexcl
+MIL120  0
+
+[ atoms ]
+;   nr       type  resnr residue  atom   cgnr     charge       mass  typeB    chargeB
+     1         ca      1    MOL     C1      1   -0.17200  12.000000
+     2         ha      1    MOL     H1      2    0.12450   1.000000
+     3         ca      1    MOL     C2      3   -0.13820  12.000000
+     4         ha      1    MOL     H2      4    0.14490   1.000000
+     5         ca      1    MOL     C3      5   -0.18020  12.000000
+     6         ha      1    MOL     H3      6    0.14570   1.000000
+     7         ca      1    MOL     C4      7   -0.13820  12.000000
+     8         ha      1    MOL     H4      8    0.14490   1.000000
+     9         ca      1    MOL     C5      9   -0.17200  12.000000
+    10         ha      1    MOL     H5     10    0.12450   1.000000
+    11         ca      1    MOL     C6     11    0.06220  12.000000
+    12         c3      1    MOL     C7     12    0.31400  12.000000
+    13         h1      1    MOL     H6     13   -0.02160   1.000000
+    14         h1      1    MOL     H7     14   -0.02160   1.000000
+    15         oh      1    MOL     O1     15   -0.60830  16.000000
+    16         ho      1    MOL     H8     16    0.39140   1.000000
+
+[ system ]
+MIL120 GAS
