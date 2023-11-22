@@ -125,6 +125,8 @@ def cutoff_topology(topo):
     Output:
         MOF framework (MOL residue) without bondings
         GAS molecule (GAS residue) without bondings
+
+    This function will cut the topolgy according to different residue names
     """
     subset_topologies = []
 

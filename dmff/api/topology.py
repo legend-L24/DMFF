@@ -258,7 +258,7 @@ class DMFFTopology:
     def getProperty(self, property_name):
         data = []
         for atom in self.atoms():
-            data.append(atom.meta[property_name])
+            data.append(atom.meta[property_name ])
         return np.array(data)
 
     def getNumAtoms(self):

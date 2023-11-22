@@ -1326,6 +1326,7 @@ class LennardJonesGenerator:
         atypes = [a.meta["type"] for a in atoms]
         map_prm = []
         for atype in atypes:
+            #print(self.atype_to_idx)
             if atype not in self.atype_to_idx:
                 raise DMFFException(f"Atom type {atype} not found.")
             idx = self.atype_to_idx[atype]
