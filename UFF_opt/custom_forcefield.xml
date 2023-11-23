@@ -64,7 +64,7 @@
     <HarmonicAngleForce>
         <Angle class1="O1_co2" class2="C1_co2" class3="O1_co2" angle="3.141593" k="817.5656" mask="true"/>
     </HarmonicAngleForce>
-    <NonbondedForce coulomb14scale="0.8333333333333334" lj14scale="0.5">
+    <NonbondedForce coulomb14scale="0.8333333333333334" lj14scale="0.50">
         <UseAttributeFromResidue name="charge"/>
         <Atom epsilon="2.11525" sigma="0.40082" type="Al"/>
         <Atom epsilon="0.43979" sigma="0.34309" type="C"/>

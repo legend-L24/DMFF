@@ -31,7 +31,7 @@ class NeighborListFreud:
         nlist = res.toNeighborList()
         nlist = np.vstack((nlist[:, 0], nlist[:, 1])).T
         nlist = nlist.astype(np.int32)
-        msk = (nlist[:, 0] - nlist[:, 1]) < 0
+        msk = (nlist[:, 0] - nlist[:, 1]) <= 0
         nlist = nlist[msk]
         if self.capacity_multiplier is None:
             self.capacity_multiplier = int(nlist.shape[0] * 1.3)
@@ -52,7 +52,6 @@ class NeighborListFreud:
             return self._pairs
         else:
             raise ValueError("padding width < 0")
-
     def update(self, positions, box=None):
         self.allocate(positions, box)
 

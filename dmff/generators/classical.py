@@ -1353,10 +1353,9 @@ class LennardJonesGenerator:
         else:
             isPBC = True
             isNoCut = False
-
+        
         mscales_lj = jnp.array([0.0, 0.0, 0.0, 1.0, 1.0, 1.0])  # mscale for LJ
         mscales_lj = mscales_lj.at[2].set(self.lj14scale)
-
         if unit.is_quantity(nonbondedCutoff):
             r_cut = nonbondedCutoff.value_in_unit(unit.nanometer)
         else:

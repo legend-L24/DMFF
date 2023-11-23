@@ -157,6 +157,7 @@ def cutoff_topology(topo):
                     subset_topology.addBond(atom_map[atom1], atom_map[atom2])  # Add the bond to the subset topology
             subset_topology.setPeriodicBoxVectors(topo.getPeriodicBoxVectors())
             subset_topologies.append(subset_topology)
+    subset_topologies = sorted(subset_topologies, key=lambda x:x.getNumAtoms())
     return subset_topologies
 
 if __name__ == '__main__':
