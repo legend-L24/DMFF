@@ -1261,7 +1261,6 @@ class LennardJonesGenerator:
         sig_nbfix, eps_nbfix = jnp.array(sig_nbfix), jnp.array(eps_nbfix)
         sig_nbf_mask = jnp.array(sig_nbf_mask)
         eps_nbf_mask = jnp.array(eps_nbf_mask)
-
         paramset.addField(self.name)
         paramset.addParameter(
             sig_prms, "sigma", field=self.name, mask=sig_mask)
@@ -1280,6 +1279,8 @@ class LennardJonesGenerator:
         for nnode in range(len(self.ffinfo["Forces"][self.name]["node"])):
             node = self.ffinfo["Forces"][self.name]["node"][nnode]
             if node["name"] == "Atom":
+                if 'mask' in node["attrib"].keys() and node["attrib"]["mask"]:
+                    continue
                 if "type" in node["attrib"]:
                     atype = node["attrib"]["type"]
                     idx = self.atype_to_idx[atype]
