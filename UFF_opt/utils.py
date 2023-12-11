@@ -24,7 +24,7 @@ def gas_generate(path):
     """
     gas = app.PDBFile(path)
     direct_vectors = gas.topology.getPeriodicBoxVectors().value_in_unit(unit.nanometer)
-    neigh = np.dot(gas.getPositions().value_in_unit(unit.nanometer)[0],np.linalg.inv(direct_vectors))
+    neigh = np.dot(gas.getPositions().value_in_unit(unit.nanometer)[1],np.linalg.inv(direct_vectors))
     new_positions = wrap_positions(gas.getPositions().value_in_unit(unit.nanometer), 
                                    cell=gas.topology.getPeriodicBoxVectors().value_in_unit(unit.nanometer),
                                    pbc=[1, 1, 1],center=neigh)

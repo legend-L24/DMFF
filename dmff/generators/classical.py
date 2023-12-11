@@ -1279,8 +1279,6 @@ class LennardJonesGenerator:
         for nnode in range(len(self.ffinfo["Forces"][self.name]["node"])):
             node = self.ffinfo["Forces"][self.name]["node"][nnode]
             if node["name"] == "Atom":
-                if 'mask' in node["attrib"].keys() and node["attrib"]["mask"]:
-                    continue
                 if "type" in node["attrib"]:
                     atype = node["attrib"]["type"]
                     idx = self.atype_to_idx[atype]
