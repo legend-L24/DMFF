@@ -8,6 +8,7 @@ The first part is in order to make supercell from a PDB file
 """
 import numpy as np
 from ase.geometry import wrap_positions
+import os
 
 """
 Scale the MIL-120 to 3 2 2 in order to ensure enough long cutoff for nonbonding Forces.
@@ -15,12 +16,84 @@ Scale the MIL-120 to 3 2 2 in order to ensure enough long cutoff for nonbonding 
 
 from ase.geometry import wrap_positions
 
+import re
+def extract_from_raspa(filenames):    
+    values = []
+    pattern = r"_([\d.]+)_component_CO2_0\.pdb"
+
+    for filename in filenames:
+        match = re.search(pattern, filename)
+        if match:
+            value = match.group(1)
+            values.append(float(value))
+    return sorted(zip(values,filenames), key=lambda x: x[0])
+def write_scaling_gas(block_coords, pdb_template, index, dest_path="./traj"):
+    '''
+    input:
+        block_coords: coordination of CO2 atoms
+        pdb: gas.pdb
+        index: index of the structure in the trajectory
+    '''
+    num = int(len(block_coords)/3)
+    pdb = app.PDBFile(pdb_template)
+    original_topology = pdb.topology
+
+    new_topology = app.Topology()
+    for i in range(num):
+        for chain in original_topology.chains():
+            
+            atom_map = {}  # Keep track of the mapping between original atoms and new atoms
+
+            new_chain = new_topology.addChain()
+            for residue in chain.residues():
+                new_residue = new_topology.addResidue(residue.name, new_chain)
+                for atom in residue.atoms():
+                    new_atom = new_topology.addAtom(atom.name, atom.element, new_residue)
+                    atom_map[atom] = new_atom
+            
+        for bond in original_topology.bonds():
+            atom1, atom2 = bond
+            if atom1 in atom_map and atom2 in atom_map:
+                new_topology.addBond(atom_map[atom1], atom_map[atom2])
+    app.PDBFile.writeFile(new_topology, block_coords, open(os.path.join(dest_path, f"{index}.pdb"), 'w'))
+
+def scaling_gas(block_coords, pdb_template, index, dest_path="./traj"):
+    '''
+    input:
+        block_coords: coordination of CO2 atoms
+        pdb: gas.pdb
+        index: index of the structure in the trajectory
+    '''
+    num = int(len(block_coords)/3)
+    pdb = app.PDBFile(pdb_template)
+    original_topology = pdb.topology
+
+    new_topology = app.Topology()
+    for i in range(num):
+        for chain in original_topology.chains():
+            
+            atom_map = {}  # Keep track of the mapping between original atoms and new atoms
+
+            new_chain = new_topology.addChain()
+            for residue in chain.residues():
+                new_residue = new_topology.addResidue(residue.name, new_chain)
+                for atom in residue.atoms():
+                    new_atom = new_topology.addAtom(atom.name, atom.element, new_residue)
+                    atom_map[atom] = new_atom
+            
+        for bond in original_topology.bonds():
+            atom1, atom2 = bond
+            if atom1 in atom_map and atom2 in atom_map:
+                new_topology.addBond(atom_map[atom1], atom_map[atom2])
+    return new_topology, block_coords
+    #app.PDBFile.writeFile(new_topology, block_coords, open(os.path.join(dest_path, f"{index}.pdb"), 'w'))
+
 def gas_generate(path):
     """
     Input:
         Gas pdb file path
     Output:
-        gas pdb topology and the new positions (nm) I chech by wrap_positions
+        gas pdb topology and the new positions (nm) I check by wrap_positions
     """
     gas = app.PDBFile(path)
     direct_vectors = gas.topology.getPeriodicBoxVectors().value_in_unit(unit.nanometer)
@@ -116,6 +189,43 @@ def add_loading(frame, loading, outputpath):
     for pos in gas_pos.value_in_unit(unit=unit.angstrom):
         new_positions.append(pos)
     app.PDBFile.writeFile(new_topology, new_positions, open(outputpath, 'w'))
+
+def simple_merge(frame, loading):
+    """
+    
+    This function is writen for CO2. It is common to meet problems when you try to transfer
+
+    """
+    gas = app.PDBFile(loading)
+    gas_topo, gas_pos = gas.topology, gas.positions
+    frame = app.PDBFile(frame)
+    new_topology = frame.topology
+    new_positions = frame.getPositions()+gas_pos
+    for chain in gas_topo.chains():
+        atom_map = {}  # Keep track of the mapping between original atoms and new atoms
+        for residue in chain.residues():
+            for chain0 in new_topology.chains():  
+                new_residue = new_topology.addResidue(residue.name, chain0)
+                continue
+            for atom in residue.atoms():
+                #print(atom)
+                new_atom = new_topology.addAtom(atom.name, atom.element, new_residue)
+                atom_map[atom] = new_atom
+            continue
+        # Copy bonds for the unique residue type
+        for bond in gas_topo.bonds():
+            atom1, atom2 = bond
+            if atom1 in atom_map and atom2 in atom_map:
+                #print(atom1,atom_map[atom1])
+                #print(atom2,atom_map[atom2])
+                new_topology.addBond(atom_map[atom1], atom_map[atom2])  # Add the bond to the subset topology
+    '''
+    for pos in gas_pos.value_in_unit(unit=unit.angstrom):
+        new_positions.append(pos)
+    '''
+    num = gas_topo.getNumAtoms()
+    return new_topology, new_positions, num
+    #app.PDBFile.writeFile(new_topology, new_positions, open(outputpath, 'w'))
 
 def cutoff_topology(topo):
     """
