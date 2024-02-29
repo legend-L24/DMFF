@@ -1,0 +1,79 @@
+Warning on use of the timeseries module: If the inherent timescales of the system are long compared to those being analyzed, this statistical inefficiency may be an underestimate.  The estimate presumes the use of many statistically independent samples.  Tests should be performed to assess whether this condition is satisfied.   Be cautious in the interpretation of the data.
+Story starts
+Once starts
+Script finished successfully!
+Script output:
+This is the final pk values:  346212
+[0.653009259294231, 0.8974351851920487, 1.0766203703904675, 1.2523611110888861, 1.3292777777882225]
+[0.24030165348645946, 0.4320029725599273, 0.5832040129559017, 0.6912047560958835, 0.7776053506078691]
+This is loss function:  2.484384958047815
+
+Successfully update once
+This is 0th time  Loss: 2.484570143182848 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.56565054 0.12456916 0.04439106 0.06708707 0.65757    0.22469   ]
+Once starts
+Script finished successfully!
+Script output:
+This is the final pk values:  346659
+[0.5663148147949689, 0.8402314814925581, 1.0701574073905042, 1.1806944443895526, 1.2893796295885476]
+[0.24030165348645946, 0.4320029725599273, 0.5832040129559017, 0.6912047560958835, 0.7776053506078691]
+This is loss function:  2.2224590319500903
+
+Successfully update once
+This is 1th time  Loss: 2.2312368098495146 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.56064383 0.11956308 0.0396577  0.06208042 0.65757    0.22469   ]
+Once starts
+Script finished successfully!
+Script output:
+This is the final pk values:  347101
+[0.5494444443951514, 0.7641018518932005, 1.0275555555908615, 1.1039999999902081, 1.2901388888885637]
+[0.24030165348645946, 0.4320029725599273, 0.5832040129559017, 0.6912047560958835, 0.7776053506078691]
+This is loss function:  2.010921995051944
+
+Successfully update once
+This is 2th time  Loss: 1.9579034765161814 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.55562726 0.11454592 0.03483933 0.05706956 0.65757    0.22469   ]
+Once starts
+Script finished successfully!
+Script output:
+This is the final pk values:  347561
+[0.4369907406961261, 0.6693796295940464, 0.9669351851914322, 1.0597222221905884, 1.158592592589728]
+[0.24030165348645946, 0.4320029725599273, 0.5832040129559017, 0.6912047560958835, 0.7776053506078691]
+This is loss function:  1.5673016245558802
+
+Successfully update once
+This is 3th time  Loss: 1.5601256987384036 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.5506232  0.10952868 0.02994324 0.05206928 0.65757    0.22469   ]
+Once starts
+Script finished successfully!
+Script output:
+This is the final pk values:  347710
+[0.4125740740963404, 0.6603981480941652, 0.8758888888922377, 0.963481481491465, 1.0701851851905164]
+[0.24030165348645946, 0.4320029725599273, 0.5832040129559017, 0.6912047560958835, 0.7776053506078691]
+This is loss function:  1.2582090320586836
+
+Successfully update once
+This is 4th time  Loss: 1.1490145876272921 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.54559095 0.10448677 0.02505043 0.0470393  0.65757    0.22469   ]
+Once starts
+Script finished successfully!
+Script output:
+This is the final pk values:  347947
+[0.3612407406967979, 0.5626111110950038, 0.8150555555927463, 0.873398148092276, 1.0049537036910847]
+[0.24030165348645946, 0.4320029725599273, 0.5832040129559017, 0.6912047560958835, 0.7776053506078691]
+This is loss function:  0.8929405134618678
+
+Traceback (most recent call last):
+  File "/home/yutao/project/github/DMFF/UFF_opt/short_opt.py", line 350, in <module>
+    traj_dict = analyse_traj(paramset, lj_gen,interval=10)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yutao/project/github/DMFF/UFF_opt/short_opt.py", line 191, in analyse_traj
+    topo, pos, num = simple_merge("scaled_frame.pdb",os.path.join(gas_dir,gas_path))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yutao/project/github/DMFF/UFF_opt/utils.py", line 199, in simple_merge
+    gas = app.PDBFile(loading)
+          ^^^^^^^^^^^^^^^^^^^^
+  File "/home/yutao/anaconda3/envs/dmff/lib/python3.11/site-packages/openmm/app/pdbfile.py", line 95, in __init__
+    pdb = PdbStructure(inputfile, load_all_models=True, extraParticleIdentifier=extraParticleIdentifier)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yutao/anaconda3/envs/dmff/lib/python3.11/site-packages/openmm/app/internal/pdbstructure.py", line 153, in __init__
+    self._load(input_stream)
+  File "/home/yutao/anaconda3/envs/dmff/lib/python3.11/site-packages/openmm/app/internal/pdbstructure.py", line 186, in _load
+    self._current_model._finalize()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute '_finalize'

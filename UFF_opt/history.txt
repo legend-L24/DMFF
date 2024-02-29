@@ -1,0 +1,1000 @@
+ 1006  gnuplot plot_fes
+ 1007  plumed sum_hills --hills HILLS --stride 100 --mintozero
+ 1008  gnuplot plot_fes
+ 1009  ls
+ 1010  plumed sum_hills --hills HILLS --stride 100 --mintozero
+ 1011  ls
+ 1012  gnuplot plot_fes
+ 1013  vim plumed.dat 
+ 1014  plumed pesmd < ../input
+ 1015  plumed sum_hills --hills HILLS --stride 1 --mintozero
+ 1016  gnuplot plot_fes
+ 1017  ls
+ 1018  gnuplot plot_fes
+ 1019  plumed sum_hills --hills HILLS --stride 1 --mintozero
+ 1020  gnuplot plot_fes
+ 1021  ls
+ 1022  cd ../3_adaptivepathmetadynamics/
+ 1023  ls
+ 1024  plumed pesmd < ../input
+ 1025  ls
+ 1026  gnuplot plot_cvs
+ 1027  gnuplot plot_s
+ 1028  plumed sum_hills --hills HILLS --stride 1 --mintozero
+ 1029  gnuplot plot_fes
+ 1030  ls
+ 1031  cd ..
+ 1032  cd 3_adaptivepathmetadynamics/
+ 1033  vim anim_fes
+ 1034  gnuplot anim_fes
+ 1035  gnuplot anim_cvs
+ 1036  vim anim_fes
+ 1037  ls *.png
+ 1038  vim anim_fes
+ 1039  ls
+ 1040  cda aiida
+ 1041  verdi process report 249381
+ 1042  verdi process report 249903
+ 1043  ls /home/yutao/project/MIL-120/traj/
+ 1044  l /home/yutao/project/MIL-120/traj/
+ 1045  vim /home/yutao/project/MIL-120/traj/Movie_framework_1_3.3.2_303.000000_
+ 1046  vim /home/yutao/project/MIL-120/traj/Movie_framework_1_3.3.2_303.000000_3825.622776_component_CO2_0.pdb 
+ 1047  verdi calcjob gotocomputer 249858
+ 1048  ls
+ 1049  verdi core.data show 249903
+ 1050  verdi data core.dict show 249903
+ 1051  ls
+ 1052  vim aiida.out 
+ 1053  verdi core.data show 249903
+ 1054  verdi calcjob gotocomputer 249858
+ 1055  ls
+ 1056  find . -name "*yaml"
+ 1057  ssh cluster5
+ 1058  ssh cluster4
+ 1059  free -h
+ 1060  mkdir pimd
+ 1061  cat ~/project/aiida/applications/ff_1.json 
+ 1062  cat ~/project/aiida/applications/result_0130.json 
+ 1063  cd ..
+ 1064  vim 
+ 1065  ls
+ 1066  vim ~/.aiida/config.json
+ 1067  ls
+ 1068  find . -name "*.yaml"
+ 1069  vim ./aiida2.x-lsmo-setup/computer/lsmosrv4-configure.yaml
+ 1070  verdi calcjob gotocomputer 250553
+ 1071  cda aiida
+ 1072  verdi calcjob gotocomputer 250553
+ 1073  verdi calcjob gotocomputer 250652
+ 1074  ls
+ 1075  cda iida
+ 1076  cda aiida
+ 1077  ls
+ 1078  verdi group show
+ 1079  verdi group list
+ 1080  verdi process list -ap35
+ 1081  verdi process list -ap70
+ 1082  verdi process report 247568
+ 1083  verdi calcjob gotocomputer 247568
+ 1084  verdi calcjob gotocomputer 247581
+ 1085  if config
+ 1086  ifconfig
+ 1087  vim ~/.ssh/config 
+ 1088  ls
+ 1089  cd applications/
+ 1090  ls
+ 1091  vim run_isotherm.py 
+ 1092  cda aiida
+ 1093  cd applications/
+ 1094  python run_isotherm.py 
+ 1095  ls
+ 1096  vim test_IsothermWorkChain_MIL120.py 
+ 1097  ls
+ 1098  vim run_isotherm.py 
+ 1099  reentry
+ 1100  reentry scan
+ 1101  ls
+ 1102  python run_isotherm.py 
+ 1103  ls
+ 1104  reentry scan
+ 1105  vim run_isotherm.py 
+ 1106  python run_isotherm.py 
+ 1107  vim run_isotherm.py 
+ 1108  python run_isotherm.py 
+ 1109  nohup python run_isotherm.py > refer_isotherm.txt &
+ 1110  ls /home/yutao/project/MIL-120/traj0/
+ 1111  ls /home/yutao/project/MIL-120/traj0/.*
+ 1112  ls /home/yutao/project/MIL-120/traj0/.*pdb
+ 1113  ls /home/yutao/project/MIL-120/traj0/.
+ 1114  ls /home/yutao/project/MIL-120/traj0/ > 1.txt
+ 1115  vim 1.txt
+ 1116  rm /home/yutao/project/MIL-120/traj0/*
+ 1117  ls
+ 1118  ls /home/yutao/project/MIL-120/traj0/ > 1.txt
+ 1119  vim 1.txt 
+ 1120  rm /home/yutao/project/MIL-120/traj0/*
+ 1121  ls /home/yutao/project/MIL-120/traj0/ > 1.txt
+ 1122  vim 1.
+ 1123  vim 1.txt 
+ 1124  ls
+ 1125  vim /home/yutao/project/MIL-120/traj0/Movie_framework_1_3.3.2_303.000000_5901.542112_component_CO2_0.pdb 
+ 1126  rm -r /home/yutao/project/github/DMFF/UFF_opt/traj
+ 1127  mkdir /home/yutao/project/github/DMFF/UFF_opt/traj
+ 1128  ls /home/yutao/project/github/DMFF/UFF_opt/traj
+ 1129  rm /home/yutao/project/github/DMFF/UFF_opt/traj/*
+ 1130  rm -r /home/yutao/project/github/DMFF/UFF_opt/traj/*
+ 1131  cda aiida
+ 1132  verdi calcjob gotocomputer 250731
+ 1133  ls /home/yutao/project/MIL-120/traj/
+ 1134  ls /home/yutao/project/MIL-120/traj/ > 1.txt
+ 1135  vim 1.txt
+ 1136  ls /home/yutao/project/MIL-120/traj/.*
+ 1137  cd ../github/DMFF
+ 1138  ls
+ 1139  cd UFF_opt/
+ 1140  ls
+ 1141  vim traj/1/10.pdb 
+ 1142  cd data
+ 1143  cp init.xml test.xml
+ 1144  code test.xml
+ 1145  vim test.xml 
+ 1146  cp custom_forcefield.xml test_forcefield.xml
+ 1147  code test_forcefield.xml 
+ 1148  ls
+ 1149  cd ..
+ 1150  ls
+ 1151  cda aiida
+ 1152  ls
+ 1153  cd applications/
+ 1154  ls
+ 1155  cp run_isotherm.py sample_isotherm.py
+ 1156  ls
+ 1157  code sample_isotherm.py 
+ 1158  cd ~/project/
+ 1159  ls
+ 1160  scp jed:~/cp2k_test.tar.gz .
+ 1161  rm cp2k_test.tar.gz \
+ 1162  scp jed:~/cp2k_test_*.tar.gz .
+ 1163  scp ~/jed/cp2k_test/111/1/aiida.coord* .
+ 1164  scp jed:~//cp2k_test/111/1/aiida.coord* .
+ 1165  ls ~/project/MIL-120/MIL-120.cif 
+ 1166  vim MIL-120.xyz 
+ 1167  cat MIL-120.xyz 
+ 1168  cat aiida.coords.xyz 
+ 1169  scp MIL-120.xyz jed:~/cp2k_test/111/1
+ 1170  scp jed:~//cp2k_test/111/1/aiida.out .
+ 1171  scp jed:~/cp2k_test/111/1/aiida.out .
+ 1172  cda aiida 
+ 1173  verdi process report 250750
+ 1174  verdi data core.dict show 251201
+ 1175  find . -name "isotherm_accuracy.py"
+ 1176  find . -name "isotherm_accur*"
+ 1177  code ./aiida-lsmo/aiida_lsmo/workchains/isotherm_accurate.py
+ 1178  vim data/gas.pdb
+ 1179  cd ../github/DMFF/UFF_opt/
+ 1180  vim data/gas.pdb
+ 1181  ls traj/1/
+ 1182  rm -rf traj/*
+ 1183  ls traj/1/
+ 1184  ls
+ 1185  which python
+ 1186  cd ~/project/aiida
+ 1187  find . -name "*.py" -exec grep -l "'ff_framework': 'Local'" {} \;
+ 1188  ls
+ 1189  cd applications/
+ 1190  ls
+ 1191  cp ../ff_optim/ff_1.json
+ 1192  cp ../ff_optim/ff_1.json .
+ 1193  ls
+ 1194  cp ../ff_optim/ff_1.json .
+ 1195  vim ff_1.json 
+ 1196  pwd
+ 1197  chmod +x sample_isotherm.py 
+ 1198  ./sample_isotherm.py 
+ 1199  reentry scan
+ 1200  ./sample_isotherm.py 
+ 1201  ls
+ 1202  ls /home/yutao/project/MIL-120/traj0/
+ 1203  ls -lh /home/yutao/project/MIL-120/traj0/
+ 1204  vim /home/yutao/project/MIL-120/traj0/Movie_framework_1_3.3.2_303.000000_2164.887307_component_CO2_0.pdb
+ 1205  rm /home/yutao/project/MIL-120/traj0/*
+ 1206  ./sample_isotherm.py 
+ 1207  ls -lh ~/project/MIL-120/traj0/Movie_framework_1_3.3.2_303.000000_*
+ 1208  vim sample_isotherm.py 
+ 1209  vim sample.sh
+ 1210  chmod +x sample.sh 
+ 1211  ./sample.sh 
+ 1212  cda aiida
+ 1213  cd applications/
+ 1214  cat sample.sh 
+ 1215  bash sample.sh 
+ 1216  cda 
+ 1217  cda aiida
+ 1218  ls
+ 1219  cd applications/
+ 1220  verdi data core.dict show 251931
+ 1221  cd ~/project/github/DMFF/UFF_opt/
+ 1222  ls
+ 1223  ls traj/1/
+ 1224  cd ~/project/aiida/
+ 1225  ls
+ 1226  cd applications/
+ 1227  ls
+ 1228  vim run_isotherm.py 
+ 1229  vim sample_isotherm.py 
+ 1230  ls
+ 1231  cp sample_isotherm.py sample_long.py
+ 1232  vim sample_long.py 
+ 1233  cp sample.sh sample_long.sh
+ 1234  vim sample_long.
+ 1235  vim sample_long.sh
+ 1236  ./sample_long.sh 
+ 1237  vim sample_long.sh
+ 1238  vim sample_long.py
+ 1239  vim ff_1.json 
+ 1240  ls ff_2.json 
+ 1241  vim ff_2.json 
+ 1242  ssh jed
+ 1243  verdi calcjob gotocomputer 251276
+ 1244  cda aiida
+ 1245  verdi calcjob gotocomputer 251276
+ 1246  cd applications/
+ 1247  pwd
+ 1248  /home/yutao/project/aiida/applications/sample_isotherm.py 
+ 1249  which python
+ 1250  /home/yutao/.aiida_venvs/aiida/bin/python /home/yutao/project/aiida/applications/sample_isotherm.py
+ 1251  verdi calcjob gotocomputer 251642
+ 1252  cda aiida
+ 1253  verdi calcjob gotocomputer 251642
+ 1254  clear
+ 1255  verdi calcjob gotocomputer 251642
+ 1256  verdi calcjob gotocomputer 250778
+ 1257  verdi calcjob gotocomputer 251689
+ 1258  cd applications/
+ 1259  ./sample_isotherm.py 
+ 1260  ssh cluster5
+ 1261  cda aiida
+ 1262  ls
+ 1263  cd applications/
+ 1264  vim sample.sh 
+ 1265  vim sample_isotherm.py 
+ 1266  vim opt_isotherm.py 
+ 1267  python opt_isotherm.py 
+ 1268  verdi data core.dict show 256038
+ 1269  free -h
+ 1270  ssh jed
+ 1271  cda aiida
+ 1272  verdi calcjob gotocomputer 251689
+ 1273  /home/yutao/.aiida_venvs/aiida/bin/python /home/yutao/project/aiida/applications/sample_isotherm.py\
+ 1274  /home/yutao/.aiida_venvs/aiida/bin/python /home/yutao/project/aiida/applications/sample_isotherm.py
+ 1275  vim ~/.bashrc
+ 1276  vim sample.sh 
+ 1277  ./sample.sh 
+ 1278  vim sample.sh 
+ 1279  ./sample.sh 
+ 1280  vim ~/.bashrc
+ 1281  export $(grep -v '^#' /home/yutao/.aiida_project.env | xargs)
+ 1282  cda () {   source $aiida_venv_dir/$1/bin/activate;   cd $aiida_project_dir/$1
+ 1283  export $(grep -v '^#' /home/yutao/.aiida_project.env | xargs)
+ 1284  source $aiida_venv_dir/$1/bin/activate
+ 1285  vim ~/.bashrc
+ 1286  source $aiida_venv_dir/$1/bin/activate
+ 1287  vim ~/.bashrc
+ 1288  source ~/.bashrc
+ 1289  vim ~/.bashrc
+ 1290  cda
+ 1291  vim ~/.bashrc
+ 1292  ls /home/yutao/.aiida_venvs/aiida/bin/activate
+ 1293  cda aiida
+ 1294  ls
+ 1295  cd applications/
+ 1296  tail -n 10 ~/.bashrc
+ 1297  vim sample.sh
+ 1298  ./sample.sh 
+ 1299  vim sample.sh 
+ 1300  ./sample.sh 
+ 1301  pwd
+ 1302  ls /home/yutao/project/aiida/applications/sample.sh 
+ 1303  ls ~/project/MIL-120/traj0/Movie_framework_1_3.3.2_303.000000_
+ 1304  ls /home/yutao/project/MIL-120/traj0/
+ 1305  cda aiida
+ 1306  verdi process report 252758
+ 1307  verdi data core.dict show 252804
+ 1308  mkdir /home/yutao/project/MIL-120/traj1/
+ 1309  cd applications/
+ 1310  vim sample_long.py 
+ 1311  ls /home/yutao/project/MIL-120/traj1/
+ 1312  mkdir ~/project/github/DMFF/UFF_opt/traj1
+ 1313  cd ~/project/github/DMFF/UFF_opt
+ 1314  ls traj1
+ 1315  ls traj1/1
+ 1316  rm traj1/*
+ 1317  rm -r traj1/*
+ 1318  ls traj1/1
+ 1319  ls traj1/
+ 1320  ls /home/yutao/project/MIL-120/traj1/
+ 1321  ls /home/yutao/project/MIL-120/traj0
+ 1322  ls /home/yutao/project/MIL-120/traj
+ 1323  vim /home/yutao/project/MIL-120/traj/Movie_framework_1_3.3.2_303.000000_119869.513642_component_CO2_0.pdb
+ 1324  cd ~/project/aiida/applications/
+ 1325  ls
+ 1326  vim sample_long.
+ 1327  vim sample_long.py 
+ 1328  df 
+ 1329  top
+ 1330  cda aiida
+ 1331  verdi calcjob gotocomputer 255322
+ 1332  verdi process report 255322
+ 1333  verdi data core.dict show 255368
+ 1334  ls
+ 1335  vim applications/ff_1.json 
+ 1336  cd applications/
+ 1337  cp ff_1.json result.json
+ 1338  vim result.json 
+ 1339  ls
+ 1340  vim run_isotherm.py 
+ 1341  cp sample_isotherm.py opt_isotherm.py
+ 1342  vim opt_isotherm.py 
+ 1343  python opt_isotherm.py 
+ 1344  verdi data core.dict show 255705
+ 1345  vim result.json 
+ 1346  cda aiida
+ 1347  verdi calcjob gotocomputer 255414
+ 1348  ls
+ 1349  cd ff_optim/
+ 1350  ls
+ 1351  cd ..
+ 1352  ls
+ 1353  cd applications/
+ 1354  ls
+ 1355  vim sample_isotherm.py 
+ 1356  vim opt_isotherm.py 
+ 1357  vim sample_isotherm.py 
+ 1358  vim sample_long.py 
+ 1359  verdi calcjob gotocomputer 255402
+ 1360  verdi calcjob gotocomputer 255414
+ 1361  verdi calcjob gotocomputer 255424
+ 1362  ls
+ 1363  cp result.json ../ff_optim/
+ 1364  cd ../ff_optim/
+ 1365  ls
+ 1366  ls *Simu*
+ 1367  cd ../applications/
+ 1368  ls
+ 1369  vim query_SimAnnealingWorkChain_MIL_120.py 
+ 1370  vim test_Cp2kBindingEnergy_CO2_MIL-120.py 
+ 1371  ls ../
+ 1372  ls ../ff_optim/
+ 1373  cd ../ff_optim/
+ 1374  vim run_bindingsite_MIL120.py 
+ 1375  python run_bindingsite_MIL120.py 
+ 1376  vim run_bindingsite_MIL120.py 
+ 1377  python run_bindingsite_MIL120.py 
+ 1378  verdi data core.cif export 256043
+ 1379  verdi data core.cif export 256045
+ 1380  verdi data core.cif export 256045 > wrong.cif 
+ 1381  ssh cluster4
+ 1382  cda aiida
+ 1383  verdi data core.dict show 256047
+ 1384  cd ../
+ 1385  ls
+ 1386  cd github/
+ 1387  cd DMFF
+ 1388  ls
+ 1389  cd ..
+ 1390  ls
+ 1391  cd ../aiida/applications/
+ 1392  ls
+ 1393  vim run_bindingsite_MIL120
+ 1394  cd ../ff_optim/
+ 1395  vim run_bindingsite_MIL120.py 
+ 1396  verdi group list
+ 1397  verdi group show UFF_0921
+ 1398  verdi process report 193700 
+ 1399  verdi data core.dict show 199423
+ 1400  verdi group show UFF_accuracy 
+ 1401  verdi process report 247903
+ 1402  verdi data core.dict show 247991
+ 1403  ls
+ 1404  ls refined_UFF/
+ 1405  cd ../applications/
+ 1406  ls
+ 1407  vim sample_isotherm.py 
+ 1408  free -h
+ 1409  vim sample_isotherm.py 
+ 1410  cd ~/project/github/DMFF
+ 1411  ls
+ 1412  cd UFF_opt/
+ 1413  ls
+ 1414  vim test.py
+ 1415  ssh cluster4
+ 1416  source /home/yutao/.aiida_venvs/aiida/bin/activate
+ 1417  ssh jed
+ 1418  cda aiida
+ 1419  verdi calcjob gotocomputer A      6.8806428294977 0.0     -2.0311604873277
+ 1420  verdi calcjob gotocomputer 250553
+ 1421  cd ~
+ 1422  cat MIL-120.xyz 
+ 1423  ls
+ 1424  cd project/github/DMFF/UFF_opt/
+ 1425  ls
+ 1426  rm -r traj/*
+ 1427  ls
+ 1428  top
+ 1429  clear
+ 1430  python
+ 1431  ls
+ 1432  cda aiida
+ 1433  ls
+ 1434  cd applications/
+ 1435  ls
+ 1436  vim refined_ff/temp_new_0131.json 
+ 1437  vim refined_ff/temp_0131.json 
+ 1438  ls
+ 1439  cda aiida
+ 1440  ls
+ 1441  cd applications/
+ 1442  ls
+ 1443  cd refined_ff/
+ 1444  ls
+ 1445  vim temp_new_0131.txt 
+ 1446  verdi data core.dict show 266505
+ 1447  vim temp_new_0131.txt 
+ 1448  verdi data core.dict show 266505
+ 1449  vim temp_new_0131.txt 
+ 1450  verdi data core.dict show 266593
+ 1451  ls
+ 1452  vim temp_new_0131.txt 
+ 1453  vim test_ff.py
+ 1454  vim ../ff_test.py
+ 1455  vim ../test_ff.py
+ 1456  nohup ../test_ff.py temp_new_0131.json >> temp_new_0131.txt &
+ 1457  vim ../test_ff.py
+ 1458  nohup ../test_ff.py temp_0131.json >> temp_0131.txt &
+ 1459  nohup ../test_ff.py result_short_0131.json >> result_short_0131.txt &
+ 1460  nohup ../test_ff.py result_long_0131.json >> result_long_0131.txt &
+ 1461  vim ../test_ff.py 
+ 1462  cp ../ff_2.json result_0201.json
+ 1463  nohup ../test_ff.py result_0201.json >> result_0201.txt &
+ 1464  top
+ 1465  ls *.txt
+ 1466  vim temp_0131.txt
+ 1467  verid data core.dict show 266430
+ 1468  verdi data core.dict show 266430
+ 1469  vim result_long_0131.txt
+ 1470  verdi data core.dict show 266353
+ 1471  ls
+ 1472  cd project/
+ 1473  ls
+ 1474  cd pimd/
+ 1475  ls
+ 1476  cd ..
+ 1477  ls
+ 1478  cat /home/yutao/dataset/exp_303.txt
+ 1479  cda aiida
+ 1480  cd application
+ 1481  cd applications/
+ 1482  ls
+ 1483  ls refined_ff/
+ 1484  vim result_0201.txt
+ 1485  cd refined_ff/
+ 1486  vim result_0201.txt
+ 1487  verdi process report  268787
+ 1488  verdi data core.dict show 270781
+ 1489  ls
+ 1490  vim result_long_0131.json 
+ 1491  vim result_long_0131.txt
+ 1492  vim result.json 
+ 1493  verdi process report 268739
+ 1494  verdi data core.dict show 270935
+ 1495  vim temp_new_0131.txt 
+ 1496  cd ..
+ 1497  vim plot_compared.py 
+ 1498  python plot_compared.py 
+ 1499  vim plot_compared.py 
+ 1500  python plot_compared.py 
+ 1501  ls 303K.png 
+ 1502  ls
+ 1503  vim ../ff_2.json
+ 1504  vim ff_2.json 
+ 1505  cat ff_2.json 
+ 1506  cat refined_ff/result_0201.json 
+ 1507  cd refined_ff/
+ 1508  ls
+ 1509  vim result_0201.
+ 1510  vim result_0201.txt 
+ 1511  cd ..
+ 1512  vim plot_compared.py 
+ 1513  python plot_compared.py 
+ 1514  vim plot_compared.py 
+ 1515  python plot_compared.py 
+ 1516  ls
+ 1517  vim sample_isotherm.py 
+ 1518  cd refined_ff/
+ 1519  ls
+ 1520  vim result_0201.
+ 1521  vim result_0201.txt 
+ 1522  verdi process report 270794
+ 1523  verdi data core.dict show 271030
+ 1524  verdi data core.dict show 270969
+ 1525  cd project/
+ 1526  ls
+ 1527  cda aiida
+ 1528  ls
+ 1529  cd applications/
+ 1530  ls
+ 1531  vim refined_ff/temp_new_0131.txt 
+ 1532  find ~/project "aiida*ipynb"
+ 1533  find ~/project -name "aiida_*.ipynb"
+ 1534  vim refined_ff/temp_new_0131.txt 
+ 1535  vim plot_compared.py
+ 1536  python plot_compared.py 
+ 1537  ls -lh *.png
+ 1538  vim plot_compared.py
+ 1539  python plot_compared.py 
+ 1540  vim plot_compared.py
+ 1541  python plot_compared.py 
+ 1542  rm 303K_compared.png 
+ 1543  python plot_compared.py 
+ 1544  ls
+ 1545  vim refined_ff/
+ 1546  verdi process report 268667
+ 1547  verdi data core.dict show 270776
+ 1548  ls
+ 1549  vim refined_ff/temp_0131.txt 
+ 1550  verdi process report 268703
+ 1551  verdi data core.dict 270829
+ 1552  verdi data core.dict show 270829
+ 1553  ls
+ 1554  verdi process report  268291
+ 1555  verdi data core.dict show 268510
+ 1556  vim plot_compared.py 
+ 1557  python plot_compared.py 
+ 1558  python /home/yutao/.vscode-server/extensions/ms-python.python-2023.22.1/pythonFiles/printEnvVariablesToFile.py /home/yutao/.vscode-server/extensions/ms-python.python-2023.22.1/pythonFiles/deactivate/bash/envVars.txt
+ 1559  echo /bin/bash
+ 1560  cd ../../github/DMFF/UFF_opt/
+ 1561  LS
+ 1562  ls
+ 1563  conda activate DMFF
+ 1564  conda activate dmff
+ 1565  python test.py
+ 1566  vim test.py
+ 1567  code test.py
+ 1568  python test.py
+ 1569  vim test.py
+ 1570  python test.py
+ 1571  vim test.py 
+ 1572  python test.py
+ 1573  cp data/transition.xml data/transition_1.xml 
+ 1574  cp /home/yutao/project/aiida/applications/ff_2.json /home/yutao/project/aiida/applications/result_long_0131.json
+ 1575  cp /home/yutao/project/aiida/applications/ff_1.json /home/yutao/project/aiida/applications/result_short_0131.json
+ 1576  code data/transition_1.xml 
+ 1577  top
+ 1578  ls
+ 1579  ls data/ff*
+ 1580  cd /home/yutao/project/aiida/applications/
+ 1581  vim ff_1.json 
+ 1582  cp ff_1.json result_0130.json
+ 1583  vim result_0130.json 
+ 1584  cat result_0130.json 
+ 1585  cd ~/project/github/DMFF/UFF_opt/data/
+ 1586  ls
+ 1587  cp init.xml transition.xml
+ 1588  code transition.xml 
+ 1589  vim transition.xml 
+ 1590  cd ../pimd/pimd-mooc/2-pimd_basics/
+ 1591  ls
+ 1592  vim rdf.tcl 
+ 1593  cd 32bead/
+ 1594  vim base_p-32.pos_21.pdb 
+ 1595  cd ..
+ 1596  ls
+ 1597  cd ..
+ 1598  ls
+ 1599  cd ..
+ 1600  ls
+ 1601  find . -name "xyz"
+ 1602  find . -name "*xyz"
+ 1603  ls
+ 1604  cd pimd/pimd-mooc/2-pimd_basics/
+ 1605  ls
+ 1606  cd 32
+ 1607  cd 32bead/
+ 1608  ls
+ 1609  vim base_p-32.pos_12.pdb 
+ 1610  cd ~/project/github/DMFF/UFF_opt/
+ 1611  ls
+ 1612  scp aiida-pos-1.xyz cluster:~/pimd/pimd-mooc/
+ 1613  scp aiida-pos-1.xyz cluster4:~/pimd/pimd-mooc/
+ 1614  mv pimd ~/project/pimd
+ 1615  cd ..
+ 1616  ls
+ 1617  git add .
+ 1618  cat ../update.sh 
+ 1619  git add .
+ 1620  git commit -m "The final version before Spring Festival, Good luck"
+ 1621  git push origin 1.0.0-level
+ 1622  mv UFF_opt/aiida-pos-1.xyz ../../pimd
+ 1623  git push origin 1.0.0-level
+ 1624  git add .
+ 1625  git commit -m ""
+ 1626  git commit -m "small correction"
+ 1627  git push origin 1.0.0-level
+ 1628  cd ../1bead/
+ 1629  ls
+ 1630  vmd 
+ 1631  ls
+ 1632  cd ../32bead/
+ 1633  ls ../rdf.tcl 
+ 1634  cat ../rdf.tcl 
+ 1635  vmd
+ 1636  cd ..
+ 1637  vim experiment.txt
+ 1638  ifconfig
+ 1639  free -h
+ 1640  clear
+ 1641  free -h
+ 1642  cda aiida
+ 1643  ls
+ 1644  cd applications/
+ 1645  ls
+ 1646  code run_isotherm.py 
+ 1647  cp run_isotherm.py test_ff.py
+ 1648  code test_ff.py 
+ 1649  vim sample_isotherm.py 
+ 1650  code sample_isotherm.py 
+ 1651  python test_ff.py result_long_0131.json 
+ 1652  ls
+ 1653  cd ../ff_optim/
+ 1654  ls
+ 1655  cd ..
+ 1656  ls
+ 1657  cd example/
+ 1658  ls
+ 1659  cd ..
+ 1660  dc applications/
+ 1661  ls
+ 1662  cd applications/
+ 1663  ls
+ 1664  chmod +x test_ff.py 
+ 1665  code query_SimAnnealingWorkChain_MIL_120.py 
+ 1666  ls -lh *.py
+ 1667  cd ../ff_optim/
+ 1668  ls -lh *.py
+ 1669  vim test_ff_MIL120.py 
+ 1670  code test_ff_MIL120.py 
+ 1671  cd ../applications/
+ 1672  python test_ff.py result_long_0131.json 
+ 1673  find ../ -name "MIL-120.cif"
+ 1674  python test_ff.py result_long_0131.json 
+ 1675  ls
+ 1676  mkdir refined_ff
+ 1677  ls result*
+ 1678  mv result* refined_ff/
+ 1679  ls
+ 1680  cd refined_ff/
+ 1681  ls
+ 1682  nohup ../test_ff.py result_long_0131.json > result_long_0131.txt &
+ 1683  nohup ../test_ff.py result_short_0131.json > result_short_0131.txt &
+ 1684  vim result_long_0131.txt 
+ 1685  vim result_short_0131.txt 
+ 1686  cat ../ff_2.json 
+ 1687  cp ../ff_2.json temp_0131.json
+ 1688  nohup ../test_ff.py temp_0131.json > temp_0131.txt &
+ 1689  vim temp_0131.txt 
+ 1690  free -h
+ 1691  cp ../ff_2.json temp_new_0131.json
+ 1692  nohup ../test_ff.py temp_new_0131.json > temp_new_0131.txt &
+ 1693  vim temp_new_0131.txt 
+ 1694  ssh cluster4
+ 1695  ifconfig
+ 1696  cda aiida
+ 1697  ls
+ 1698  cd ff_optim/
+ 1699  ls
+ 1700  cd ../applications/
+ 1701  ls
+ 1702  vim run_isotherm.py 
+ 1703  python run_isotherm.py 
+ 1704  vim run_isotherm.py 
+ 1705  python run_isotherm.py 
+ 1706  vim run_isotherm.py 
+ 1707  python run_isotherm.py 
+ 1708  verdi calcjob gotocomputer 250553
+ 1709  ls
+ 1710  vim run_isotherm.py 
+ 1711  python run_isotherm.py 
+ 1712  free -h
+ 1713  ls
+ 1714  free -h
+ 1715  ls
+ 1716  cd project/
+ 1717  ls
+ 1718  cda aiida
+ 1719  cd applications/
+ 1720  cd ..
+ 1721  cd ../github/
+ 1722  ls
+ 1723  cd DMFF
+ 1724  cd UFF_opt/
+ 1725  ls
+ 1726  vim long_opt.py 
+ 1727  vim long_opt.txt
+ 1728  vim long_opt.py 
+ 1729  python long_opt.py 
+ 1730  conda activate dmff
+ 1731  python long_opt.py 
+ 1732  vim long_opt.py 
+ 1733  cda aiida
+ 1734  cd applications/
+ 1735  vim sample_long.sh
+ 1736  vim sample_long.py
+ 1737  cp sample_long_new.py
+ 1738  cp sample_long.py sample_long_new.py
+ 1739  vim long_opt.py
+ 1740  which python
+ 1741  python
+ 1742  vim test.py
+ 1743  vim test_loss.py
+ 1744  python test_loss.py 
+ 1745  vim test_loss.py
+ 1746  python test_loss.py 
+ 1747  vim test_loss.py
+ 1748  python test_loss.py 
+ 1749  vim test_loss.py
+ 1750  python test_loss.py 
+ 1751  vim test_loss.py
+ 1752  python test_loss.py 
+ 1753  vim test_loss.py
+ 1754  python test_loss.py 
+ 1755  vim test_loss.py
+ 1756  nohup python sample_long.py > sample_long.txt &
+ 1757  cd project/github/DMFF/UFF_opt/
+ 1758  ls
+ 1759  ls *.txt
+ 1760  vim long_opt.txt 
+ 1761  cd ~/project/github/DMFF/UFF_opt
+ 1762  conda activate dmff
+ 1763  python long_opt.py 
+ 1764  vim long_opt.py 
+ 1765  python long_opt.py 
+ 1766  vim long_opt.py 
+ 1767  python long_opt.py 
+ 1768  vim long_opt.py
+ 1769  nohup python long_opt.py > long_opt.txt &
+ 1770  vim long_opt.txt 
+ 1771  ls
+ 1772  vim long_opt.txt 
+ 1773  vim long_opt.txt
+ 1774  vim long_opt.py
+ 1775  ls
+ 1776  cda aiida.
+ 1777  cda aiida
+ 1778  ls
+ 1779  cd applications/
+ 1780  ls
+ 1781  vim sample_long.txt 
+ 1782  ls *.txt
+ 1783  vim test_loss.txt
+ 1784  vim test_loss.py 
+ 1785  vim sample_long_new.py 
+ 1786  vim sample_long.txt 
+ 1787  nohup ./sample_long_new.py > sample_long_new.txt &
+ 1788  ls
+ 1789  cd project/github/DMFF
+ 1790  ls
+ 1791  cd UFF_opt/
+ 1792  ls
+ 1793  ls *.txt
+ 1794  vim long_opt.
+ 1795  vim long_opt.txt 
+ 1796  cda aiida
+ 1797  cd applications/
+ 1798  ls
+ 1799  vim sample_long.txt 
+ 1800  ls
+ 1801  vim sample_long.txt 
+ 1802  python /home/yutao/.vscode-server/extensions/ms-python.python-2023.22.1/pythonFiles/printEnvVariablesToFile.py /home/yutao/.vscode-server/extensions/ms-python.python-2023.22.1/pythonFiles/deactivate/bash/envVars.txt
+ 1803  echo /bin/bash
+ 1804  cd project/github/DMFF/UFF_opt/
+ 1805  ls
+ 1806  ls *.txt
+ 1807  vim long_opt.txt 
+ 1808  vim long_opt.py
+ 1809  conda activate dmff
+ 1810  nohup python long_opt.py > output_0203.txt &
+ 1811  vim output_0203.txt 
+ 1812  vim long_opt.py 
+ 1813  python long_opt.py 
+ 1814  vim long_opt.py
+ 1815  top
+ 1816  python long_opt.py 
+ 1817  vim long_opt.py 
+ 1818  top
+ 1819  cda aiida
+ 1820  cd applications/
+ 1821  ls
+ 1822  ls *.txt
+ 1823  vim sample_long_new.txt 
+ 1824  vim sample_long_new.
+ 1825  vim sample_long_new.py 
+ 1826  ls
+ 1827  vim test_loss.py 
+ 1828  python sample_long_new.py 
+ 1829  cp sample_long.py sample_long.py.copy
+ 1830  cp sample_long_new.py sample_long.py
+ 1831  vim sample_long.py
+ 1832  ./sample_long.sh
+ 1833  ls
+ 1834  cd project/
+ 1835  ls
+ 1836  cd github/
+ 1837  ls
+ 1838  cd DMFF
+ 1839  ls
+ 1840  cd UFF_opt/
+ 1841  LS
+ 1842  ls
+ 1843  vim long_opt.txt 
+ 1844  vim long_opt.txt
+ 1845  vim long_opt.py
+ 1846  vim long_opt.py 
+ 1847  python long_opt.py 
+ 1848  conda activate dmff
+ 1849  python long_opt.py 
+ 1850  top
+ 1851  free -h 
+ 1852  cda aiida
+ 1853  cd applications/
+ 1854  ls
+ 1855  nohup ./sample.sh > test_worflow.txt &
+ 1856  vim test_worflow.txt 
+ 1857  nohup ./sample_long.sh > test_worflow.txt &
+ 1858  vim test_worflow.txt 
+ 1859  cd project/github/DMFF
+ 1860  cd UFF_opt/
+ 1861  ls
+ 1862  ls *.txt
+ 1863  vim output_0203.txt 
+ 1864  ls -lh *.txt
+ 1865  conda activate dmff
+ 1866  ls
+ 1867  python long_opt.py 
+ 1868  cd ~/project/aiida/applications/
+ 1869  ls
+ 1870  vim sample_long.py
+ 1871  cd ~/project/github/DMFF/UFF_opt
+ 1872  ls
+ 1873  vim long_opt.py y
+ 1874  vim long_opt.py 
+ 1875  cd ~/project/github/DMFF
+ 1876  ls
+ 1877  cd UFF_opt/
+ 1878  ls
+ 1879  vim long_opt.py
+ 1880  conda activate dmff
+ 1881  python long_opt.py 
+ 1882  vim long_opt.py
+ 1883  python long_opt.py 
+ 1884  nohup python long_opt.py > 1.txt &
+ 1885  vim 1.txt 
+ 1886  vim long_opt.py 
+ 1887  ls
+ 1888  cd project/
+ 1889  cda aiida
+ 1890  ls
+ 1891  cd applications/
+ 1892  ls
+ 1893  ls *.txt
+ 1894  ls sample*.txt
+ 1895  vim test_worflow.txt 
+ 1896  vim sample_long.py
+ 1897  python sample_long.py 
+ 1898  ls
+ 1899  cd project/
+ 1900  ls
+ 1901  cd github/DMFF
+ 1902  ls
+ 1903  cd UFF_opt/
+ 1904  ls
+ 1905  ls *.txt
+ 1906  vim 1.txt 
+ 1907  vim long_opt.py
+ 1908  conda activate dmff
+ 1909  vim 1.txt
+ 1910  nohup python long_opt.py > 1.txt &
+ 1911  vim 1.txt
+ 1912  ls
+ 1913  cda aiida
+ 1914  ls
+ 1915  cd applications/
+ 1916  ls
+ 1917  vim sample_long.py
+ 1918  ls
+ 1919  cd project/github/DMFF
+ 1920  ls
+ 1921  cd UFF_opt/
+ 1922  ls
+ 1923  vim 1.txt 
+ 1924  ls -lh 1.txt
+ 1925  ls
+ 1926  ls /data/ff*
+ 1927  ls ff*
+ 1928  vim long_opt.py 
+ 1929  ls  /home/yutao/project/aiida/applications/ff_2.json
+ 1930  vim  /home/yutao/project/aiida/applications/ff_2.json
+ 1931  ls -lh  /home/yutao/project/aiida/applications/ff_2.json
+ 1932  ls
+ 1933  vim short_opt.py
+ 1934  ls *.py
+ 1935  vim test.py
+ 1936  cp restart_long.py short_opt.py
+ 1937  vim short_opt.py 
+ 1938  vim nohup.out
+ 1939  nohup conda activate dmff && python ./short_opt.py &
+ 1940  conda activate dmff
+ 1941  mv restart_long.py restart_short.py 
+ 1942  vim short_opt.py 
+ 1943  nohup python ./short_opt.py &
+ 1944  vim nohup.out 
+ 1945  vim short_opt.py 
+ 1946  nohup python ./short_opt.py &
+ 1947  ls
+ 1948  cd project/
+ 1949  ls
+ 1950  cd github/DMFF
+ 1951  LS
+ 1952  ls
+ 1953  vim ~/.ssh/authorized_keys 
+ 1954  vim ~/.ssh/config 
+ 1955  vim ~/.ssh/authorized_keys 
+ 1956  pwd
+ 1957  free -h
+ 1958  ls
+ 1959  pwd
+ 1960  ls
+ 1961  conda activate dmff
+ 1962  ls
+ 1963  conda env export | grep -v "^prefix:">environment.yml
+ 1964  vim environment.yml 
+ 1965  pwd
+ 1966  conda env export > 1.txt
+ 1967  conda env export > environment1.yml
+ 1968  vim environment1.yml 
+ 1969  python --version
+ 1970  ls
+ 1971  conda uopdate
+ 1972  conda update
+ 1973  conda update conda
+ 1974  conda activate dmff
+ 1975  conda env export | grep -v "^prefix: " > environment.yml
+ 1976  vim environment.yml 
+ 1977  ls
+ 1978  cd project
+ 1979  ls
+ 1980  cd github/
+ 1981  cat update.sh 
+ 1982  python --version
+ 1983  python 
+ 1984  ls
+ 1985  conda activate dmff
+ 1986  ls
+ 1987  clear
+ 1988  ls
+ 1989  cd softwares/
+ 1990  ls
+ 1991  cd ..
+ 1992  cd project/github/DMFF
+ 1993  ls
+ 1994  cd UFF_opt/
+ 1995  ls
+ 1996  ls *.txt
+ 1997  vim 1.txt 
+ 1998  clear
+ 1999  ls
+ 2000  cd project/github/DMFF
+ 2001  ls
+ 2002  cd UFF_opt/
+ 2003  ls -lh *.txt
+ 2004  ls
+ 2005  history > history.txt

@@ -196,7 +196,13 @@ def simple_merge(frame, loading):
     This function is writen for CO2. It is common to meet problems when you try to transfer
 
     """
-    gas = app.PDBFile(loading)
+    try:
+        gas = app.PDBFile(loading)
+    except:
+        frame = app.PDBFile(frame)
+        new_topology = frame.topology
+        new_positions = frame.getPositions()
+        return new_topology, new_positions, 0
     gas_topo, gas_pos = gas.topology, gas.positions
     frame = app.PDBFile(frame)
     new_topology = frame.topology

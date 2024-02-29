@@ -1,0 +1,68 @@
+Warning on use of the timeseries module: If the inherent timescales of the system are long compared to those being analyzed, this statistical inefficiency may be an underestimate.  The estimate presumes the use of many statistically independent samples.  Tests should be performed to assess whether this condition is satisfied.   Be cautious in the interpretation of the data.
+Script finished successfully!
+Script output:
+This is the final pk values:  343615
+[0.664546296294108, 0.929898148091775, 1.077018518490437, 1.2113796295892394, 1.3426759258880767]
+[0.24030165348645946, 0.4320029725599273, 0.5832040129559017, 0.6912047560958835, 0.7776053506078691]
+This is loss function:  2.5011997726475954
+
+Function 'sample' completed within 50 mins.
+start derivative
+Successfully update once
+This is 0th time  Loss: 2.6116600902727947 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.56065054 0.11956916 0.03939106 0.06208707 0.65757    0.22469   ]
+Script finished successfully!
+Script output:
+This is the final pk values:  343862
+[0.5573055555950326, 0.7302129629935442, 0.9657962962914362, 1.1523055555897554, 1.1981481480893956]
+[0.24030165348645946, 0.4320029725599273, 0.5832040129559017, 0.6912047560958835, 0.7776053506078691]
+This is loss function:  1.8794497728531228
+
+Function 'sample' completed within 50 mins.
+start derivative
+Successfully update once
+This is 1th time  Loss: 1.9330886617013658 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.5506386  0.10958324 0.02950042 0.05210255 0.65757    0.22469   ]
+Script finished successfully!
+Script output:
+
+Function 'sample' completed within 50 mins.
+start derivative
+Successfully update once
+This is 2th time  Loss: 1.3669510955637998 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.54070262 0.09965094 0.01975189 0.04224726 0.65757    0.22469   ]
+Script finished successfully!
+Script output:
+
+Function 'sample' completed within 50 mins.
+start derivative
+Successfully update once
+This is 3th time  Loss: 0.544199772812477 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.53077164 0.08968528 0.0116665  0.03235866 0.65757    0.22469   ]
+Script finished successfully!
+Script output:
+
+Function 'sample' completed within 50 mins.
+start derivative
+Successfully update once
+This is 4th time  Loss: -0.04839281978011531 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.52076099 0.079655   0.0116665  0.02238156 0.65757    0.22469   ]
+Script finished successfully!
+Script output:
+
+Function 'sample' completed within 50 mins.
+start derivative
+Traceback (most recent call last):
+  File "/home/yutao/project/github/DMFF/UFF_opt/short_opt.py", line 345, in <module>
+    print("start derivative")
+                ^^^^^^^^^^^^^^
+  File "/home/yutao/project/github/DMFF/UFF_opt/short_opt.py", line 191, in analyse_traj
+    topo, pos, num = simple_merge("scaled_frame.pdb",os.path.join(gas_dir,gas_path))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yutao/project/github/DMFF/UFF_opt/utils.py", line 199, in simple_merge
+    gas = app.PDBFile(loading)
+          ^^^^^^^^^^^^^^^^^^^^
+  File "/home/yutao/anaconda3/envs/dmff/lib/python3.11/site-packages/openmm/app/pdbfile.py", line 95, in __init__
+    pdb = PdbStructure(inputfile, load_all_models=True, extraParticleIdentifier=extraParticleIdentifier)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yutao/anaconda3/envs/dmff/lib/python3.11/site-packages/openmm/app/internal/pdbstructure.py", line 153, in __init__
+    self._load(input_stream)
+  File "/home/yutao/anaconda3/envs/dmff/lib/python3.11/site-packages/openmm/app/internal/pdbstructure.py", line 186, in _load
+    self._current_model._finalize()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute '_finalize'

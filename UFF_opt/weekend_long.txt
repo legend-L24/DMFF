@@ -1,0 +1,22 @@
+Warning on use of the timeseries module: If the inherent timescales of the system are long compared to those being analyzed, this statistical inefficiency may be an underestimate.  The estimate presumes the use of many statistically independent samples.  Tests should be performed to assess whether this condition is satisfied.   Be cautious in the interpretation of the data.
+0 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+Aiida based GCMC sampling started.
+This is the final pk values:  324288
+[2.0181481480821226, 2.040509259281925, 2.111999999981268, 2.1358333332810377, 2.1555092592809046, 2.2254537036802597, 2.2528981480800407, 2.232555555580174, 2.2487685184800443, 2.3286944443793707]
+[0.4863387978142075, 0.8743169398907105, 1.180327868852459, 1.3989071038251364, 1.5737704918032787, 1.885245901639344, 2.0765027322404372, 2.2185792349726774, 2.33879781420765, 2.442622950819672]
+This is loss function:  13.609814355931022
+
+Directory created: ./traj1/10
+Traceback (most recent call last):
+  File "/home/yutao/project/github/DMFF/UFF_opt/long_opt.py", line 316, in <module>
+    v, g = v_and_g(paramset)
+           ^^^^^^^^^^^^^^^^^
+  File "/home/yutao/project/github/DMFF/UFF_opt/long_opt.py", line 302, in loss
+    for jdx in range(len(traj_dict[idx]['structure'])):  
+                         ~~~~~~~~~^^^^^
+KeyError: 9
+--------------------
+For simplicity, JAX has removed its internal frames from the traceback of the following exception. Set JAX_TRACEBACK_FILTERING=off to include these.

@@ -1,0 +1,19 @@
+Warning on use of the timeseries module: If the inherent timescales of the system are long compared to those being analyzed, this statistical inefficiency may be an underestimate.  The estimate presumes the use of many statistically independent samples.  Tests should be performed to assess whether this condition is satisfied.   Be cautious in the interpretation of the data.
+0 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+Aiida based GCMC sampling started.
+This is the final pk values:  336806
+[0.6206481480945177, 0.8768055555921987]
+[0.4863387978142075, 0.8743169398907105]
+This is loss function:  0.8251490776403296
+
+Traceback (most recent call last):
+  File "/home/yutao/project/github/DMFF/UFF_opt/long_opt.py", line 296, in <module>
+    traj_dict = analyse_traj(paramset, lj_gen, dest_path="./traj1/", interval=15)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yutao/project/github/DMFF/UFF_opt/long_opt.py", line 232, in analyse_traj
+    traj_dict[idx] = {'experiment': {'pressure': picked_pressure[idx-1], 'loading': picked_isotherm[idx-1]}, 'structure': [], 'refer_energy':[], 'loading':[]}
+                                                 ~~~~~~~~~~~~~~~^^^^^^^
+IndexError: list index out of range

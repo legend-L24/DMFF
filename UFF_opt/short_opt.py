@@ -1,5 +1,3 @@
-# this is some self-defined functions for testing the model
-
 # These package is inherited from Lenard-Jones optimization part of DMFF
 
 import openmm.app as app
@@ -28,21 +26,22 @@ from utils import cutoff_topology
 import matplotlib.pyplot as plt
 import optax
 from utils import extract_from_raspa
-from IPython.display import display
+from jax import clear_backends, clear_caches
+import threading
 """
 
 Superparameters for Lenard-Jone Potential optimization
 
 """
-Number_points = 7             ## must be smaller than len(picked_ls)
+Number_points = 2            ## must be smaller than len(picked_ls)
 Trajectory_length = 250#250          #液体pdb文件的个数
 target_site1 = -50.60                  #拟合的目标binding energy
 target_site2 = -46.69           #拟合的目标binding energy
-SET_temperature=  303           #温度设定
+SET_temperature=  100           #温度设定
 time_gap=   2.2                      #分子动力学模拟过程中每一个frame的时间间隔，单位是皮秒picosecond   推荐2-4ps
 loop_time =   100                  #迭代循环次数    推荐50-100
 scaling_factors = (3,3,2)
-cutoff = 0.905     #1.3 # unit is nanometer
+cutoff = 0.905 #1.3 # unit is nanometer
 
 Transfer_unit = 2.7719416667/5.6100437023 
 
@@ -76,7 +75,8 @@ pressure_list = [
 
 arr_3 = np.loadtxt("/home/yutao/dataset/exp_303.txt", delimiter=',')
 
-picked_ls = [0, 3, 6, 9, 12, 15, 18]
+
+picked_ls = list(range(Number_points))#[0, 3, 6]#[0, 3, 6, 9, 12, 15, 18]   # this value need to be consistent with Number_points
 picked_pressure = [pressure_list[i] for i in picked_ls]
 picked_isotherm = [arr_3[i,1]*Transfer_unit for i in picked_ls]
 
@@ -91,7 +91,7 @@ import os
 import numpy as np
 from utils import scaling_gas, extract_from_raspa, write_scaling_gas
 bar = 10**5
-def move_traj(dest_path = "/home/yutao/project/MIL-120/traj1/",picked_pressure=picked_pressure, copy_to_path = "./traj1/"):
+def move_traj(dest_path = "/home/yutao/project/MIL-120/traj0/",picked_pressure=picked_pressure):
     traj_ls = os.listdir(dest_path)
     isotherm_data = [[],[]] # the first list is for pressure, the second is for loading
     jdx = 0 
@@ -109,7 +109,7 @@ def move_traj(dest_path = "/home/yutao/project/MIL-120/traj1/",picked_pressure=p
         index = 0
         write_idx = 1
         num_atoms = 0  # Variable to store the number of atoms in the current structure
-        directory = copy_to_path+f"{jdx+1}"
+        directory = f"./traj/{jdx+1}"
         jdx += 1
         if not os.path.exists(directory):
             os.makedirs(directory)
@@ -131,9 +131,9 @@ def move_traj(dest_path = "/home/yutao/project/MIL-120/traj1/",picked_pressure=p
                 block_Csym.append(parts[-1])
                 num_atoms += 1  # Increment the number of atoms
         #num_atoms_list.append(num_atoms)  # Add the number of atoms for the last structure
-        isotherm_data[1].append(sum(num_atoms_list)/len(num_atoms_list)/3/3/2/3)
+        #   isotherm_data[1].append(sum(num_atoms_list)/len(num_atoms_list)/3/3/2/3)
         #print("Number of atoms in each structure for", pdb_file, ":", num_atoms_list)
-    return isotherm_data
+    #return isotherm_data
 
 def update_mask(parameters, mask):
     updated_parameters = parameters.copy()
@@ -172,7 +172,55 @@ def compute_binding_energy(paramset,topo, pos, lj_gen, numframe=720,cutoff=cutof
     ener = lj_force(pos_jnp,cell_jnp, pairs, paramset)
     return ener
 
-def detect_parameter_change(paramset_new, paramset_old, error_threshold=0.4):
+def analyse_traj(paramset, lj_gen, dest_path = "./traj/", interval=10):
+    global picked_isotherm, picked_pressure
+    traj_dict = {}
+    global Number_points, Trajectory_length, cutoff
+    traj_ls = os.listdir(dest_path)
+    create_supercell("data/MIL-120.pdb", scaling_factors, "scaled_frame.pdb")
+
+    # Filter out file names and keep only directory names
+    dir_names = [name for name in traj_ls if os.path.isdir(os.path.join(dest_path, name)) and name.isdigit()]
+    dir_names = sorted(map(int, dir_names))
+    dir_names = [str(i) for i in dir_names]
+    for directory in dir_names[:Number_points]:
+        idx = int(directory)
+        traj_dict[idx] = {'experiment': {'pressure': picked_pressure[idx-1], 'loading': picked_isotherm[idx-1]}, 'structure': [], 'refer_energy':[], 'loading':[]}
+        gas_dir = os.path.join(dest_path, directory)
+        for gas_path in os.listdir(gas_dir)[::interval]:
+            topo, pos, num = simple_merge("scaled_frame.pdb",os.path.join(gas_dir,gas_path))
+            ener_lj = compute_binding_energy(paramset,topo, pos, lj_gen, numframe=720,cutoff=cutoff)
+            traj_dict[idx]['structure'].append([topo, pos])
+            traj_dict[idx]['loading'].append(num/scaling_factors[0]/scaling_factors[1]/scaling_factors[2]/3)
+            traj_dict[idx]['refer_energy'].append(ener_lj)
+    clear_backends()    
+    for key in traj_dict.keys():
+        traj_dict[key]['refer_energy'] = jnp.array(traj_dict[key]['refer_energy'])
+        traj_dict[key]['loading'] = jnp.array(traj_dict[key]['loading'])
+        traj_dict[key]['estimator'] = ReweightEstimator(ref_energies=traj_dict[key]['refer_energy'], temperature=SET_temperature)
+    return traj_dict
+
+import subprocess
+def sample(cmd="/home/yutao/project/aiida/applications/sample.sh"):
+    command = [cmd]
+    # Run the script using subprocess
+    completed_process = subprocess.run(command, capture_output=True, cwd="/home/yutao/project/aiida/applications",text=True)
+
+    # Check the return code
+    if completed_process.returncode == 0:
+        # The script finished successfully
+        print("Script finished successfully!")
+        # Display the output in the notebook
+        print("Script output:")
+        print(completed_process.stdout)
+        # Continue with your program logic here
+    else:
+        # The script encountered an error
+        print("Script encountered an error:", completed_process.stderr)
+        print("Script encountered an error:", completed_process.stderr)
+        # Handle the error or exit the program
+
+def detect_parameter_change(paramset_new, paramset_old):
     # Get the initial parameters
     initial_sigma = paramset_old.parameters['LennardJonesForce']['sigma']
     initial_epsilon = paramset_old.parameters['LennardJonesForce']['epsilon']
@@ -186,23 +234,22 @@ def detect_parameter_change(paramset_new, paramset_old, error_threshold=0.4):
     epsilon_change = np.abs(updated_epsilon - initial_epsilon) / initial_epsilon
 
     # Find the indices of values that have changed by more than 40%
-    sigma_indices = np.where(sigma_change > error_threshold)[0]
-    epsilon_indices = np.where(epsilon_change > error_threshold)[0]
+    sigma_indices = np.where(sigma_change > 0.9)[0]
+    epsilon_indices = np.where(epsilon_change > 0.9)[0]
     
     return sigma_indices, epsilon_indices
 
-def fix_changed_parameters(paramset_new, sigma_indices, epsilon_indices):
+def fix_changed_parameters(paramset, sigma_indices, epsilon_indices):
     for idx in sigma_indices:
         paramset.mask['LennardJonesForce']['sigma'] = paramset.mask['LennardJonesForce']['sigma'].at[idx].set(0)
     for idx in epsilon_indices:
         paramset.mask['LennardJonesForce']['epsilon'] = paramset.mask['LennardJonesForce']['epsilon'].at[idx].set(0)
-    return paramset_new
-
+    return paramset
 
 import json
 Transfer_energy_unit = 254.152/2.11525
 Transfer_length_unit = 10
-def update_ff(paramset, dest_path='/home/yutao/project/aiida/applications/ff_2.json'):
+def update_ff(paramset, dest_path='/home/yutao/project/aiida/applications/ff_1.json'):
     global Transfer_energy_unit, Transfer_length_unit
     element_list = ['Al_', 'C_', 'H_', 'O_']
     params = paramset.parameters
@@ -216,83 +263,100 @@ def update_ff(paramset, dest_path='/home/yutao/project/aiida/applications/ff_2.j
     with open(dest_path, 'w') as f:
         json.dump(ff_data, f, indent=4)
 
-from jax import clear_backends
-def analyse_traj(paramset, lj_gen, dest_path = "./traj1/", interval=3):
-    traj_dict = {}
-    global Number_points, cutoff
-    traj_ls = os.listdir(dest_path)
-    create_supercell("data/MIL-120.pdb", scaling_factors, "scaled_frame.pdb")
+def show_ff(file_path='/home/yutao/project/aiida/applications/ff_1.json'):
+    global Transfer_energy_unit, Transfer_length_unit
+    element_list = ['Al_', 'C_', 'H_', 'O_']
+    ff_data = json.load(open(file_path))
 
-    # Filter out file names and keep only directory names
-    dir_names = [name for name in traj_ls if os.path.isdir(os.path.join(dest_path, name)) and name.isdigit()]
+    for idx in range(len(element_list)):
+        print(ff_data[element_list[idx]][0],ff_data[element_list[idx]][1]/Transfer_energy_unit,ff_data[element_list[idx]][2]/Transfer_length_unit)
+#update_ff(paramset)
+        
 
-    for directory in dir_names[:Number_points]:
-        idx = int(directory)
-        traj_dict[idx] = {'experiment': {'pressure': picked_pressure[idx-1], 'loading': picked_isotherm[idx-1]}, 'structure': [], 'refer_energy':[], 'loading':[]}
-        gas_dir = os.path.join(dest_path, directory)
-        for gas_path in os.listdir(gas_dir)[::interval]:
-            topo, pos, num = simple_merge("scaled_frame.pdb",os.path.join(gas_dir,gas_path))
-            ener_lj = compute_binding_energy(paramset,topo, pos, lj_gen, numframe=720,cutoff=cutoff)
-            traj_dict[idx]['structure'].append([topo, pos])
-            traj_dict[idx]['loading'].append(num/scaling_factors[0]/scaling_factors[1]/scaling_factors[2]/3)
-            traj_dict[idx]['refer_energy'].append(ener_lj)
-        clear_backends()
-    for key in traj_dict.keys():
-        traj_dict[key]['refer_energy'] = jnp.array(traj_dict[key]['refer_energy'])
-        traj_dict[key]['loading'] = jnp.array(traj_dict[key]['loading'])
-        traj_dict[key]['estimator'] = ReweightEstimator(ref_energies=traj_dict[key]['refer_energy'], temperature=SET_temperature)
-    return traj_dict
 
-import subprocess
-def sample():
-    command = ["/home/yutao/project/aiida/applications/sample_long.sh"]
-    # Run the script using subprocess
-    completed_process = subprocess.run(command, capture_output=True, cwd="/home/yutao/project/aiida/applications",text=True)
+'''
 
-    # Check the return code
-    if completed_process.returncode == 0:
-        # The script finished successfully
-        display("Script finished successfully!")
-        # Display the output in the notebook
-        display("Script output:")
-        display(completed_process.stdout)
-        # Continue with your program logic here
-    else:
-        # The script encountered an error
-        display("Script encountered an error:", completed_process.stderr)
-        # Handle the error or exit the program
+The actutaly optimization part starts here
+
+'''
+
+'''
+#If the code is not restarted, I use these codes
 
 # Initial Optimized parameters
 xmlio = XMLIO()
 xmlio.loadXML("data/init.xml")
 ffinfo = xmlio.parseXML()
+paramset = ParamSet()
+lj_gen = LennardJonesGenerator(ffinfo, paramset)
 
+xmlio = XMLIO()
+xmlio.loadXML("data/init.xml")
+ffinfo = xmlio.parseXML()
 paramset_old = ParamSet()
 lj_gen = LennardJonesGenerator(ffinfo, paramset_old)
 
-xmlio = XMLIO()
-xmlio.loadXML("data/transition_1.xml")
-ffinfo = xmlio.parseXML()
-paramset = ParamSet()
-lj_gen = LennardJonesGenerator(ffinfo, paramset)
 paramset.mask['LennardJonesForce']['sigma'] = paramset.mask['LennardJonesForce']['sigma'].at[0].set(0)
 paramset.mask['LennardJonesForce']['sigma'] = paramset.mask['LennardJonesForce']['sigma'].at[1].set(0)
 paramset.mask['LennardJonesForce']['sigma'] = paramset.mask['LennardJonesForce']['sigma'].at[2].set(0)
 paramset.mask['LennardJonesForce']['sigma'] = paramset.mask['LennardJonesForce']['sigma'].at[3].set(0)
 
-optimizer = optax.adam(0.01)
+
+'''
+
+# Initial Optimized parameters
+xmlio = XMLIO()
+xmlio.loadXML("data/init.xml")
+ffinfo = xmlio.parseXML()
+paramset_old = ParamSet()
+lj_gen = LennardJonesGenerator(ffinfo, paramset_old)
+
+xmlio = XMLIO()
+#xmlio.loadXML("data/init.xml")
+xmlio.loadXML("transition_0228.xml")
+#xmlio.loadXML("0219.xml")
+ffinfo = xmlio.parseXML()
+paramset = ParamSet()
+lj_gen = LennardJonesGenerator(ffinfo, paramset)
+
+
+paramset.mask['LennardJonesForce']['sigma'] = paramset.mask['LennardJonesForce']['sigma'].at[0].set(0)
+paramset.mask['LennardJonesForce']['sigma'] = paramset.mask['LennardJonesForce']['sigma'].at[1].set(0)
+paramset.mask['LennardJonesForce']['sigma'] = paramset.mask['LennardJonesForce']['sigma'].at[2].set(0)
+paramset.mask['LennardJonesForce']['sigma'] = paramset.mask['LennardJonesForce']['sigma'].at[3].set(0)
+
+paramset.mask['LennardJonesForce']['epsilon'] = paramset.mask['LennardJonesForce']['epsilon'].at[1].set(0)
+paramset.mask['LennardJonesForce']['epsilon'] = paramset.mask['LennardJonesForce']['epsilon'].at[3].set(0)
+
+
+#paramset.mask['LennardJonesForce']['epsilon'] = paramset.mask['LennardJonesForce']['epsilon'].at[1].set(0)
+
+optimizer = optax.adam(0.05)
 opt_state = optimizer.init(paramset)
 
-from jax import clear_caches
-loss_ls = []
-os.system("cp /home/yutao/project/aiida/applications/UFF.json /home/yutao/project/aiida/applications/ff_2.json")
 
-for nloop in range(46):
-    if nloop!=0:
-        sample()
-        clear_caches()
-    move_traj(dest_path="/home/yutao/project/MIL-120/traj1/",picked_pressure=picked_pressure, copy_to_path = "./traj1/")
-    traj_dict = analyse_traj(paramset, lj_gen, dest_path="./traj1/", interval=15)
+scalar_epsilon = paramset_old.parameters['LennardJonesForce']['epsilon']
+scalar_epsilon = scalar_epsilon/jnp.max(scalar_epsilon)
+
+#os.system("cp /home/yutao/project/aiida/applications/UFF.json /home/yutao/project/aiida/applications/ff_1.json")
+os.system("cp transition_0228.json /home/yutao/project/aiida/applications/ff_1.json")
+print("Story starts")
+for nloop in range(50):
+    '''
+    t = threading.Thread(target=sample, args=("/home/yutao/project/aiida/applications/sample.sh",))
+    t.start()
+    # Wait for 2 hours for the function to complete
+    t.join(45*60)  # Timeout in seconds# If the function is still running after 2 hours, continue with the rest of the code
+    if t.is_alive():
+        print("Function 'sample' is still running after 50 mins, skipping it and continuing with the rest of the code.")
+    else:
+        print("Function 'sample' completed within 50 mins.")
+    print("start derivative")
+    '''
+    print("Once starts")
+    sample("/home/yutao/project/aiida/applications/sample.sh")
+    move_traj(dest_path="/home/yutao/project/MIL-120/traj0/",picked_pressure=picked_pressure)
+    traj_dict = analyse_traj(paramset, lj_gen,interval=10)
 
     def loss(paramset):
         errors = []
@@ -304,25 +368,31 @@ for nloop in range(46):
             energies = jnp.concatenate(energies)
             weight = traj_dict[idx]['estimator'].estimate_weight(energies)
             reweight_loading = traj_dict[idx]['loading'] * weight
-            error = jnp.power(jnp.average(reweight_loading)-traj_dict[idx]['experiment']['loading'],2)
+            error = jnp.power(jnp.average(reweight_loading)-traj_dict[idx]['experiment']['loading'],1)
             errors.append(error.reshape((1,)))
             #print(error)
         errors = jnp.concatenate(errors)
         return jnp.sum(errors)
 
     v_and_g = jax.value_and_grad(loss, 0)
-    clear_backends()
     v, g = v_and_g(paramset)
-    loss_ls.append(v)
-    
+    print("This is before derivative",g.parameters['LennardJonesForce']['epsilon'])
+    g.parameters['LennardJonesForce']['epsilon'] = g.parameters['LennardJonesForce']['epsilon']*scalar_epsilon
+    print("This is scaled derivative",g.parameters['LennardJonesForce']['epsilon'])
     updates, opt_state = optimizer.update(g, opt_state)
     updates.parameters = update_mask(updates.parameters,paramset.mask)
     paramset = optax.apply_updates(paramset, updates)
     paramset = jax.tree_map(lambda x: jnp.clip(x, 0.0, 1e8), paramset)
+    
     update_ff(paramset)
     lj_gen.overwrite(paramset)
-    sigma_indices, epsilon_indices = detect_parameter_change(paramset, paramset_old,0.7)
+    sigma_indices, epsilon_indices = detect_parameter_change(paramset, paramset_old)
     paramset = fix_changed_parameters(paramset, sigma_indices, epsilon_indices)
+    
+    print("Successfully update once")
     print(f"This is {nloop}th time", f" Loss: {v} and Parameters: ",paramset.parameters['LennardJonesForce']['sigma'], paramset.parameters['LennardJonesForce']['epsilon'])
+    clear_backends()
+    clear_caches()
 
-   
+
+

@@ -1,0 +1,834 @@
+Warning on use of the timeseries module: If the inherent timescales of the system are long compared to those being analyzed, this statistical inefficiency may be an underestimate.  The estimate presumes the use of many statistically independent samples.  Tests should be performed to assess whether this condition is satisfied.   Be cautious in the interpretation of the data.
+2024-02-15 21:26:57.308460: E external/xla/xla/service/slow_operation_alarm.cc:65] 
+********************************
+[Compiling module jit_gather] Very slow compile? If you want to file a bug, run with envvar XLA_FLAGS=--xla_dump_to=/tmp/foo and attach the results.
+********************************
+2024-02-15 21:30:32.465004: E external/xla/xla/service/slow_operation_alarm.cc:133] The operation took 5m36.548183432s
+
+********************************
+[Compiling module jit_gather] Very slow compile? If you want to file a bug, run with envvar XLA_FLAGS=--xla_dump_to=/tmp/foo and attach the results.
+********************************
+Successfully update once
+This is 0th time  Loss: 1.3569205687357626 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [2.11025 0.43479 0.17936 0.24579 0.65757 0.22469]
+Script finished successfully!
+Script output:
+This is the final pk values:  314655
+[2.0072592592822196]
+[0.6484517304189433]
+This is loss function:  1.686857054633607
+
+Successfully update once
+This is 1th time  Loss: 1.7517618385770326 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [2.10639082 0.43092835 0.176736   0.24171651 0.65757    0.22469   ]
+Script finished successfully!
+Script output:
+This is the final pk values:  314860
+[1.9811018518824066]
+[0.6484517304189433]
+This is loss function:  1.660699647233794
+
+Successfully update once
+This is 2th time  Loss: 1.7497777115929056 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [2.1027453  0.42730841 0.17380342 0.237568   0.65757    0.22469   ]
+Script finished successfully!
+Script output:
+This is the final pk values:  315074
+[1.9713240740825302]
+[0.6484517304189433]
+This is loss function:  1.6509218694339176
+
+Successfully update once
+This is 3th time  Loss: 1.735227447042641 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [2.09901719 0.42365803 0.17139912 0.23344191 0.65757    0.22469   ]
+Script finished successfully!
+Script output:
+This is the final pk values:  315245
+[1.9814074073824222]
+[0.6484517304189433]
+This is loss function:  1.6610052027338096
+
+Successfully update once
+This is 4th time  Loss: 1.7418412036563975 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [2.09528041 0.41992966 0.16944149 0.22920183 0.65757    0.22469   ]
+Script finished successfully!
+Script output:
+This is the final pk values:  315403
+[2.0016018518822247]
+[0.6484517304189433]
+This is loss function:  1.6811996472336121
+
+Successfully update once
+This is 5th time  Loss: 1.7418412036563975 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [2.09190386 0.41656719 0.16761205 0.22540663 0.65757    0.22469   ]
+Script finished successfully!
+Script output:
+This is the final pk values:  315545
+[1.9938148147823078]
+[0.6484517304189433]
+This is loss function:  1.6734126101336952
+
+Successfully update once
+This is 6th time  Loss: 1.7735872354024294 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [2.08860492 0.4132308  0.16680266 0.22174648 0.65757    0.22469   ]
+Script finished successfully!
+Script output:
+This is the final pk values:  315788
+[1.9845185184823881]
+[0.6484517304189433]
+This is loss function:  1.6641163138337756
+
+Successfully update once
+This is 7th time  Loss: 1.7444867063019003 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [2.08537275 0.40992447 0.16658919 0.21805714 0.65757    0.22469   ]
+Script finished successfully!
+Script output:
+This is the final pk values:  315941
+[1.9961851851823031]
+[0.6484517304189433]
+This is loss function:  1.6757829805336906
+
+Successfully update once
+This is 8th time  Loss: 1.7610210978362917 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [2.08217317 0.40662559 0.16616702 0.21435339 0.65757    0.22469   ]
+Script encountered an error: 02/15/2024 10:03:31 PM <2353954> aiida.orm.nodes.process.workflow.workchain.WorkChainNode: [REPORT] [316064|IsothermWorkChain|run_zeopp]: Running zeo++ block and volpo for CO2 Calculation<316073>
+02/15/2024 10:05:34 PM <2353954> aiida.orm.nodes.process.workflow.workchain.WorkChainNode: [REPORT] [316064|IsothermWorkChain|should_run_widom]: Found accessible pore volume for CO2: continue
+02/15/2024 10:05:34 PM <2353954> aiida.orm.nodes.process.workflow.workchain.WorkChainNode: [REPORT] [316064|IsothermWorkChain|should_run_widom]: Found 0 blocking spheres
+02/15/2024 10:05:35 PM <2353954> aiida.orm.nodes.process.workflow.workchain.WorkChainNode: [REPORT] [316064|IsothermWorkChain|run_raspa_widom]: Running Raspa Widom CO2 @ 303K for the Henry coefficient
+02/15/2024 10:05:36 PM <2353954> aiida.orm.nodes.process.workflow.workchain.WorkChainNode: [REPORT] [316119|RaspaBaseWorkChain|run_process]: launching RaspaCalculation<316123> iteration #1
+02/15/2024 10:07:39 PM <2353954> aiida.orm.nodes.process.workflow.workchain.WorkChainNode: [REPORT] [316119|RaspaBaseWorkChain|results]: work chain completed after 1 iterations
+02/15/2024 10:07:39 PM <2353954> aiida.orm.nodes.process.workflow.workchain.WorkChainNode: [REPORT] [316119|RaspaBaseWorkChain|on_terminated]: remote folders will not be cleaned
+02/15/2024 10:07:39 PM <2353954> aiida.orm.nodes.process.workflow.workchain.WorkChainNode: [REPORT] [316064|IsothermWorkChain|should_run_gcmc]: kH larger than the threshold for CO2: continue
+02/15/2024 10:07:39 PM <2353954> aiida.orm.nodes.process.workflow.workchain.WorkChainNode: [REPORT] [316064|IsothermWorkChain|init_raspa_gcmc]: CO2: Kh(mol/kg/Pa)=1.15e-01 POAV(cm3/g)=0.325 Qsat(mol/kg)=6.89
+02/15/2024 10:07:39 PM <2353954> aiida.orm.nodes.process.workflow.workchain.WorkChainNode: [REPORT] [316064|IsothermWorkChain|init_raspa_gcmc]: Now evaluating the isotherm CO2 @ 303K for 1 pressure points
+02/15/2024 10:07:40 PM <2353954> aiida.orm.nodes.process.workflow.workchain.WorkChainNode: [REPORT] [316064|IsothermWorkChain|run_raspa_gcmc]: Running Raspa GCMC CO2 @ 303K/0.022bar (pressure 1 of 1)
+02/15/2024 10:07:40 PM <2353954> aiida.orm.nodes.process.workflow.workchain.WorkChainNode: [REPORT] [316141|RaspaBaseWorkChain|run_process]: launching RaspaCalculation<316145> iteration #1
+02/15/2024 10:15:47 PM <2353954> aiida.orm.nodes.process.workflow.workchain.WorkChainNode: [REPORT] [316141|RaspaBaseWorkChain|results]: work chain completed after 1 iterations
+02/15/2024 10:15:47 PM <2353954> aiida.orm.nodes.process.workflow.workchain.WorkChainNode: [REPORT] [316141|RaspaBaseWorkChain|on_terminated]: remote folders will not be cleaned
+02/15/2024 10:15:47 PM <2353954> aiida.orm.nodes.process.workflow.workchain.WorkChainNode: [REPORT] [316064|IsothermWorkChain|return_output_parameters]: Isotherm CO2 @ 303K computed: ouput Dict<316201>
+/home/yutao/.aiida_venvs/aiida/lib/python3.9/site-packages/aiida/orm/querybuilder.py:1385: AiidaEntryPointWarning: Process type 'aiida_raspa.workchains.base.RaspaBaseWorkChain' does not correspond to a registered entry. This risks queries to fail once the location of the process class changes. Add an entry point for 'aiida_raspa.workchains.base.RaspaBaseWorkChain' to remove this warning.
+  warnings.warn(
+Traceback (most recent call last):
+  File "/home/yutao/project/aiida/applications/./sample_isotherm.py", line 103, in <module>
+    raise ValueError("Wrong number of files")
+ValueError: Wrong number of files
+
+Script encountered an error: 02/15/2024 10:03:31 PM <2353954> aiida.orm.nodes.process.workflow.workchain.WorkChainNode: [REPORT] [316064|IsothermWorkChain|run_zeopp]: Running zeo++ block and volpo for CO2 Calculation<316073>
+02/15/2024 10:05:34 PM <2353954> aiida.orm.nodes.process.workflow.workchain.WorkChainNode: [REPORT] [316064|IsothermWorkChain|should_run_widom]: Found accessible pore volume for CO2: continue
+02/15/2024 10:05:34 PM <2353954> aiida.orm.nodes.process.workflow.workchain.WorkChainNode: [REPORT] [316064|IsothermWorkChain|should_run_widom]: Found 0 blocking spheres
+02/15/2024 10:05:35 PM <2353954> aiida.orm.nodes.process.workflow.workchain.WorkChainNode: [REPORT] [316064|IsothermWorkChain|run_raspa_widom]: Running Raspa Widom CO2 @ 303K for the Henry coefficient
+02/15/2024 10:05:36 PM <2353954> aiida.orm.nodes.process.workflow.workchain.WorkChainNode: [REPORT] [316119|RaspaBaseWorkChain|run_process]: launching RaspaCalculation<316123> iteration #1
+02/15/2024 10:07:39 PM <2353954> aiida.orm.nodes.process.workflow.workchain.WorkChainNode: [REPORT] [316119|RaspaBaseWorkChain|results]: work chain completed after 1 iterations
+02/15/2024 10:07:39 PM <2353954> aiida.orm.nodes.process.workflow.workchain.WorkChainNode: [REPORT] [316119|RaspaBaseWorkChain|on_terminated]: remote folders will not be cleaned
+02/15/2024 10:07:39 PM <2353954> aiida.orm.nodes.process.workflow.workchain.WorkChainNode: [REPORT] [316064|IsothermWorkChain|should_run_gcmc]: kH larger than the threshold for CO2: continue
+02/15/2024 10:07:39 PM <2353954> aiida.orm.nodes.process.workflow.workchain.WorkChainNode: [REPORT] [316064|IsothermWorkChain|init_raspa_gcmc]: CO2: Kh(mol/kg/Pa)=1.15e-01 POAV(cm3/g)=0.325 Qsat(mol/kg)=6.89
+02/15/2024 10:07:39 PM <2353954> aiida.orm.nodes.process.workflow.workchain.WorkChainNode: [REPORT] [316064|IsothermWorkChain|init_raspa_gcmc]: Now evaluating the isotherm CO2 @ 303K for 1 pressure points
+02/15/2024 10:07:40 PM <2353954> aiida.orm.nodes.process.workflow.workchain.WorkChainNode: [REPORT] [316064|IsothermWorkChain|run_raspa_gcmc]: Running Raspa GCMC CO2 @ 303K/0.022bar (pressure 1 of 1)
+02/15/2024 10:07:40 PM <2353954> aiida.orm.nodes.process.workflow.workchain.WorkChainNode: [REPORT] [316141|RaspaBaseWorkChain|run_process]: launching RaspaCalculation<316145> iteration #1
+02/15/2024 10:15:47 PM <2353954> aiida.orm.nodes.process.workflow.workchain.WorkChainNode: [REPORT] [316141|RaspaBaseWorkChain|results]: work chain completed after 1 iterations
+02/15/2024 10:15:47 PM <2353954> aiida.orm.nodes.process.workflow.workchain.WorkChainNode: [REPORT] [316141|RaspaBaseWorkChain|on_terminated]: remote folders will not be cleaned
+02/15/2024 10:15:47 PM <2353954> aiida.orm.nodes.process.workflow.workchain.WorkChainNode: [REPORT] [316064|IsothermWorkChain|return_output_parameters]: Isotherm CO2 @ 303K computed: ouput Dict<316201>
+/home/yutao/.aiida_venvs/aiida/lib/python3.9/site-packages/aiida/orm/querybuilder.py:1385: AiidaEntryPointWarning: Process type 'aiida_raspa.workchains.base.RaspaBaseWorkChain' does not correspond to a registered entry. This risks queries to fail once the location of the process class changes. Add an entry point for 'aiida_raspa.workchains.base.RaspaBaseWorkChain' to remove this warning.
+  warnings.warn(
+Traceback (most recent call last):
+  File "/home/yutao/project/aiida/applications/./sample_isotherm.py", line 103, in <module>
+    raise ValueError("Wrong number of files")
+ValueError: Wrong number of files
+
+Successfully update once
+This is 9th time  Loss: 1.7610210978362917 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [2.07899323 0.40332427 0.16556115 0.2106284  0.65757    0.22469   ]
+Script finished successfully!
+Script output:
+This is the final pk values:  316207
+[1.9536111110826664]
+[0.6484517304189433]
+This is loss function:  1.6332089064340538
+
+Successfully update once
+This is 10th time  Loss: 1.7100951719103659 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [2.0756829  0.39992189 0.16511395 0.20694749 0.65757    0.22469   ]
+Script finished successfully!
+Script output:
+This is the final pk values:  316354
+[2.0045370369822004]
+[0.6484517304189433]
+This is loss function:  1.6841348323335879
+
+Successfully update once
+This is 11th time  Loss: 1.7623438491590433 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [2.07243658 0.39655308 0.16453595 0.20342364 0.65757    0.22469   ]
+Script finished successfully!
+Script output:
+This is the final pk values:  316481
+[1.9744351851824964]
+[0.6484517304189433]
+This is loss function:  1.6540329805338838
+
+Successfully update once
+This is 12th time  Loss: 1.7623438491590433 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [2.06912972 0.39315505 0.16383111 0.19988944 0.65757    0.22469   ]
+Script finished successfully!
+Script output:
+This is the final pk values:  316667
+[1.979555555582418]
+[0.6484517304189433]
+This is loss function:  1.6591533509338054
+
+Successfully update once
+This is 13th time  Loss: 1.735227447042641 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [2.06563339 0.38955158 0.16322584 0.19620299 0.65757    0.22469   ]
+Script finished successfully!
+Script output:
+This is the final pk values:  316950
+[1.9545833332826454]
+[0.6484517304189433]
+This is loss function:  1.6341811286340329
+
+Successfully update once
+This is 14th time  Loss: 1.7305978174130114 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [2.06208059 0.38594426 0.16264881 0.19243704 0.65757    0.22469   ]
+Script finished successfully!
+Script output:
+This is the final pk values:  317156
+[1.9592685184826122]
+[0.6484517304189433]
+This is loss function:  1.6388663138339996
+
+Successfully update once
+This is 15th time  Loss: 1.7193544311696252 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [2.05854473 0.3823842  0.16208623 0.18885134 0.65757    0.22469   ]
+Script finished successfully!
+Script output:
+This is the final pk values:  317228
+[1.9620277777826105]
+[0.6484517304189433]
+This is loss function:  1.641625573133998
+
+Successfully update once
+This is 16th time  Loss: 1.7431639549791489 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [2.05515963 0.37896493 0.16121643 0.1855245  0.65757    0.22469   ]
+Script finished successfully!
+Script output:
+This is the final pk values:  317300
+[1.9484259258827041]
+[0.6484517304189433]
+This is loss function:  1.6280237212340916
+
+Successfully update once
+This is 17th time  Loss: 1.7087724205876145 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [2.05170887 0.3754509  0.16018255 0.18213005 0.65757    0.22469   ]
+Script finished successfully!
+Script output:
+This is the final pk values:  317392
+[1.9432499999827646]
+[0.6484517304189433]
+This is loss function:  1.622847795334152
+
+Successfully update once
+This is 18th time  Loss: 1.7266295634447575 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [2.04810153 0.37177148 0.15849267 0.17857248 0.65757    0.22469   ]
+Script finished successfully!
+Script output:
+This is the final pk values:  317466
+[1.942722222182757]
+[0.6484517304189433]
+This is loss function:  1.6223200175341443
+
+Successfully update once
+This is 19th time  Loss: 1.7167089285241228 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [2.04431073 0.36786872 0.15626062 0.1747668  0.65757    0.22469   ]
+Script finished successfully!
+Script output:
+This is the final pk values:  317538
+[1.9344629629828634]
+[0.6484517304189433]
+This is loss function:  1.6140607583342508
+
+Successfully update once
+This is 20th time  Loss: 1.6988517856669796 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [2.04048    0.36390261 0.1539351  0.17084321 0.65757    0.22469   ]
+Script finished successfully!
+Script output:
+This is the final pk values:  317610
+[1.9219999999829531]
+[0.6484517304189433]
+This is loss function:  1.6015977953343405
+
+Successfully update once
+This is 21th time  Loss: 1.6657830025981966 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [2.03661931 0.35987064 0.15273994 0.1669759  0.65757    0.22469   ]
+Script finished successfully!
+Script output:
+This is the final pk values:  317682
+[1.9286759258828794]
+[0.6484517304189433]
+This is loss function:  1.6082737212342668
+
+Successfully update once
+This is 22th time  Loss: 1.6948835316987259 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [2.03254278 0.3556831  0.15122034 0.16310033 0.65757    0.22469   ]
+Script finished successfully!
+Script output:
+This is the final pk values:  317749
+[1.8999814814831588]
+[0.6484517304189433]
+This is loss function:  1.5795792768345462
+
+Successfully update once
+This is 23th time  Loss: 1.6446189814341754 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [2.02819772 0.35127363 0.14872498 0.15921583 0.65757    0.22469   ]
+Script finished successfully!
+Script output:
+This is the final pk values:  317848
+[1.9096574073830583]
+[0.6484517304189433]
+This is loss function:  1.5892552027344458
+
+Successfully update once
+This is 24th time  Loss: 1.6677671295823233 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [2.02371673 0.34669335 0.14532151 0.15497462 0.65757    0.22469   ]
+Script finished successfully!
+Script output:
+This is the final pk values:  317920
+[1.8898796295832214]
+[0.6484517304189433]
+This is loss function:  1.5694774249346088
+
+Successfully update once
+This is 25th time  Loss: 1.6188253306405245 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [2.01897618 0.34186059 0.1414576  0.15039795 0.65757    0.22469   ]
+Script finished successfully!
+Script output:
+This is the final pk values:  317992
+[1.858407407383513]
+[0.6484517304189433]
+This is loss function:  1.5380052027349005
+
+Successfully update once
+This is 26th time  Loss: 1.6333755951907893 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [2.01397356 0.33678999 0.1370506  0.15039795 0.65757    0.22469   ]
+Script finished successfully!
+Script output:
+This is the final pk values:  318064
+[1.8827129629833221]
+[0.6484517304189433]
+This is loss function:  1.5623107583347096
+
+Successfully update once
+This is 27th time  Loss: 1.6598306216458156 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [2.00893578 0.33166798 0.13251717 0.15039795 0.65757    0.22469   ]
+Script finished successfully!
+Script output:
+This is the final pk values:  318136
+[1.848574074083619]
+[0.6484517304189433]
+This is loss function:  1.5281718694350064
+
+Successfully update once
+This is 28th time  Loss: 1.6446189814341752 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [2.003789   0.32641204 0.12782225 0.15039795 0.65757    0.22469   ]
+Script finished successfully!
+Script output:
+This is the final pk values:  318227
+[1.8843333332832686]
+[0.6484517304189433]
+This is loss function:  1.563931128634656
+
+Successfully update once
+This is 29th time  Loss: 1.6393279761431703 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.99866542 0.32114535 0.12323994 0.15039795 0.65757    0.22469   ]
+Script finished successfully!
+Script output:
+This is the final pk values:  318302
+[1.8403425925836814]
+[0.6484517304189433]
+This is loss function:  1.5199403879350688
+
+Successfully update once
+This is 30th time  Loss: 1.6089046957198894 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.99339601 0.31573948 0.11877822 0.15039795 0.65757    0.22469   ]
+Script finished successfully!
+Script output:
+This is the final pk values:  318374
+[1.7820740740842087]
+[0.6484517304189433]
+This is loss function:  1.4616718694355961
+
+Successfully update once
+This is 31th time  Loss: 1.5553332671484612 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.98786428 0.31007686 0.11378573 0.15039795 0.65757    0.22469   ]
+Script finished successfully!
+Script output:
+This is the final pk values:  318446
+[1.8742592592833993]
+[0.6484517304189433]
+This is loss function:  1.5538570546347867
+
+Successfully update once
+This is 32th time  Loss: 1.6518941137093077 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.98214643 0.30421785 0.10868296 0.15039795 0.65757    0.22469   ]
+Script finished successfully!
+Script output:
+This is the final pk values:  318518
+[1.794907407384076]
+[0.6484517304189433]
+This is loss function:  1.4745052027354635
+
+Successfully update once
+This is 33th time  Loss: 1.5526877645029584 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.97652457 0.29840428 0.10868296 0.15039795 0.65757    0.22469   ]
+Script finished successfully!
+Script output:
+This is the final pk values:  318580
+[1.81178703698391]
+[0.6484517304189433]
+This is loss function:  1.4913848323352974
+
+Successfully update once
+This is 34th time  Loss: 1.5778200396352335 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.97076641 0.2924299  0.10868296 0.15039795 0.65757    0.22469   ]
+Script finished successfully!
+Script output:
+This is the final pk values:  318684
+[1.7979166666840722]
+[0.6484517304189433]
+This is loss function:  1.4775144620354597
+
+Successfully update once
+This is 35th time  Loss: 1.5745131613283554 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.96502773 0.28646498 0.10868296 0.15039795 0.65757    0.22469   ]
+Script finished successfully!
+Script output:
+This is the final pk values:  318756
+[1.7754259258842386]
+[0.6484517304189433]
+This is loss function:  1.455023721235626
+
+Successfully update once
+This is 36th time  Loss: 1.5467353835505775 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.95927746 0.28045794 0.10868296 0.15039795 0.65757    0.22469   ]
+Script finished successfully!
+Script output:
+This is the final pk values:  318828
+[1.752824074084468]
+[0.6484517304189433]
+This is loss function:  1.4324218694358555
+
+Successfully update once
+This is 37th time  Loss: 1.5189576057727996 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.9532888  0.27422767 0.10868296 0.15039795 0.65757    0.22469   ]
+Script finished successfully!
+Script output:
+This is the final pk values:  318890
+[1.7444722221845153]
+[0.6484517304189433]
+This is loss function:  1.4240700175359027
+
+Successfully update once
+This is 38th time  Loss: 1.4759681877833817 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.94713642 0.26786509 0.10868296 0.15039795 0.65757    0.22469   ]
+Script finished successfully!
+Script output:
+This is the final pk values:  318962
+[1.7384629629846018]
+[0.6484517304189433]
+This is loss function:  1.4180607583359892
+
+Successfully update once
+This is 39th time  Loss: 1.4858888227040166 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.94081751 0.26136085 0.10868296 0.15039795 0.65757    0.22469   ]
+Script finished successfully!
+Script output:
+This is the final pk values:  319029
+[1.7470648147844963]
+[0.6484517304189433]
+This is loss function:  1.4266626101358837
+
+Successfully update once
+This is 40th time  Loss: 1.4845660713812652 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.93454195 0.26136085 0.10868296 0.15039795 0.65757    0.22469   ]
+Script finished successfully!
+Script output:
+This is the final pk values:  319137
+[1.7115462962848218]
+[0.6484517304189433]
+This is loss function:  1.3911440916362092
+
+Successfully update once
+This is 41th time  Loss: 1.4640634258786196 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.92809936 0.26136085 0.10868296 0.15039795 0.65757    0.22469   ]
+Script finished successfully!
+Script output:
+This is the final pk values:  319200
+[1.750574074084488]
+[0.6484517304189433]
+This is loss function:  1.4301718694358754
+
+Successfully update once
+This is 42th time  Loss: 1.4938253306405245 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.92158755 0.26136085 0.10868296 0.15039795 0.65757    0.22469   ]
+Script finished successfully!
+Script output:
+This is the final pk values:  319272
+[1.709083333284823]
+[0.6484517304189433]
+This is loss function:  1.3886811286362104
+
+Successfully update once
+This is 43th time  Loss: 1.4660475528627466 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.91509513 0.26136085 0.10868296 0.15039795 0.65757    0.22469   ]
+Script finished successfully!
+Script output:
+This is the final pk values:  319344
+[1.6794907406850812]
+[0.6484517304189433]
+This is loss function:  1.3590885360364686
+
+Successfully update once
+This is 44th time  Loss: 1.4005713623865563 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.90867042 0.26136085 0.10868296 0.15039795 0.65757    0.22469   ]
+Script finished successfully!
+Script output:
+This is the final pk values:  319416
+[1.7143518518847725]
+[0.6484517304189433]
+This is loss function:  1.3939496472361599
+
+Successfully update once
+This is 45th time  Loss: 1.4455449073601012 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.90234132 0.26136085 0.10868296 0.15039795 0.65757    0.22469   ]
+Script finished successfully!
+Script output:
+This is the final pk values:  319508
+[1.7169444443847965]
+[0.6484517304189433]
+This is loss function:  1.396542239736184
+
+Successfully update once
+This is 46th time  Loss: 1.5030845898997836 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.89625471 0.26136085 0.10868296 0.15039795 0.65757    0.22469   ]
+Script finished successfully!
+Script output:
+This is the final pk values:  319582
+[1.6972962962849483]
+[0.6484517304189433]
+This is loss function:  1.3768940916363357
+
+Successfully update once
+This is 47th time  Loss: 1.4177671295823233 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.89020092 0.26136085 0.10868296 0.15039795 0.65757    0.22469   ]
+Script finished successfully!
+Script output:
+This is the final pk values:  319654
+[1.6706944443852068]
+[0.6484517304189433]
+This is loss function:  1.3502922397365942
+
+Successfully update once
+This is 48th time  Loss: 1.4336401454553394 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.88395733 0.26136085 0.10868296 0.15039795 0.65757    0.22469   ]
+Script finished successfully!
+Script output:
+This is the final pk values:  319726
+[1.65053703698534]
+[0.6484517304189433]
+This is loss function:  1.3301348323367275
+
+Successfully update once
+This is 49th time  Loss: 1.4190898809050747 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.87750846 0.26136085 0.10868296 0.15039795 0.65757    0.22469   ]
+Script finished successfully!
+Script output:
+This is the final pk values:  319798
+[1.7200462962847465]
+[0.6484517304189433]
+This is loss function:  1.399644091636134
+
+Successfully update once
+This is 50th time  Loss: 1.4772909391061328 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.87119565 0.26136085 0.10868296 0.15039795 0.65757    0.22469   ]
+Script finished successfully!
+Script output:
+This is the final pk values:  319860
+[1.668685185185208]
+[0.6484517304189433]
+This is loss function:  1.3482829805365955
+
+Successfully update once
+This is 51th time  Loss: 1.4131374999526938 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.86459301 0.26136085 0.10868296 0.15039795 0.65757    0.22469   ]
+Script finished successfully!
+Script output:
+This is the final pk values:  319964
+[1.6400185184854439]
+[0.6484517304189433]
+This is loss function:  1.3196163138368313
+
+Successfully update once
+This is 52th time  Loss: 1.3972644840796777 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.85769218 0.26136085 0.10868296 0.15039795 0.65757    0.22469   ]
+Script finished successfully!
+Script output:
+This is the final pk values:  320036
+[1.6919814814850034]
+[0.6484517304189433]
+This is loss function:  1.3715792768363908
+
+Successfully update once
+This is 53th time  Loss: 1.4554655422807363 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.85090411 0.26136085 0.10868296 0.15039795 0.65757    0.22469   ]
+Script finished successfully!
+Script output:
+This is the final pk values:  320108
+[1.6451018518853866]
+[0.6484517304189433]
+This is loss function:  1.324699647236774
+
+Successfully update once
+This is 54th time  Loss: 1.418428505243699 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.84427639 0.26136085 0.10868296 0.15039795 0.65757    0.22469   ]
+Script finished successfully!
+Script output:
+This is the final pk values:  320180
+[1.6677407406851854]
+[0.6484517304189433]
+This is loss function:  1.3473385360365728
+
+Successfully update once
+This is 55th time  Loss: 1.4296718914870854 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.83760553 0.26136085 0.10868296 0.15039795 0.65757    0.22469   ]
+Script finished successfully!
+Script output:
+This is the final pk values:  320242
+[1.7072407406848351]
+[0.6484517304189433]
+This is loss function:  1.3868385360362225
+
+Successfully update once
+This is 56th time  Loss: 1.4753068121220057 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.8309145  0.26136085 0.10868296 0.15039795 0.65757    0.22469   ]
+Script finished successfully!
+Script output:
+This is the final pk values:  320309
+[1.679638888885109]
+[0.6484517304189433]
+This is loss function:  1.3592366842364965
+
+Successfully update once
+This is 57th time  Loss: 1.4627406745558682 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.82421211 0.26136085 0.10868296 0.15039795 0.65757    0.22469   ]
+Script finished successfully!
+Script output:
+This is the final pk values:  320418
+[1.6957222221849475]
+[0.6484517304189433]
+This is loss function:  1.375320017536335
+
+Successfully update once
+This is 58th time  Loss: 1.4462062830214768 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.81755977 0.26136085 0.10868296 0.15039795 0.65757    0.22469   ]
+Script finished successfully!
+Script output:
+This is the final pk values:  320490
+[1.6206759258856112]
+[0.6484517304189433]
+This is loss function:  1.3002737212369986
+
+Successfully update once
+This is 59th time  Loss: 1.3979258597410533 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.81091589 0.26136085 0.10868296 0.15039795 0.65757    0.22469   ]
+Script finished successfully!
+Script output:
+This is the final pk values:  320561
+[1.6966388888849582]
+[0.6484517304189433]
+This is loss function:  1.3762366842363456
+
+Successfully update once
+This is 60th time  Loss: 1.4448835316987254 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.80422935 0.26136085 0.10868296 0.15039795 0.65757    0.22469   ]
+Script finished successfully!
+Script output:
+This is the final pk values:  320774
+[1.692398148085012]
+[0.6484517304189433]
+This is loss function:  1.3719959434363995
+
+Successfully update once
+This is 61th time  Loss: 1.5176348544500486 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.79778096 0.26136085 0.10868296 0.15039795 0.65757    0.22469   ]
+Script finished successfully!
+Script output:
+This is the final pk values:  320920
+[1.679009259285131]
+[0.6484517304189433]
+This is loss function:  1.3586070546365183
+
+Successfully update once
+This is 62th time  Loss: 1.4118147486299424 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.79134137 0.26136085 0.10868296 0.15039795 0.65757    0.22469   ]
+Script finished successfully!
+Script output:
+This is the final pk values:  321084
+[1.692212962985012]
+[0.6484517304189433]
+This is loss function:  1.3718107583363994
+
+Successfully update once
+This is 63th time  Loss: 1.4528200396352335 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.7847685  0.26136085 0.10868296 0.15039795 0.65757    0.22469   ]
+Script finished successfully!
+Script output:
+This is the final pk values:  321216
+[1.663083333285231]
+[0.6484517304189433]
+This is loss function:  1.3426811286366185
+
+Successfully update once
+This is 64th time  Loss: 1.3919734787886724 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.77821572 0.26136085 0.10868296 0.15039795 0.65757    0.22469   ]
+Script finished successfully!
+Script output:
+This is the final pk values:  321338
+[1.648777777785389]
+[0.6484517304189433]
+This is loss function:  1.3283755731367763
+
+Successfully update once
+This is 65th time  Loss: 1.4038782406934347 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.77164099 0.26136085 0.10868296 0.15039795 0.65757    0.22469   ]
+Script finished successfully!
+Script output:
+This is the final pk values:  321470
+[1.6300092592855657]
+[0.6484517304189433]
+This is loss function:  1.3096070546369531
+
+Successfully update once
+This is 66th time  Loss: 1.4217353835505775 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.76489348 0.26136085 0.10868296 0.15039795 0.65757    0.22469   ]
+Script finished successfully!
+Script output:
+This is the final pk values:  321592
+[1.6588425925852912]
+[0.6484517304189433]
+This is loss function:  1.3384403879366786
+
+Successfully update once
+This is 67th time  Loss: 1.4124761242913184 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.75805611 0.26136085 0.10868296 0.15039795 0.65757    0.22469   ]
+Script finished successfully!
+Script output:
+This is the final pk values:  321719
+[1.6437870369854]
+[0.6484517304189433]
+This is loss function:  1.3233848323367874
+
+Successfully update once
+This is 68th time  Loss: 1.4230581348733289 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.75123835 0.26136085 0.10868296 0.15039795 0.65757    0.22469   ]
+Script finished successfully!
+Script output:
+This is the final pk values:  321878
+[1.5929814814858818]
+[0.6484517304189433]
+This is loss function:  1.2725792768372692
+
+Successfully update once
+This is 69th time  Loss: 1.3079787697939635 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.74444119 0.26136085 0.10868296 0.15039795 0.65757    0.22469   ]
+Script finished successfully!
+Script output:
+This is the final pk values:  322009
+[1.6586388888852952]
+[0.6484517304189433]
+This is loss function:  1.3382366842366826
+
+Successfully update once
+This is 70th time  Loss: 1.4237195105347045 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.73774278 0.26136085 0.10868296 0.15039795 0.65757    0.22469   ]
+Script finished successfully!
+Script output:
+This is the final pk values:  322122
+[1.6611111110852608]
+[0.6484517304189433]
+This is loss function:  1.3407089064366482
+
+Successfully update once
+This is 71th time  Loss: 1.399248611063805 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.7310854  0.26136085 0.10868296 0.15039795 0.65757    0.22469   ]
+Script finished successfully!
+Script output:
+This is the final pk values:  322253
+[1.640009259285477]
+[0.6484517304189433]
+This is loss function:  1.3196070546368643
+
+Successfully update once
+This is 72th time  Loss: 1.3853597221749159 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.72466693 0.26136085 0.10868296 0.15039795 0.65757    0.22469   ]
+Script finished successfully!
+Script output:
+This is the final pk values:  322439
+[1.6369814814854915]
+[0.6484517304189433]
+This is loss function:  1.316579276836879
+
+Successfully update once
+This is 73th time  Loss: 1.4276877645029582 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.71858119 0.26136085 0.10868296 0.15039795 0.65757    0.22469   ]
+Script finished successfully!
+Script output:
+This is the final pk values:  322792
+[1.6387037036854637]
+[0.6484517304189433]
+This is loss function:  1.3183014990368511
+
+Successfully update once
+This is 74th time  Loss: 1.4078464946616887 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.71250952 0.26136085 0.10868296 0.15039795 0.65757    0.22469   ]
+Script finished successfully!
+Script output:
+This is the final pk values:  322894
+[1.634712962985522]
+[0.6484517304189433]
+This is loss function:  1.3143107583369094
+
+Successfully update once
+This is 75th time  Loss: 1.4012327380479315 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.70641224 0.26136085 0.10868296 0.15039795 0.65757    0.22469   ]
+Script finished successfully!
+Script output:
+This is the final pk values:  322966
+[1.6441111110854116]
+[0.6484517304189433]
+This is loss function:  1.323708906436799
+
+Successfully update once
+This is 76th time  Loss: 1.3522909391061328 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.70036362 0.26136085 0.10868296 0.15039795 0.65757    0.22469   ]
+Script finished successfully!
+Script output:
+This is the final pk values:  323038
+[1.5956481480858702]
+[0.6484517304189433]
+This is loss function:  1.2752459434372576
+
+Successfully update once
+This is 77th time  Loss: 1.4078464946616887 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.69448388 0.26136085 0.10868296 0.15039795 0.65757    0.22469   ]
+Script finished successfully!
+Script output:
+This is the final pk values:  323110
+[1.6295555555855719]
+[0.6484517304189433]
+This is loss function:  1.3091533509369593
+
+Successfully update once
+This is 78th time  Loss: 1.4197512565664503 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.68863649 0.26136085 0.10868296 0.15039795 0.65757    0.22469   ]
+Script finished successfully!
+Script output:
+This is the final pk values:  323177
+[1.6150092592856988]
+[0.6484517304189433]
+This is loss function:  1.2946070546370863
+
+Successfully update once
+This is 79th time  Loss: 1.38932797614317 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.68287486 0.26136085 0.10868296 0.15039795 0.65757    0.22469   ]
+Script finished successfully!
+Script output:
+This is the final pk values:  323276
+[1.6799166666851189]
+[0.6484517304189433]
+This is loss function:  1.3595144620365063
+
+Successfully update once
+This is 80th time  Loss: 1.412476124291318 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.67730821 0.26136085 0.10868296 0.15039795 0.65757    0.22469   ]
+Script finished successfully!
+Script output:
+This is the final pk values:  323348
+[1.6151851851856827]
+[0.6484517304189433]
+This is loss function:  1.29478298053707
+
+Successfully update once
+This is 81th time  Loss: 1.378084589899784 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.6717748  0.26136085 0.10868296 0.15039795 0.65757    0.22469   ]
+Script finished successfully!
+Script output:
+This is the final pk values:  323420
+[1.6625648147852459]
+[0.6484517304189433]
+This is loss function:  1.3421626101366333
+
+Successfully update once
+This is 82th time  Loss: 1.449513161328355 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.66627361 0.26136085 0.10868296 0.15039795 0.65757    0.22469   ]
+Script finished successfully!
+Script output:
+This is the final pk values:  323492
+[1.619009259285663]
+[0.6484517304189433]
+This is loss function:  1.2986070546370505
+
+Successfully update once
+This is 83th time  Loss: 1.3780845898997836 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.66091196 0.26136085 0.10868296 0.15039795 0.65757    0.22469   ]
+Script finished successfully!
+Script output:
+This is the final pk values:  323564
+[1.6586851851852968]
+[0.6484517304189433]
+This is loss function:  1.3382829805366843
+
+Successfully update once
+This is 84th time  Loss: 1.44422215603735 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.65528689 0.26136085 0.10868296 0.15039795 0.65757    0.22469   ]
+Script finished successfully!
+Script output:
+This is the final pk values:  323656
+[1.5989629629858388]
+[0.6484517304189433]
+This is loss function:  1.2785607583372263
+
+Successfully update once
+This is 85th time  Loss: 1.3747777115929056 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.64943938 0.26136085 0.10868296 0.15039795 0.65757    0.22469   ]
+Script finished successfully!
+Script output:
+This is the final pk values:  323739
+[1.6133796295856737]
+[0.6484517304189433]
+This is loss function:  1.2929774249370611
+
+Successfully update once
+This is 86th time  Loss: 1.3906507274659214 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.64349199 0.26136085 0.10868296 0.15039795 0.65757    0.22469   ]
+Script finished successfully!
+Script output:
+This is the final pk values:  323802
+[1.5837407406859305]
+[0.6484517304189433]
+This is loss function:  1.263338536037318
+
+Successfully update once
+This is 87th time  Loss: 1.350968187783382 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.63741738 0.26136085 0.10868296 0.15039795 0.65757    0.22469   ]
+Script finished successfully!
+Script output:

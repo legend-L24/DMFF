@@ -1,0 +1,831 @@
+Warning on use of the timeseries module: If the inherent timescales of the system are long compared to those being analyzed, this statistical inefficiency may be an underestimate.  The estimate presumes the use of many statistically independent samples.  Tests should be performed to assess whether this condition is satisfied.   Be cautious in the interpretation of the data.
+0 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+Aiida based GCMC sampling started.
+This is the final pk values:  299143
+[1.9993703703822834, 2.0967592592814257, 2.123990740681139, 2.1737499999807204, 2.2865740740797342, 2.237074074080173, 2.4072407406786267, 2.451324074078273, 2.4543796295782148]
+[0.6484517304189433, 1.5737704918032787, 2.098360655737705, 2.7686703096539165, 3.1183970856102, 3.3661202185792347, 4.0510018214936245, 4.408014571948998, 4.714025500910747]
+This is loss function:  10.3154244081059
+
+This is 16th reweight_loading results from dmff code. 1.9967320261437906 Traced<ConcreteArray(1.9967320261437906, dtype=float64)>with<JVPTrace(level=2/0)> with
+  primal = Array(1.99673203, dtype=float64)
+  tangent = Traced<ShapedArray(float64[])>with<JaxprTrace(level=1/0)> with
+    pval = (ShapedArray(float64[]), None)
+    recipe = JaxprEqnRecipe(eqn_id=<object object at 0x7f1872a13150>, in_tracers=(Traced<ShapedArray(float64[17]):JaxprTrace(level=1/0)>,), out_tracer_refs=[<weakref at 0x7f187ba5db20; to 'JaxprTracer' at 0x7f187ba5e930>], out_avals=[ShapedArray(float64[])], primitive=pjit, params={'jaxpr': { lambda ; a:f64[17]. let
+    b:f64[] = reduce_sum[axes=(0,)] a
+    c:f64[] = div b 17.0
+  in (c,) }, 'in_shardings': (UnspecifiedValue,), 'out_shardings': (UnspecifiedValue,), 'resource_env': None, 'donated_invars': (False,), 'name': '_average', 'keep_unused': False, 'inline': True}, effects=set(), source_info=SourceInfo(traceback=<jaxlib.xla_extension.Traceback object at 0x7f187b62f570>, name_stack=NameStack(stack=(Transform(name='jvp'),))))
+This is 16th reweight_loading results from dmff code. 2.1274509803921573 Traced<ConcreteArray(2.1274509803921573, dtype=float64)>with<JVPTrace(level=2/0)> with
+  primal = Array(2.12745098, dtype=float64)
+  tangent = Traced<ShapedArray(float64[])>with<JaxprTrace(level=1/0)> with
+    pval = (ShapedArray(float64[]), None)
+    recipe = JaxprEqnRecipe(eqn_id=<object object at 0x7f186b36e7e0>, in_tracers=(Traced<ShapedArray(float64[17]):JaxprTrace(level=1/0)>,), out_tracer_refs=[<weakref at 0x7f1873138360; to 'JaxprTracer' at 0x7f186a8cb970>], out_avals=[ShapedArray(float64[])], primitive=pjit, params={'jaxpr': { lambda ; a:f64[17]. let
+    b:f64[] = reduce_sum[axes=(0,)] a
+    c:f64[] = div b 17.0
+  in (c,) }, 'in_shardings': (UnspecifiedValue,), 'out_shardings': (UnspecifiedValue,), 'resource_env': None, 'donated_invars': (False,), 'name': '_average', 'keep_unused': False, 'inline': True}, effects=set(), source_info=SourceInfo(traceback=<jaxlib.xla_extension.Traceback object at 0x7f18687312b0>, name_stack=NameStack(stack=(Transform(name='jvp'),))))
+This is 16th reweight_loading results from dmff code. 2.1111111111111107 Traced<ConcreteArray(2.1111111111111107, dtype=float64)>with<JVPTrace(level=2/0)> with
+  primal = Array(2.11111111, dtype=float64)
+  tangent = Traced<ShapedArray(float64[])>with<JaxprTrace(level=1/0)> with
+    pval = (ShapedArray(float64[]), None)
+    recipe = JaxprEqnRecipe(eqn_id=<object object at 0x7f18670aa350>, in_tracers=(Traced<ShapedArray(float64[17]):JaxprTrace(level=1/0)>,), out_tracer_refs=[<weakref at 0x7f1867610db0; to 'JaxprTracer' at 0x7f1866c94ae0>], out_avals=[ShapedArray(float64[])], primitive=pjit, params={'jaxpr': { lambda ; a:f64[17]. let
+    b:f64[] = reduce_sum[axes=(0,)] a
+    c:f64[] = div b 17.0
+  in (c,) }, 'in_shardings': (UnspecifiedValue,), 'out_shardings': (UnspecifiedValue,), 'resource_env': None, 'donated_invars': (False,), 'name': '_average', 'keep_unused': False, 'inline': True}, effects=set(), source_info=SourceInfo(traceback=<jaxlib.xla_extension.Traceback object at 0x7f18676184f0>, name_stack=NameStack(stack=(Transform(name='jvp'),))))
+This is 16th reweight_loading results from dmff code. 2.1764705882352935 Traced<ConcreteArray(2.1764705882352935, dtype=float64)>with<JVPTrace(level=2/0)> with
+  primal = Array(2.17647059, dtype=float64)
+  tangent = Traced<ShapedArray(float64[])>with<JaxprTrace(level=1/0)> with
+    pval = (ShapedArray(float64[]), None)
+    recipe = JaxprEqnRecipe(eqn_id=<object object at 0x7f1872a762d0>, in_tracers=(Traced<ShapedArray(float64[17]):JaxprTrace(level=1/0)>,), out_tracer_refs=[<weakref at 0x7f186623a340; to 'JaxprTracer' at 0x7f1864acd530>], out_avals=[ShapedArray(float64[])], primitive=pjit, params={'jaxpr': { lambda ; a:f64[17]. let
+    b:f64[] = reduce_sum[axes=(0,)] a
+    c:f64[] = div b 17.0
+  in (c,) }, 'in_shardings': (UnspecifiedValue,), 'out_shardings': (UnspecifiedValue,), 'resource_env': None, 'donated_invars': (False,), 'name': '_average', 'keep_unused': False, 'inline': True}, effects=set(), source_info=SourceInfo(traceback=<jaxlib.xla_extension.Traceback object at 0x7f186585e7f0>, name_stack=NameStack(stack=(Transform(name='jvp'),))))
+This is 16th reweight_loading results from dmff code. 2.2385620915032676 Traced<ConcreteArray(2.2385620915032676, dtype=float64)>with<JVPTrace(level=2/0)> with
+  primal = Array(2.23856209, dtype=float64)
+  tangent = Traced<ShapedArray(float64[])>with<JaxprTrace(level=1/0)> with
+    pval = (ShapedArray(float64[]), None)
+    recipe = JaxprEqnRecipe(eqn_id=<object object at 0x7f196d380af0>, in_tracers=(Traced<ShapedArray(float64[17]):JaxprTrace(level=1/0)>,), out_tracer_refs=[<weakref at 0x7f18675d36f0; to 'JaxprTracer' at 0x7f18675d36a0>], out_avals=[ShapedArray(float64[])], primitive=pjit, params={'jaxpr': { lambda ; a:f64[17]. let
+    b:f64[] = reduce_sum[axes=(0,)] a
+    c:f64[] = div b 17.0
+  in (c,) }, 'in_shardings': (UnspecifiedValue,), 'out_shardings': (UnspecifiedValue,), 'resource_env': None, 'donated_invars': (False,), 'name': '_average', 'keep_unused': False, 'inline': True}, effects=set(), source_info=SourceInfo(traceback=<jaxlib.xla_extension.Traceback object at 0x7f1863ccf970>, name_stack=NameStack(stack=(Transform(name='jvp'),))))
+This is 16th reweight_loading results from dmff code. 2.225490196078431 Traced<ConcreteArray(2.225490196078431, dtype=float64)>with<JVPTrace(level=2/0)> with
+  primal = Array(2.2254902, dtype=float64)
+  tangent = Traced<ShapedArray(float64[])>with<JaxprTrace(level=1/0)> with
+    pval = (ShapedArray(float64[]), None)
+    recipe = JaxprEqnRecipe(eqn_id=<object object at 0x7f1872a12120>, in_tracers=(Traced<ShapedArray(float64[17]):JaxprTrace(level=1/0)>,), out_tracer_refs=[<weakref at 0x7f185f3b6110; to 'JaxprTracer' at 0x7f1861476570>], out_avals=[ShapedArray(float64[])], primitive=pjit, params={'jaxpr': { lambda ; a:f64[17]. let
+    b:f64[] = reduce_sum[axes=(0,)] a
+    c:f64[] = div b 17.0
+  in (c,) }, 'in_shardings': (UnspecifiedValue,), 'out_shardings': (UnspecifiedValue,), 'resource_env': None, 'donated_invars': (False,), 'name': '_average', 'keep_unused': False, 'inline': True}, effects=set(), source_info=SourceInfo(traceback=<jaxlib.xla_extension.Traceback object at 0x7f185f3e9bb0>, name_stack=NameStack(stack=(Transform(name='jvp'),))))
+This is 16th reweight_loading results from dmff code. 2.372549019607843 Traced<ConcreteArray(2.372549019607843, dtype=float64)>with<JVPTrace(level=2/0)> with
+  primal = Array(2.37254902, dtype=float64)
+  tangent = Traced<ShapedArray(float64[])>with<JaxprTrace(level=1/0)> with
+    pval = (ShapedArray(float64[]), None)
+    recipe = JaxprEqnRecipe(eqn_id=<object object at 0x7f186b4bb920>, in_tracers=(Traced<ShapedArray(float64[17]):JaxprTrace(level=1/0)>,), out_tracer_refs=[<weakref at 0x7f185dc9bc40; to 'JaxprTracer' at 0x7f1865877c90>], out_avals=[ShapedArray(float64[])], primitive=pjit, params={'jaxpr': { lambda ; a:f64[17]. let
+    b:f64[] = reduce_sum[axes=(0,)] a
+    c:f64[] = div b 17.0
+  in (c,) }, 'in_shardings': (UnspecifiedValue,), 'out_shardings': (UnspecifiedValue,), 'resource_env': None, 'donated_invars': (False,), 'name': '_average', 'keep_unused': False, 'inline': True}, effects=set(), source_info=SourceInfo(traceback=<jaxlib.xla_extension.Traceback object at 0x7f185dcab8b0>, name_stack=NameStack(stack=(Transform(name='jvp'),))))
+This is 16th reweight_loading results from dmff code. 2.4542483660130716 Traced<ConcreteArray(2.4542483660130716, dtype=float64)>with<JVPTrace(level=2/0)> with
+  primal = Array(2.45424837, dtype=float64)
+  tangent = Traced<ShapedArray(float64[])>with<JaxprTrace(level=1/0)> with
+    pval = (ShapedArray(float64[]), None)
+    recipe = JaxprEqnRecipe(eqn_id=<object object at 0x7f1863146e50>, in_tracers=(Traced<ShapedArray(float64[17]):JaxprTrace(level=1/0)>,), out_tracer_refs=[<weakref at 0x7f185bdc9bc0; to 'JaxprTracer' at 0x7f185be20770>], out_avals=[ShapedArray(float64[])], primitive=pjit, params={'jaxpr': { lambda ; a:f64[17]. let
+    b:f64[] = reduce_sum[axes=(0,)] a
+    c:f64[] = div b 17.0
+  in (c,) }, 'in_shardings': (UnspecifiedValue,), 'out_shardings': (UnspecifiedValue,), 'resource_env': None, 'donated_invars': (False,), 'name': '_average', 'keep_unused': False, 'inline': True}, effects=set(), source_info=SourceInfo(traceback=<jaxlib.xla_extension.Traceback object at 0x7f185be2f2b0>, name_stack=NameStack(stack=(Transform(name='jvp'),))))
+This is 16th reweight_loading results from dmff code. 2.4542483660130716 Traced<ConcreteArray(2.4542483660130716, dtype=float64)>with<JVPTrace(level=2/0)> with
+  primal = Array(2.45424837, dtype=float64)
+  tangent = Traced<ShapedArray(float64[])>with<JaxprTrace(level=1/0)> with
+    pval = (ShapedArray(float64[]), None)
+    recipe = JaxprEqnRecipe(eqn_id=<object object at 0x7f186a4ee620>, in_tracers=(Traced<ShapedArray(float64[17]):JaxprTrace(level=1/0)>,), out_tracer_refs=[<weakref at 0x7f185e0dab10; to 'JaxprTracer' at 0x7f185e0daac0>], out_avals=[ShapedArray(float64[])], primitive=pjit, params={'jaxpr': { lambda ; a:f64[17]. let
+    b:f64[] = reduce_sum[axes=(0,)] a
+    c:f64[] = div b 17.0
+  in (c,) }, 'in_shardings': (UnspecifiedValue,), 'out_shardings': (UnspecifiedValue,), 'resource_env': None, 'donated_invars': (False,), 'name': '_average', 'keep_unused': False, 'inline': True}, effects=set(), source_info=SourceInfo(traceback=<jaxlib.xla_extension.Traceback object at 0x7f1859d31b70>, name_stack=NameStack(stack=(Transform(name='jvp'),))))
+This is 0th time  Loss: 6.9411718095355965 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.7712011  0.25011281 0.2683417  0.14013779 0.65757    0.22469   ]
+1 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+Aiida based GCMC sampling started.
+This is the final pk values:  299310
+[1.7766388888842486, 1.9265370369828922, 1.949361111082704, 2.0078055555821672, 2.0345555555819304, 2.0521944443817737, 2.0843981480815352, 2.107731481481316, 2.1910555555805917]
+[0.6484517304189433, 1.5737704918032787, 2.098360655737705, 2.7686703096539165, 3.1183970856102, 3.3661202185792347, 4.0510018214936245, 4.408014571948998, 4.714025500910747]
+This is loss function:  11.578442015807328
+
+This is 16th reweight_loading results from dmff code. 1.777777777777778 Traced<ConcreteArray(1.777777777777778, dtype=float64)>with<JVPTrace(level=2/0)> with
+  primal = Array(1.77777778, dtype=float64)
+  tangent = Traced<ShapedArray(float64[])>with<JaxprTrace(level=1/0)> with
+    pval = (ShapedArray(float64[]), None)
+    recipe = JaxprEqnRecipe(eqn_id=<object object at 0x7f197df96660>, in_tracers=(Traced<ShapedArray(float64[17]):JaxprTrace(level=1/0)>,), out_tracer_refs=[<weakref at 0x7f18ec698680; to 'JaxprTracer' at 0x7f18ec69bba0>], out_avals=[ShapedArray(float64[])], primitive=pjit, params={'jaxpr': { lambda ; a:f64[17]. let
+    b:f64[] = reduce_sum[axes=(0,)] a
+    c:f64[] = div b 17.0
+  in (c,) }, 'in_shardings': (UnspecifiedValue,), 'out_shardings': (UnspecifiedValue,), 'resource_env': None, 'donated_invars': (False,), 'name': '_average', 'keep_unused': False, 'inline': True}, effects=set(), source_info=SourceInfo(traceback=<jaxlib.xla_extension.Traceback object at 0x7f1883ee47b0>, name_stack=NameStack(stack=(Transform(name='jvp'),))))
+This is 16th reweight_loading results from dmff code. 1.9084967320261437 Traced<ConcreteArray(1.9084967320261437, dtype=float64)>with<JVPTrace(level=2/0)> with
+  primal = Array(1.90849673, dtype=float64)
+  tangent = Traced<ShapedArray(float64[])>with<JaxprTrace(level=1/0)> with
+    pval = (ShapedArray(float64[]), None)
+    recipe = JaxprEqnRecipe(eqn_id=<object object at 0x7f197d73e040>, in_tracers=(Traced<ShapedArray(float64[17]):JaxprTrace(level=1/0)>,), out_tracer_refs=[<weakref at 0x7f196ed75850; to 'JaxprTracer' at 0x7f196ed757b0>], out_avals=[ShapedArray(float64[])], primitive=pjit, params={'jaxpr': { lambda ; a:f64[17]. let
+    b:f64[] = reduce_sum[axes=(0,)] a
+    c:f64[] = div b 17.0
+  in (c,) }, 'in_shardings': (UnspecifiedValue,), 'out_shardings': (UnspecifiedValue,), 'resource_env': None, 'donated_invars': (False,), 'name': '_average', 'keep_unused': False, 'inline': True}, effects=set(), source_info=SourceInfo(traceback=<jaxlib.xla_extension.Traceback object at 0x7f19345c4ab0>, name_stack=NameStack(stack=(Transform(name='jvp'),))))
+This is 16th reweight_loading results from dmff code. 1.950980392156863 Traced<ConcreteArray(1.950980392156863, dtype=float64)>with<JVPTrace(level=2/0)> with
+  primal = Array(1.95098039, dtype=float64)
+  tangent = Traced<ShapedArray(float64[])>with<JaxprTrace(level=1/0)> with
+    pval = (ShapedArray(float64[]), None)
+    recipe = JaxprEqnRecipe(eqn_id=<object object at 0x7f1863147c40>, in_tracers=(Traced<ShapedArray(float64[17]):JaxprTrace(level=1/0)>,), out_tracer_refs=[<weakref at 0x7f18a86833d0; to 'JaxprTracer' at 0x7f18a8683290>], out_avals=[ShapedArray(float64[])], primitive=pjit, params={'jaxpr': { lambda ; a:f64[17]. let
+    b:f64[] = reduce_sum[axes=(0,)] a
+    c:f64[] = div b 17.0
+  in (c,) }, 'in_shardings': (UnspecifiedValue,), 'out_shardings': (UnspecifiedValue,), 'resource_env': None, 'donated_invars': (False,), 'name': '_average', 'keep_unused': False, 'inline': True}, effects=set(), source_info=SourceInfo(traceback=<jaxlib.xla_extension.Traceback object at 0x7f197da00570>, name_stack=NameStack(stack=(Transform(name='jvp'),))))
+This is 16th reweight_loading results from dmff code. 1.9869281045751634 Traced<ConcreteArray(1.9869281045751634, dtype=float64)>with<JVPTrace(level=2/0)> with
+  primal = Array(1.9869281, dtype=float64)
+  tangent = Traced<ShapedArray(float64[])>with<JaxprTrace(level=1/0)> with
+    pval = (ShapedArray(float64[]), None)
+    recipe = JaxprEqnRecipe(eqn_id=<object object at 0x7f1883cc1700>, in_tracers=(Traced<ShapedArray(float64[17]):JaxprTrace(level=1/0)>,), out_tracer_refs=[<weakref at 0x7f18ec71f0b0; to 'JaxprTracer' at 0x7f18ec71e5c0>], out_avals=[ShapedArray(float64[])], primitive=pjit, params={'jaxpr': { lambda ; a:f64[17]. let
+    b:f64[] = reduce_sum[axes=(0,)] a
+    c:f64[] = div b 17.0
+  in (c,) }, 'in_shardings': (UnspecifiedValue,), 'out_shardings': (UnspecifiedValue,), 'resource_env': None, 'donated_invars': (False,), 'name': '_average', 'keep_unused': False, 'inline': True}, effects=set(), source_info=SourceInfo(traceback=<jaxlib.xla_extension.Traceback object at 0x7f185ed4ecf0>, name_stack=NameStack(stack=(Transform(name='jvp'),))))
+This is 16th reweight_loading results from dmff code. 2.0522875816993467 Traced<ConcreteArray(2.0522875816993467, dtype=float64)>with<JVPTrace(level=2/0)> with
+  primal = Array(2.05228758, dtype=float64)
+  tangent = Traced<ShapedArray(float64[])>with<JaxprTrace(level=1/0)> with
+    pval = (ShapedArray(float64[]), None)
+    recipe = JaxprEqnRecipe(eqn_id=<object object at 0x7f1865684f90>, in_tracers=(Traced<ShapedArray(float64[17]):JaxprTrace(level=1/0)>,), out_tracer_refs=[<weakref at 0x7f196d3f4770; to 'JaxprTracer' at 0x7f196d3f4220>], out_avals=[ShapedArray(float64[])], primitive=pjit, params={'jaxpr': { lambda ; a:f64[17]. let
+    b:f64[] = reduce_sum[axes=(0,)] a
+    c:f64[] = div b 17.0
+  in (c,) }, 'in_shardings': (UnspecifiedValue,), 'out_shardings': (UnspecifiedValue,), 'resource_env': None, 'donated_invars': (False,), 'name': '_average', 'keep_unused': False, 'inline': True}, effects=set(), source_info=SourceInfo(traceback=<jaxlib.xla_extension.Traceback object at 0x7f1873006570>, name_stack=NameStack(stack=(Transform(name='jvp'),))))
+This is 16th reweight_loading results from dmff code. 2.0816993464052285 Traced<ConcreteArray(2.0816993464052285, dtype=float64)>with<JVPTrace(level=2/0)> with
+  primal = Array(2.08169935, dtype=float64)
+  tangent = Traced<ShapedArray(float64[])>with<JaxprTrace(level=1/0)> with
+    pval = (ShapedArray(float64[]), None)
+    recipe = JaxprEqnRecipe(eqn_id=<object object at 0x7f186012c8a0>, in_tracers=(Traced<ShapedArray(float64[17]):JaxprTrace(level=1/0)>,), out_tracer_refs=[<weakref at 0x7f18576b0db0; to 'JaxprTracer' at 0x7f1872fbd120>], out_avals=[ShapedArray(float64[])], primitive=pjit, params={'jaxpr': { lambda ; a:f64[17]. let
+    b:f64[] = reduce_sum[axes=(0,)] a
+    c:f64[] = div b 17.0
+  in (c,) }, 'in_shardings': (UnspecifiedValue,), 'out_shardings': (UnspecifiedValue,), 'resource_env': None, 'donated_invars': (False,), 'name': '_average', 'keep_unused': False, 'inline': True}, effects=set(), source_info=SourceInfo(traceback=<jaxlib.xla_extension.Traceback object at 0x7f185a1bcbf0>, name_stack=NameStack(stack=(Transform(name='jvp'),))))
+This is 16th reweight_loading results from dmff code. 2.0849673202614376 Traced<ConcreteArray(2.0849673202614376, dtype=float64)>with<JVPTrace(level=2/0)> with
+  primal = Array(2.08496732, dtype=float64)
+  tangent = Traced<ShapedArray(float64[])>with<JaxprTrace(level=1/0)> with
+    pval = (ShapedArray(float64[]), None)
+    recipe = JaxprEqnRecipe(eqn_id=<object object at 0x7f18674ef740>, in_tracers=(Traced<ShapedArray(float64[17]):JaxprTrace(level=1/0)>,), out_tracer_refs=[<weakref at 0x7f197d762430; to 'JaxprTracer' at 0x7f1872bed4e0>], out_avals=[ShapedArray(float64[])], primitive=pjit, params={'jaxpr': { lambda ; a:f64[17]. let
+    b:f64[] = reduce_sum[axes=(0,)] a
+    c:f64[] = div b 17.0
+  in (c,) }, 'in_shardings': (UnspecifiedValue,), 'out_shardings': (UnspecifiedValue,), 'resource_env': None, 'donated_invars': (False,), 'name': '_average', 'keep_unused': False, 'inline': True}, effects=set(), source_info=SourceInfo(traceback=<jaxlib.xla_extension.Traceback object at 0x7f197d732cb0>, name_stack=NameStack(stack=(Transform(name='jvp'),))))
+This is 16th reweight_loading results from dmff code. 2.1209150326797386 Traced<ConcreteArray(2.1209150326797386, dtype=float64)>with<JVPTrace(level=2/0)> with
+  primal = Array(2.12091503, dtype=float64)
+  tangent = Traced<ShapedArray(float64[])>with<JaxprTrace(level=1/0)> with
+    pval = (ShapedArray(float64[]), None)
+    recipe = JaxprEqnRecipe(eqn_id=<object object at 0x7f1860727ef0>, in_tracers=(Traced<ShapedArray(float64[17]):JaxprTrace(level=1/0)>,), out_tracer_refs=[<weakref at 0x7f185bc278d0; to 'JaxprTracer' at 0x7f1872bd6980>], out_avals=[ShapedArray(float64[])], primitive=pjit, params={'jaxpr': { lambda ; a:f64[17]. let
+    b:f64[] = reduce_sum[axes=(0,)] a
+    c:f64[] = div b 17.0
+  in (c,) }, 'in_shardings': (UnspecifiedValue,), 'out_shardings': (UnspecifiedValue,), 'resource_env': None, 'donated_invars': (False,), 'name': '_average', 'keep_unused': False, 'inline': True}, effects=set(), source_info=SourceInfo(traceback=<jaxlib.xla_extension.Traceback object at 0x7f196e3a1170>, name_stack=NameStack(stack=(Transform(name='jvp'),))))
+This is 16th reweight_loading results from dmff code. 2.173202614379085 Traced<ConcreteArray(2.173202614379085, dtype=float64)>with<JVPTrace(level=2/0)> with
+  primal = Array(2.17320261, dtype=float64)
+  tangent = Traced<ShapedArray(float64[])>with<JaxprTrace(level=1/0)> with
+    pval = (ShapedArray(float64[]), None)
+    recipe = JaxprEqnRecipe(eqn_id=<object object at 0x7f193c7c81a0>, in_tracers=(Traced<ShapedArray(float64[17]):JaxprTrace(level=1/0)>,), out_tracer_refs=[<weakref at 0x7f1809f4d6c0; to 'JaxprTracer' at 0x7f1809f4d670>], out_avals=[ShapedArray(float64[])], primitive=pjit, params={'jaxpr': { lambda ; a:f64[17]. let
+    b:f64[] = reduce_sum[axes=(0,)] a
+    c:f64[] = div b 17.0
+  in (c,) }, 'in_shardings': (UnspecifiedValue,), 'out_shardings': (UnspecifiedValue,), 'resource_env': None, 'donated_invars': (False,), 'name': '_average', 'keep_unused': False, 'inline': True}, effects=set(), source_info=SourceInfo(traceback=<jaxlib.xla_extension.Traceback object at 0x7f1809f50b70>, name_stack=NameStack(stack=(Transform(name='jvp'),))))
+This is 1th time  Loss: 5.347790699697846 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.76245023 0.24085772 0.2753658  0.13128061 0.65757    0.22469   ]
+2 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+Aiida based GCMC sampling started.
+This is the final pk values:  299442
+[1.6848796295850397, 1.8481111110836022, 1.9364907406828018, 1.9704351851825317, 2.0136296295821237, 2.039657407381905, 2.0755740740816053, 2.157583333280845, 2.17555555558068]
+[0.6484517304189433, 1.5737704918032787, 2.098360655737705, 2.7686703096539165, 3.1183970856102, 3.3661202185792347, 4.0510018214936245, 4.408014571948998, 4.714025500910747]
+This is loss function:  11.466432756608354
+
+This is 16th reweight_loading results from dmff code. 1.715686274509804 Traced<ConcreteArray(1.715686274509804, dtype=float64)>with<JVPTrace(level=2/0)> with
+  primal = Array(1.71568627, dtype=float64)
+  tangent = Traced<ShapedArray(float64[])>with<JaxprTrace(level=1/0)> with
+    pval = (ShapedArray(float64[]), None)
+    recipe = JaxprEqnRecipe(eqn_id=<object object at 0x7f1863df2640>, in_tracers=(Traced<ShapedArray(float64[17]):JaxprTrace(level=1/0)>,), out_tracer_refs=[<weakref at 0x7f1866917240; to 'JaxprTracer' at 0x7f1866914a40>], out_avals=[ShapedArray(float64[])], primitive=pjit, params={'jaxpr': { lambda ; a:f64[17]. let
+    b:f64[] = reduce_sum[axes=(0,)] a
+    c:f64[] = div b 17.0
+  in (c,) }, 'in_shardings': (UnspecifiedValue,), 'out_shardings': (UnspecifiedValue,), 'resource_env': None, 'donated_invars': (False,), 'name': '_average', 'keep_unused': False, 'inline': True}, effects=set(), source_info=SourceInfo(traceback=<jaxlib.xla_extension.Traceback object at 0x7f18a060cbb0>, name_stack=NameStack(stack=(Transform(name='jvp'),))))
+This is 16th reweight_loading results from dmff code. 1.843137254901961 Traced<ConcreteArray(1.843137254901961, dtype=float64)>with<JVPTrace(level=2/0)> with
+  primal = Array(1.84313725, dtype=float64)
+  tangent = Traced<ShapedArray(float64[])>with<JaxprTrace(level=1/0)> with
+    pval = (ShapedArray(float64[]), None)
+    recipe = JaxprEqnRecipe(eqn_id=<object object at 0x7f18670aa050>, in_tracers=(Traced<ShapedArray(float64[17]):JaxprTrace(level=1/0)>,), out_tracer_refs=[<weakref at 0x7f187b752a70; to 'JaxprTracer' at 0x7f187b7502c0>], out_avals=[ShapedArray(float64[])], primitive=pjit, params={'jaxpr': { lambda ; a:f64[17]. let
+    b:f64[] = reduce_sum[axes=(0,)] a
+    c:f64[] = div b 17.0
+  in (c,) }, 'in_shardings': (UnspecifiedValue,), 'out_shardings': (UnspecifiedValue,), 'resource_env': None, 'donated_invars': (False,), 'name': '_average', 'keep_unused': False, 'inline': True}, effects=set(), source_info=SourceInfo(traceback=<jaxlib.xla_extension.Traceback object at 0x7f19345c5430>, name_stack=NameStack(stack=(Transform(name='jvp'),))))
+This is 16th reweight_loading results from dmff code. 1.9444444444444444 Traced<ConcreteArray(1.9444444444444444, dtype=float64)>with<JVPTrace(level=2/0)> with
+  primal = Array(1.94444444, dtype=float64)
+  tangent = Traced<ShapedArray(float64[])>with<JaxprTrace(level=1/0)> with
+    pval = (ShapedArray(float64[]), None)
+    recipe = JaxprEqnRecipe(eqn_id=<object object at 0x7f186b798d10>, in_tracers=(Traced<ShapedArray(float64[17]):JaxprTrace(level=1/0)>,), out_tracer_refs=[<weakref at 0x7f1869507c90; to 'JaxprTracer' at 0x7f186052bab0>], out_avals=[ShapedArray(float64[])], primitive=pjit, params={'jaxpr': { lambda ; a:f64[17]. let
+    b:f64[] = reduce_sum[axes=(0,)] a
+    c:f64[] = div b 17.0
+  in (c,) }, 'in_shardings': (UnspecifiedValue,), 'out_shardings': (UnspecifiedValue,), 'resource_env': None, 'donated_invars': (False,), 'name': '_average', 'keep_unused': False, 'inline': True}, effects=set(), source_info=SourceInfo(traceback=<jaxlib.xla_extension.Traceback object at 0x7f187ba86c70>, name_stack=NameStack(stack=(Transform(name='jvp'),))))
+This is 16th reweight_loading results from dmff code. 2.0 Traced<ConcreteArray(2.0, dtype=float64)>with<JVPTrace(level=2/0)> with
+  primal = Array(2., dtype=float64)
+  tangent = Traced<ShapedArray(float64[])>with<JaxprTrace(level=1/0)> with
+    pval = (ShapedArray(float64[]), None)
+    recipe = JaxprEqnRecipe(eqn_id=<object object at 0x7f18678478e0>, in_tracers=(Traced<ShapedArray(float64[17]):JaxprTrace(level=1/0)>,), out_tracer_refs=[<weakref at 0x7f1856cbd3f0; to 'JaxprTracer' at 0x7f1856cbe610>], out_avals=[ShapedArray(float64[])], primitive=pjit, params={'jaxpr': { lambda ; a:f64[17]. let
+    b:f64[] = reduce_sum[axes=(0,)] a
+    c:f64[] = div b 17.0
+  in (c,) }, 'in_shardings': (UnspecifiedValue,), 'out_shardings': (UnspecifiedValue,), 'resource_env': None, 'donated_invars': (False,), 'name': '_average', 'keep_unused': False, 'inline': True}, effects=set(), source_info=SourceInfo(traceback=<jaxlib.xla_extension.Traceback object at 0x7f197e72ab30>, name_stack=NameStack(stack=(Transform(name='jvp'),))))
+This is 16th reweight_loading results from dmff code. 2.026143790849673 Traced<ConcreteArray(2.026143790849673, dtype=float64)>with<JVPTrace(level=2/0)> with
+  primal = Array(2.02614379, dtype=float64)
+  tangent = Traced<ShapedArray(float64[])>with<JaxprTrace(level=1/0)> with
+    pval = (ShapedArray(float64[]), None)
+    recipe = JaxprEqnRecipe(eqn_id=<object object at 0x7f18606b2af0>, in_tracers=(Traced<ShapedArray(float64[17]):JaxprTrace(level=1/0)>,), out_tracer_refs=[<weakref at 0x7f18731460c0; to 'JaxprTracer' at 0x7f186b2d0b80>], out_avals=[ShapedArray(float64[])], primitive=pjit, params={'jaxpr': { lambda ; a:f64[17]. let
+    b:f64[] = reduce_sum[axes=(0,)] a
+    c:f64[] = div b 17.0
+  in (c,) }, 'in_shardings': (UnspecifiedValue,), 'out_shardings': (UnspecifiedValue,), 'resource_env': None, 'donated_invars': (False,), 'name': '_average', 'keep_unused': False, 'inline': True}, effects=set(), source_info=SourceInfo(traceback=<jaxlib.xla_extension.Traceback object at 0x7f196d7ccff0>, name_stack=NameStack(stack=(Transform(name='jvp'),))))
+This is 16th reweight_loading results from dmff code. 2.0424836601307192 Traced<ConcreteArray(2.0424836601307192, dtype=float64)>with<JVPTrace(level=2/0)> with
+  primal = Array(2.04248366, dtype=float64)
+  tangent = Traced<ShapedArray(float64[])>with<JaxprTrace(level=1/0)> with
+    pval = (ShapedArray(float64[]), None)
+    recipe = JaxprEqnRecipe(eqn_id=<object object at 0x7f196d6684c0>, in_tracers=(Traced<ShapedArray(float64[17]):JaxprTrace(level=1/0)>,), out_tracer_refs=[<weakref at 0x7f18a86439c0; to 'JaxprTracer' at 0x7f18a8643880>], out_avals=[ShapedArray(float64[])], primitive=pjit, params={'jaxpr': { lambda ; a:f64[17]. let
+    b:f64[] = reduce_sum[axes=(0,)] a
+    c:f64[] = div b 17.0
+  in (c,) }, 'in_shardings': (UnspecifiedValue,), 'out_shardings': (UnspecifiedValue,), 'resource_env': None, 'donated_invars': (False,), 'name': '_average', 'keep_unused': False, 'inline': True}, effects=set(), source_info=SourceInfo(traceback=<jaxlib.xla_extension.Traceback object at 0x7f1857af7af0>, name_stack=NameStack(stack=(Transform(name='jvp'),))))
+This is 16th reweight_loading results from dmff code. 2.107843137254902 Traced<ConcreteArray(2.107843137254902, dtype=float64)>with<JVPTrace(level=2/0)> with
+  primal = Array(2.10784314, dtype=float64)
+  tangent = Traced<ShapedArray(float64[])>with<JaxprTrace(level=1/0)> with
+    pval = (ShapedArray(float64[]), None)
+    recipe = JaxprEqnRecipe(eqn_id=<object object at 0x7f1867306a60>, in_tracers=(Traced<ShapedArray(float64[17]):JaxprTrace(level=1/0)>,), out_tracer_refs=[<weakref at 0x7f186b70dc10; to 'JaxprTracer' at 0x7f186b70dbc0>], out_avals=[ShapedArray(float64[])], primitive=pjit, params={'jaxpr': { lambda ; a:f64[17]. let
+    b:f64[] = reduce_sum[axes=(0,)] a
+    c:f64[] = div b 17.0
+  in (c,) }, 'in_shardings': (UnspecifiedValue,), 'out_shardings': (UnspecifiedValue,), 'resource_env': None, 'donated_invars': (False,), 'name': '_average', 'keep_unused': False, 'inline': True}, effects=set(), source_info=SourceInfo(traceback=<jaxlib.xla_extension.Traceback object at 0x7f197e22c7b0>, name_stack=NameStack(stack=(Transform(name='jvp'),))))
+This is 16th reweight_loading results from dmff code. 2.1633986928104574 Traced<ConcreteArray(2.1633986928104574, dtype=float64)>with<JVPTrace(level=2/0)> with
+  primal = Array(2.16339869, dtype=float64)
+  tangent = Traced<ShapedArray(float64[])>with<JaxprTrace(level=1/0)> with
+    pval = (ShapedArray(float64[]), None)
+    recipe = JaxprEqnRecipe(eqn_id=<object object at 0x7f185e7f6b40>, in_tracers=(Traced<ShapedArray(float64[17]):JaxprTrace(level=1/0)>,), out_tracer_refs=[<weakref at 0x7f186b5e2200; to 'JaxprTracer' at 0x7f186b5e21b0>], out_avals=[ShapedArray(float64[])], primitive=pjit, params={'jaxpr': { lambda ; a:f64[17]. let
+    b:f64[] = reduce_sum[axes=(0,)] a
+    c:f64[] = div b 17.0
+  in (c,) }, 'in_shardings': (UnspecifiedValue,), 'out_shardings': (UnspecifiedValue,), 'resource_env': None, 'donated_invars': (False,), 'name': '_average', 'keep_unused': False, 'inline': True}, effects=set(), source_info=SourceInfo(traceback=<jaxlib.xla_extension.Traceback object at 0x7f1868fd9a70>, name_stack=NameStack(stack=(Transform(name='jvp'),))))
+This is 16th reweight_loading results from dmff code. 2.173202614379085 Traced<ConcreteArray(2.173202614379085, dtype=float64)>with<JVPTrace(level=2/0)> with
+  primal = Array(2.17320261, dtype=float64)
+  tangent = Traced<ShapedArray(float64[])>with<JaxprTrace(level=1/0)> with
+    pval = (ShapedArray(float64[]), None)
+    recipe = JaxprEqnRecipe(eqn_id=<object object at 0x7f1863df1bc0>, in_tracers=(Traced<ShapedArray(float64[17]):JaxprTrace(level=1/0)>,), out_tracer_refs=[<weakref at 0x7f17b93302c0; to 'JaxprTracer' at 0x7f17b9330270>], out_avals=[ShapedArray(float64[])], primitive=pjit, params={'jaxpr': { lambda ; a:f64[17]. let
+    b:f64[] = reduce_sum[axes=(0,)] a
+    c:f64[] = div b 17.0
+  in (c,) }, 'in_shardings': (UnspecifiedValue,), 'out_shardings': (UnspecifiedValue,), 'resource_env': None, 'donated_invars': (False,), 'name': '_average', 'keep_unused': False, 'inline': True}, effects=set(), source_info=SourceInfo(traceback=<jaxlib.xla_extension.Traceback object at 0x7f1856e452f0>, name_stack=NameStack(stack=(Transform(name='jvp'),))))
+This is 2th time  Loss: 5.14190834675667 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.75324193 0.23129703 0.27799207 0.12202974 0.65757    0.22469   ]
+3 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+Aiida based GCMC sampling started.
+This is the final pk values:  299574
+[1.6945277777849832, 1.8406759258836598, 1.9264629629829342, 1.9870092592823994, 2.00612962958219, 2.0497222221818077, 2.0602314814817375, 2.0979259258813783, 2.147231481480966]
+[0.6484517304189433, 1.5737704918032787, 2.098360655737705, 2.7686703096539165, 3.1183970856102, 3.3661202185792347, 4.0510018214936245, 4.408014571948998, 4.714025500910747]
+This is loss function:  11.562858682507436
+
+This is 16th reweight_loading results from dmff code. 1.735294117647059 Traced<ConcreteArray(1.735294117647059, dtype=float64)>with<JVPTrace(level=2/0)> with
+  primal = Array(1.73529412, dtype=float64)
+  tangent = Traced<ShapedArray(float64[])>with<JaxprTrace(level=1/0)> with
+    pval = (ShapedArray(float64[]), None)
+    recipe = JaxprEqnRecipe(eqn_id=<object object at 0x7f1856d36710>, in_tracers=(Traced<ShapedArray(float64[17]):JaxprTrace(level=1/0)>,), out_tracer_refs=[<weakref at 0x7f1866ff9800; to 'JaxprTracer' at 0x7f1866ffb0b0>], out_avals=[ShapedArray(float64[])], primitive=pjit, params={'jaxpr': { lambda ; a:f64[17]. let
+    b:f64[] = reduce_sum[axes=(0,)] a
+    c:f64[] = div b 17.0
+  in (c,) }, 'in_shardings': (UnspecifiedValue,), 'out_shardings': (UnspecifiedValue,), 'resource_env': None, 'donated_invars': (False,), 'name': '_average', 'keep_unused': False, 'inline': True}, effects=set(), source_info=SourceInfo(traceback=<jaxlib.xla_extension.Traceback object at 0x7f1860c347f0>, name_stack=NameStack(stack=(Transform(name='jvp'),))))
+This is 16th reweight_loading results from dmff code. 1.7777777777777777 Traced<ConcreteArray(1.7777777777777777, dtype=float64)>with<JVPTrace(level=2/0)> with
+  primal = Array(1.77777778, dtype=float64)
+  tangent = Traced<ShapedArray(float64[])>with<JaxprTrace(level=1/0)> with
+    pval = (ShapedArray(float64[]), None)
+    recipe = JaxprEqnRecipe(eqn_id=<object object at 0x7f193c7c9b80>, in_tracers=(Traced<ShapedArray(float64[17]):JaxprTrace(level=1/0)>,), out_tracer_refs=[<weakref at 0x7f19346aba60; to 'JaxprTracer' at 0x7f1934562750>], out_avals=[ShapedArray(float64[])], primitive=pjit, params={'jaxpr': { lambda ; a:f64[17]. let
+    b:f64[] = reduce_sum[axes=(0,)] a
+    c:f64[] = div b 17.0
+  in (c,) }, 'in_shardings': (UnspecifiedValue,), 'out_shardings': (UnspecifiedValue,), 'resource_env': None, 'donated_invars': (False,), 'name': '_average', 'keep_unused': False, 'inline': True}, effects=set(), source_info=SourceInfo(traceback=<jaxlib.xla_extension.Traceback object at 0x7f1862e79bf0>, name_stack=NameStack(stack=(Transform(name='jvp'),))))
+This is 16th reweight_loading results from dmff code. 1.9183006535947713 Traced<ConcreteArray(1.9183006535947713, dtype=float64)>with<JVPTrace(level=2/0)> with
+  primal = Array(1.91830065, dtype=float64)
+  tangent = Traced<ShapedArray(float64[])>with<JaxprTrace(level=1/0)> with
+    pval = (ShapedArray(float64[]), None)
+    recipe = JaxprEqnRecipe(eqn_id=<object object at 0x7f1872a11310>, in_tracers=(Traced<ShapedArray(float64[17]):JaxprTrace(level=1/0)>,), out_tracer_refs=[<weakref at 0x7f186a936020; to 'JaxprTracer' at 0x7f186a937560>], out_avals=[ShapedArray(float64[])], primitive=pjit, params={'jaxpr': { lambda ; a:f64[17]. let
+    b:f64[] = reduce_sum[axes=(0,)] a
+    c:f64[] = div b 17.0
+  in (c,) }, 'in_shardings': (UnspecifiedValue,), 'out_shardings': (UnspecifiedValue,), 'resource_env': None, 'donated_invars': (False,), 'name': '_average', 'keep_unused': False, 'inline': True}, effects=set(), source_info=SourceInfo(traceback=<jaxlib.xla_extension.Traceback object at 0x7f18ec1263f0>, name_stack=NameStack(stack=(Transform(name='jvp'),))))
+This is 16th reweight_loading results from dmff code. 1.9967320261437906 Traced<ConcreteArray(1.9967320261437906, dtype=float64)>with<JVPTrace(level=2/0)> with
+  primal = Array(1.99673203, dtype=float64)
+  tangent = Traced<ShapedArray(float64[])>with<JaxprTrace(level=1/0)> with
+    pval = (ShapedArray(float64[]), None)
+    recipe = JaxprEqnRecipe(eqn_id=<object object at 0x7f193c7c9b80>, in_tracers=(Traced<ShapedArray(float64[17]):JaxprTrace(level=1/0)>,), out_tracer_refs=[<weakref at 0x7f187b86f510; to 'JaxprTracer' at 0x7f187b86db20>], out_avals=[ShapedArray(float64[])], primitive=pjit, params={'jaxpr': { lambda ; a:f64[17]. let
+    b:f64[] = reduce_sum[axes=(0,)] a
+    c:f64[] = div b 17.0
+  in (c,) }, 'in_shardings': (UnspecifiedValue,), 'out_shardings': (UnspecifiedValue,), 'resource_env': None, 'donated_invars': (False,), 'name': '_average', 'keep_unused': False, 'inline': True}, effects=set(), source_info=SourceInfo(traceback=<jaxlib.xla_extension.Traceback object at 0x7f196c537eb0>, name_stack=NameStack(stack=(Transform(name='jvp'),))))
+This is 16th reweight_loading results from dmff code. 1.9967320261437906 Traced<ConcreteArray(1.9967320261437906, dtype=float64)>with<JVPTrace(level=2/0)> with
+  primal = Array(1.99673203, dtype=float64)
+  tangent = Traced<ShapedArray(float64[])>with<JaxprTrace(level=1/0)> with
+    pval = (ShapedArray(float64[]), None)
+    recipe = JaxprEqnRecipe(eqn_id=<object object at 0x7f196e50b180>, in_tracers=(Traced<ShapedArray(float64[17]):JaxprTrace(level=1/0)>,), out_tracer_refs=[<weakref at 0x7f19a9e099e0; to 'JaxprTracer' at 0x7f19a9e08900>], out_avals=[ShapedArray(float64[])], primitive=pjit, params={'jaxpr': { lambda ; a:f64[17]. let
+    b:f64[] = reduce_sum[axes=(0,)] a
+    c:f64[] = div b 17.0
+  in (c,) }, 'in_shardings': (UnspecifiedValue,), 'out_shardings': (UnspecifiedValue,), 'resource_env': None, 'donated_invars': (False,), 'name': '_average', 'keep_unused': False, 'inline': True}, effects=set(), source_info=SourceInfo(traceback=<jaxlib.xla_extension.Traceback object at 0x7f1808fe65b0>, name_stack=NameStack(stack=(Transform(name='jvp'),))))
+This is 16th reweight_loading results from dmff code. 2.0653594771241828 Traced<ConcreteArray(2.0653594771241828, dtype=float64)>with<JVPTrace(level=2/0)> with
+  primal = Array(2.06535948, dtype=float64)
+  tangent = Traced<ShapedArray(float64[])>with<JaxprTrace(level=1/0)> with
+    pval = (ShapedArray(float64[]), None)
+    recipe = JaxprEqnRecipe(eqn_id=<object object at 0x7f197e625b70>, in_tracers=(Traced<ShapedArray(float64[17]):JaxprTrace(level=1/0)>,), out_tracer_refs=[<weakref at 0x7f1861994ef0; to 'JaxprTracer' at 0x7f1861995d50>], out_avals=[ShapedArray(float64[])], primitive=pjit, params={'jaxpr': { lambda ; a:f64[17]. let
+    b:f64[] = reduce_sum[axes=(0,)] a
+    c:f64[] = div b 17.0
+  in (c,) }, 'in_shardings': (UnspecifiedValue,), 'out_shardings': (UnspecifiedValue,), 'resource_env': None, 'donated_invars': (False,), 'name': '_average', 'keep_unused': False, 'inline': True}, effects=set(), source_info=SourceInfo(traceback=<jaxlib.xla_extension.Traceback object at 0x7f196c88fd30>, name_stack=NameStack(stack=(Transform(name='jvp'),))))
+This is 16th reweight_loading results from dmff code. 2.026143790849673 Traced<ConcreteArray(2.026143790849673, dtype=float64)>with<JVPTrace(level=2/0)> with
+  primal = Array(2.02614379, dtype=float64)
+  tangent = Traced<ShapedArray(float64[])>with<JaxprTrace(level=1/0)> with
+    pval = (ShapedArray(float64[]), None)
+    recipe = JaxprEqnRecipe(eqn_id=<object object at 0x7f18650d8d20>, in_tracers=(Traced<ShapedArray(float64[17]):JaxprTrace(level=1/0)>,), out_tracer_refs=[<weakref at 0x7f18a0281ad0; to 'JaxprTracer' at 0x7f18a0280220>], out_avals=[ShapedArray(float64[])], primitive=pjit, params={'jaxpr': { lambda ; a:f64[17]. let
+    b:f64[] = reduce_sum[axes=(0,)] a
+    c:f64[] = div b 17.0
+  in (c,) }, 'in_shardings': (UnspecifiedValue,), 'out_shardings': (UnspecifiedValue,), 'resource_env': None, 'donated_invars': (False,), 'name': '_average', 'keep_unused': False, 'inline': True}, effects=set(), source_info=SourceInfo(traceback=<jaxlib.xla_extension.Traceback object at 0x7f186143e770>, name_stack=NameStack(stack=(Transform(name='jvp'),))))
+This is 16th reweight_loading results from dmff code. 2.088235294117647 Traced<ConcreteArray(2.088235294117647, dtype=float64)>with<JVPTrace(level=2/0)> with
+  primal = Array(2.08823529, dtype=float64)
+  tangent = Traced<ShapedArray(float64[])>with<JaxprTrace(level=1/0)> with
+    pval = (ShapedArray(float64[]), None)
+    recipe = JaxprEqnRecipe(eqn_id=<object object at 0x7f18c817ea70>, in_tracers=(Traced<ShapedArray(float64[17]):JaxprTrace(level=1/0)>,), out_tracer_refs=[<weakref at 0x7f186b7166b0; to 'JaxprTracer' at 0x7f18a018f790>], out_avals=[ShapedArray(float64[])], primitive=pjit, params={'jaxpr': { lambda ; a:f64[17]. let
+    b:f64[] = reduce_sum[axes=(0,)] a
+    c:f64[] = div b 17.0
+  in (c,) }, 'in_shardings': (UnspecifiedValue,), 'out_shardings': (UnspecifiedValue,), 'resource_env': None, 'donated_invars': (False,), 'name': '_average', 'keep_unused': False, 'inline': True}, effects=set(), source_info=SourceInfo(traceback=<jaxlib.xla_extension.Traceback object at 0x7f1867860730>, name_stack=NameStack(stack=(Transform(name='jvp'),))))
+This is 16th reweight_loading results from dmff code. 2.156862745098039 Traced<ConcreteArray(2.156862745098039, dtype=float64)>with<JVPTrace(level=2/0)> with
+  primal = Array(2.15686275, dtype=float64)
+  tangent = Traced<ShapedArray(float64[])>with<JaxprTrace(level=1/0)> with
+    pval = (ShapedArray(float64[]), None)
+    recipe = JaxprEqnRecipe(eqn_id=<object object at 0x7f17b81c3410>, in_tracers=(Traced<ShapedArray(float64[17]):JaxprTrace(level=1/0)>,), out_tracer_refs=[<weakref at 0x7f197dbf7880; to 'JaxprTracer' at 0x7f197dbf5080>], out_avals=[ShapedArray(float64[])], primitive=pjit, params={'jaxpr': { lambda ; a:f64[17]. let
+    b:f64[] = reduce_sum[axes=(0,)] a
+    c:f64[] = div b 17.0
+  in (c,) }, 'in_shardings': (UnspecifiedValue,), 'out_shardings': (UnspecifiedValue,), 'resource_env': None, 'donated_invars': (False,), 'name': '_average', 'keep_unused': False, 'inline': True}, effects=set(), source_info=SourceInfo(traceback=<jaxlib.xla_extension.Traceback object at 0x7f185e995070>, name_stack=NameStack(stack=(Transform(name='jvp'),))))
+This is 3th time  Loss: 5.070012921920068 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.74375339 0.22154624 0.27958893 0.11259236 0.65757    0.22469   ]
+4 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+Aiida based GCMC sampling started.
+This is the final pk values:  299706
+[1.590824074085905, 1.8570740740835436, 1.9245925925829344, 1.9775740740824745, 2.003462962982251, 2.030666666682008, 2.041805555581866, 2.0894351851814763, 2.1204629629812133]
+[0.6484517304189433, 1.5737704918032787, 2.098360655737705, 2.7686703096539165, 3.1183970856102, 3.3661202185792347, 4.0510018214936245, 4.408014571948998, 4.714025500910747]
+This is loss function:  11.56226608980743
+
+This is 16th reweight_loading results from dmff code. 1.6176470588235294 Traced<ConcreteArray(1.6176470588235294, dtype=float64)>with<JVPTrace(level=2/0)> with
+  primal = Array(1.61764706, dtype=float64)
+  tangent = Traced<ShapedArray(float64[])>with<JaxprTrace(level=1/0)> with
+    pval = (ShapedArray(float64[]), None)
+    recipe = JaxprEqnRecipe(eqn_id=<object object at 0x7f18730aa9a0>, in_tracers=(Traced<ShapedArray(float64[17]):JaxprTrace(level=1/0)>,), out_tracer_refs=[<weakref at 0x7f1863626610; to 'JaxprTracer' at 0x7f18636271a0>], out_avals=[ShapedArray(float64[])], primitive=pjit, params={'jaxpr': { lambda ; a:f64[17]. let
+    b:f64[] = reduce_sum[axes=(0,)] a
+    c:f64[] = div b 17.0
+  in (c,) }, 'in_shardings': (UnspecifiedValue,), 'out_shardings': (UnspecifiedValue,), 'resource_env': None, 'donated_invars': (False,), 'name': '_average', 'keep_unused': False, 'inline': True}, effects=set(), source_info=SourceInfo(traceback=<jaxlib.xla_extension.Traceback object at 0x7f193459a170>, name_stack=NameStack(stack=(Transform(name='jvp'),))))
+This is 16th reweight_loading results from dmff code. 1.8137254901960786 Traced<ConcreteArray(1.8137254901960786, dtype=float64)>with<JVPTrace(level=2/0)> with
+  primal = Array(1.81372549, dtype=float64)
+  tangent = Traced<ShapedArray(float64[])>with<JaxprTrace(level=1/0)> with
+    pval = (ShapedArray(float64[]), None)
+    recipe = JaxprEqnRecipe(eqn_id=<object object at 0x7f18647e9950>, in_tracers=(Traced<ShapedArray(float64[17]):JaxprTrace(level=1/0)>,), out_tracer_refs=[<weakref at 0x7f185ea48db0; to 'JaxprTracer' at 0x7f1869e3f7e0>], out_avals=[ShapedArray(float64[])], primitive=pjit, params={'jaxpr': { lambda ; a:f64[17]. let
+    b:f64[] = reduce_sum[axes=(0,)] a
+    c:f64[] = div b 17.0
+  in (c,) }, 'in_shardings': (UnspecifiedValue,), 'out_shardings': (UnspecifiedValue,), 'resource_env': None, 'donated_invars': (False,), 'name': '_average', 'keep_unused': False, 'inline': True}, effects=set(), source_info=SourceInfo(traceback=<jaxlib.xla_extension.Traceback object at 0x7f1862ce9930>, name_stack=NameStack(stack=(Transform(name='jvp'),))))
+This is 16th reweight_loading results from dmff code. 1.9313725490196079 Traced<ConcreteArray(1.9313725490196079, dtype=float64)>with<JVPTrace(level=2/0)> with
+  primal = Array(1.93137255, dtype=float64)
+  tangent = Traced<ShapedArray(float64[])>with<JaxprTrace(level=1/0)> with
+    pval = (ShapedArray(float64[]), None)
+    recipe = JaxprEqnRecipe(eqn_id=<object object at 0x7f186a49a700>, in_tracers=(Traced<ShapedArray(float64[17]):JaxprTrace(level=1/0)>,), out_tracer_refs=[<weakref at 0x7f196e978a90; to 'JaxprTracer' at 0x7f196e979f80>], out_avals=[ShapedArray(float64[])], primitive=pjit, params={'jaxpr': { lambda ; a:f64[17]. let
+    b:f64[] = reduce_sum[axes=(0,)] a
+    c:f64[] = div b 17.0
+  in (c,) }, 'in_shardings': (UnspecifiedValue,), 'out_shardings': (UnspecifiedValue,), 'resource_env': None, 'donated_invars': (False,), 'name': '_average', 'keep_unused': False, 'inline': True}, effects=set(), source_info=SourceInfo(traceback=<jaxlib.xla_extension.Traceback object at 0x7f186a0daef0>, name_stack=NameStack(stack=(Transform(name='jvp'),))))
+This is 16th reweight_loading results from dmff code. 1.983660130718954 Traced<ConcreteArray(1.983660130718954, dtype=float64)>with<JVPTrace(level=2/0)> with
+  primal = Array(1.98366013, dtype=float64)
+  tangent = Traced<ShapedArray(float64[])>with<JaxprTrace(level=1/0)> with
+    pval = (ShapedArray(float64[]), None)
+    recipe = JaxprEqnRecipe(eqn_id=<object object at 0x7f186565f550>, in_tracers=(Traced<ShapedArray(float64[17]):JaxprTrace(level=1/0)>,), out_tracer_refs=[<weakref at 0x7f185a236d90; to 'JaxprTracer' at 0x7f185a235f80>], out_avals=[ShapedArray(float64[])], primitive=pjit, params={'jaxpr': { lambda ; a:f64[17]. let
+    b:f64[] = reduce_sum[axes=(0,)] a
+    c:f64[] = div b 17.0
+  in (c,) }, 'in_shardings': (UnspecifiedValue,), 'out_shardings': (UnspecifiedValue,), 'resource_env': None, 'donated_invars': (False,), 'name': '_average', 'keep_unused': False, 'inline': True}, effects=set(), source_info=SourceInfo(traceback=<jaxlib.xla_extension.Traceback object at 0x7f187b3af730>, name_stack=NameStack(stack=(Transform(name='jvp'),))))
+This is 16th reweight_loading results from dmff code. 2.003267973856209 Traced<ConcreteArray(2.003267973856209, dtype=float64)>with<JVPTrace(level=2/0)> with
+  primal = Array(2.00326797, dtype=float64)
+  tangent = Traced<ShapedArray(float64[])>with<JaxprTrace(level=1/0)> with
+    pval = (ShapedArray(float64[]), None)
+    recipe = JaxprEqnRecipe(eqn_id=<object object at 0x7f18608bcb00>, in_tracers=(Traced<ShapedArray(float64[17]):JaxprTrace(level=1/0)>,), out_tracer_refs=[<weakref at 0x7f187b798590; to 'JaxprTracer' at 0x7f187b79b010>], out_avals=[ShapedArray(float64[])], primitive=pjit, params={'jaxpr': { lambda ; a:f64[17]. let
+    b:f64[] = reduce_sum[axes=(0,)] a
+    c:f64[] = div b 17.0
+  in (c,) }, 'in_shardings': (UnspecifiedValue,), 'out_shardings': (UnspecifiedValue,), 'resource_env': None, 'donated_invars': (False,), 'name': '_average', 'keep_unused': False, 'inline': True}, effects=set(), source_info=SourceInfo(traceback=<jaxlib.xla_extension.Traceback object at 0x7f18575e2d70>, name_stack=NameStack(stack=(Transform(name='jvp'),))))
+This is 16th reweight_loading results from dmff code. 2.026143790849673 Traced<ConcreteArray(2.026143790849673, dtype=float64)>with<JVPTrace(level=2/0)> with
+  primal = Array(2.02614379, dtype=float64)
+  tangent = Traced<ShapedArray(float64[])>with<JaxprTrace(level=1/0)> with
+    pval = (ShapedArray(float64[]), None)
+    recipe = JaxprEqnRecipe(eqn_id=<object object at 0x7f197edefa70>, in_tracers=(Traced<ShapedArray(float64[17]):JaxprTrace(level=1/0)>,), out_tracer_refs=[<weakref at 0x7f186731c400; to 'JaxprTracer' at 0x7f1866af7560>], out_avals=[ShapedArray(float64[])], primitive=pjit, params={'jaxpr': { lambda ; a:f64[17]. let
+    b:f64[] = reduce_sum[axes=(0,)] a
+    c:f64[] = div b 17.0
+  in (c,) }, 'in_shardings': (UnspecifiedValue,), 'out_shardings': (UnspecifiedValue,), 'resource_env': None, 'donated_invars': (False,), 'name': '_average', 'keep_unused': False, 'inline': True}, effects=set(), source_info=SourceInfo(traceback=<jaxlib.xla_extension.Traceback object at 0x7f1872ca2170>, name_stack=NameStack(stack=(Transform(name='jvp'),))))
+This is 16th reweight_loading results from dmff code. 2.0228758169934644 Traced<ConcreteArray(2.0228758169934644, dtype=float64)>with<JVPTrace(level=2/0)> with
+  primal = Array(2.02287582, dtype=float64)
+  tangent = Traced<ShapedArray(float64[])>with<JaxprTrace(level=1/0)> with
+    pval = (ShapedArray(float64[]), None)
+    recipe = JaxprEqnRecipe(eqn_id=<object object at 0x7f196d382eb0>, in_tracers=(Traced<ShapedArray(float64[17]):JaxprTrace(level=1/0)>,), out_tracer_refs=[<weakref at 0x7f18a073b740; to 'JaxprTracer' at 0x7f18a073b0b0>], out_avals=[ShapedArray(float64[])], primitive=pjit, params={'jaxpr': { lambda ; a:f64[17]. let
+    b:f64[] = reduce_sum[axes=(0,)] a
+    c:f64[] = div b 17.0
+  in (c,) }, 'in_shardings': (UnspecifiedValue,), 'out_shardings': (UnspecifiedValue,), 'resource_env': None, 'donated_invars': (False,), 'name': '_average', 'keep_unused': False, 'inline': True}, effects=set(), source_info=SourceInfo(traceback=<jaxlib.xla_extension.Traceback object at 0x7f196e077570>, name_stack=NameStack(stack=(Transform(name='jvp'),))))
+This is 16th reweight_loading results from dmff code. 2.107843137254902 Traced<ConcreteArray(2.107843137254902, dtype=float64)>with<JVPTrace(level=2/0)> with
+  primal = Array(2.10784314, dtype=float64)
+  tangent = Traced<ShapedArray(float64[])>with<JaxprTrace(level=1/0)> with
+    pval = (ShapedArray(float64[]), None)
+    recipe = JaxprEqnRecipe(eqn_id=<object object at 0x7f18608de220>, in_tracers=(Traced<ShapedArray(float64[17]):JaxprTrace(level=1/0)>,), out_tracer_refs=[<weakref at 0x7f1868702b60; to 'JaxprTracer' at 0x7f1868703f60>], out_avals=[ShapedArray(float64[])], primitive=pjit, params={'jaxpr': { lambda ; a:f64[17]. let
+    b:f64[] = reduce_sum[axes=(0,)] a
+    c:f64[] = div b 17.0
+  in (c,) }, 'in_shardings': (UnspecifiedValue,), 'out_shardings': (UnspecifiedValue,), 'resource_env': None, 'donated_invars': (False,), 'name': '_average', 'keep_unused': False, 'inline': True}, effects=set(), source_info=SourceInfo(traceback=<jaxlib.xla_extension.Traceback object at 0x7f196d4d09b0>, name_stack=NameStack(stack=(Transform(name='jvp'),))))
+This is 16th reweight_loading results from dmff code. 2.1209150326797386 Traced<ConcreteArray(2.1209150326797386, dtype=float64)>with<JVPTrace(level=2/0)> with
+  primal = Array(2.12091503, dtype=float64)
+  tangent = Traced<ShapedArray(float64[])>with<JaxprTrace(level=1/0)> with
+    pval = (ShapedArray(float64[]), None)
+    recipe = JaxprEqnRecipe(eqn_id=<object object at 0x7f185ed04140>, in_tracers=(Traced<ShapedArray(float64[17]):JaxprTrace(level=1/0)>,), out_tracer_refs=[<weakref at 0x7f187b363010; to 'JaxprTracer' at 0x7f187b362c00>], out_avals=[ShapedArray(float64[])], primitive=pjit, params={'jaxpr': { lambda ; a:f64[17]. let
+    b:f64[] = reduce_sum[axes=(0,)] a
+    c:f64[] = div b 17.0
+  in (c,) }, 'in_shardings': (UnspecifiedValue,), 'out_shardings': (UnspecifiedValue,), 'resource_env': None, 'donated_invars': (False,), 'name': '_average', 'keep_unused': False, 'inline': True}, effects=set(), source_info=SourceInfo(traceback=<jaxlib.xla_extension.Traceback object at 0x7f17b7ecc930>, name_stack=NameStack(stack=(Transform(name='jvp'),))))
+This is 4th time  Loss: 4.968705732377584 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.7343442  0.21188684 0.27867052 0.10328158 0.65757    0.22469   ]
+5 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+Aiida based GCMC sampling started.
+This is the final pk values:  299838
+[1.4903611110867752, 1.763537036984338, 1.8491018518835771, 1.9669722221825419, 1.9928333332823065, 2.0090185184821707, 2.053416666681806, 2.086916666681509, 2.102351851881331]
+[0.6484517304189433, 1.5737704918032787, 2.098360655737705, 2.7686703096539165, 3.1183970856102, 3.3661202185792347, 4.0510018214936245, 4.408014571948998, 4.714025500910747]
+This is loss function:  11.495654978708075
+
+This is 16th reweight_loading results from dmff code. 1.473856209150327 Traced<ConcreteArray(1.473856209150327, dtype=float64)>with<JVPTrace(level=2/0)> with
+  primal = Array(1.47385621, dtype=float64)
+  tangent = Traced<ShapedArray(float64[])>with<JaxprTrace(level=1/0)> with
+    pval = (ShapedArray(float64[]), None)
+    recipe = JaxprEqnRecipe(eqn_id=<object object at 0x7f17b7e899d0>, in_tracers=(Traced<ShapedArray(float64[17]):JaxprTrace(level=1/0)>,), out_tracer_refs=[<weakref at 0x7f196ec64590; to 'JaxprTracer' at 0x7f196ec67d30>], out_avals=[ShapedArray(float64[])], primitive=pjit, params={'jaxpr': { lambda ; a:f64[17]. let
+    b:f64[] = reduce_sum[axes=(0,)] a
+    c:f64[] = div b 17.0
+  in (c,) }, 'in_shardings': (UnspecifiedValue,), 'out_shardings': (UnspecifiedValue,), 'resource_env': None, 'donated_invars': (False,), 'name': '_average', 'keep_unused': False, 'inline': True}, effects=set(), source_info=SourceInfo(traceback=<jaxlib.xla_extension.Traceback object at 0x7f17b9270270>, name_stack=NameStack(stack=(Transform(name='jvp'),))))
+This is 16th reweight_loading results from dmff code. 1.722222222222222 Traced<ConcreteArray(1.722222222222222, dtype=float64)>with<JVPTrace(level=2/0)> with
+  primal = Array(1.72222222, dtype=float64)
+  tangent = Traced<ShapedArray(float64[])>with<JaxprTrace(level=1/0)> with
+    pval = (ShapedArray(float64[]), None)
+    recipe = JaxprEqnRecipe(eqn_id=<object object at 0x7f17b92e8920>, in_tracers=(Traced<ShapedArray(float64[17]):JaxprTrace(level=1/0)>,), out_tracer_refs=[<weakref at 0x7f197ecc8040; to 'JaxprTracer' at 0x7f197eccaca0>], out_avals=[ShapedArray(float64[])], primitive=pjit, params={'jaxpr': { lambda ; a:f64[17]. let
+    b:f64[] = reduce_sum[axes=(0,)] a
+    c:f64[] = div b 17.0
+  in (c,) }, 'in_shardings': (UnspecifiedValue,), 'out_shardings': (UnspecifiedValue,), 'resource_env': None, 'donated_invars': (False,), 'name': '_average', 'keep_unused': False, 'inline': True}, effects=set(), source_info=SourceInfo(traceback=<jaxlib.xla_extension.Traceback object at 0x7f186315c930>, name_stack=NameStack(stack=(Transform(name='jvp'),))))
+This is 16th reweight_loading results from dmff code. 1.8562091503267975 Traced<ConcreteArray(1.8562091503267975, dtype=float64)>with<JVPTrace(level=2/0)> with
+  primal = Array(1.85620915, dtype=float64)
+  tangent = Traced<ShapedArray(float64[])>with<JaxprTrace(level=1/0)> with
+    pval = (ShapedArray(float64[]), None)
+    recipe = JaxprEqnRecipe(eqn_id=<object object at 0x7f185f616b30>, in_tracers=(Traced<ShapedArray(float64[17]):JaxprTrace(level=1/0)>,), out_tracer_refs=[<weakref at 0x7f185ffabd80; to 'JaxprTracer' at 0x7f185ffa89a0>], out_avals=[ShapedArray(float64[])], primitive=pjit, params={'jaxpr': { lambda ; a:f64[17]. let
+    b:f64[] = reduce_sum[axes=(0,)] a
+    c:f64[] = div b 17.0
+  in (c,) }, 'in_shardings': (UnspecifiedValue,), 'out_shardings': (UnspecifiedValue,), 'resource_env': None, 'donated_invars': (False,), 'name': '_average', 'keep_unused': False, 'inline': True}, effects=set(), source_info=SourceInfo(traceback=<jaxlib.xla_extension.Traceback object at 0x7f185d81d5b0>, name_stack=NameStack(stack=(Transform(name='jvp'),))))
+This is 16th reweight_loading results from dmff code. 1.9444444444444444 Traced<ConcreteArray(1.9444444444444444, dtype=float64)>with<JVPTrace(level=2/0)> with
+  primal = Array(1.94444444, dtype=float64)
+  tangent = Traced<ShapedArray(float64[])>with<JaxprTrace(level=1/0)> with
+    pval = (ShapedArray(float64[]), None)
+    recipe = JaxprEqnRecipe(eqn_id=<object object at 0x7f18696a00c0>, in_tracers=(Traced<ShapedArray(float64[17]):JaxprTrace(level=1/0)>,), out_tracer_refs=[<weakref at 0x7f1883db7d30; to 'JaxprTracer' at 0x7f18a0147560>], out_avals=[ShapedArray(float64[])], primitive=pjit, params={'jaxpr': { lambda ; a:f64[17]. let
+    b:f64[] = reduce_sum[axes=(0,)] a
+    c:f64[] = div b 17.0
+  in (c,) }, 'in_shardings': (UnspecifiedValue,), 'out_shardings': (UnspecifiedValue,), 'resource_env': None, 'donated_invars': (False,), 'name': '_average', 'keep_unused': False, 'inline': True}, effects=set(), source_info=SourceInfo(traceback=<jaxlib.xla_extension.Traceback object at 0x7f18a812a5f0>, name_stack=NameStack(stack=(Transform(name='jvp'),))))
+This is 16th reweight_loading results from dmff code. 1.983660130718954 Traced<ConcreteArray(1.983660130718954, dtype=float64)>with<JVPTrace(level=2/0)> with
+  primal = Array(1.98366013, dtype=float64)
+  tangent = Traced<ShapedArray(float64[])>with<JaxprTrace(level=1/0)> with
+    pval = (ShapedArray(float64[]), None)
+    recipe = JaxprEqnRecipe(eqn_id=<object object at 0x7f197d73c490>, in_tracers=(Traced<ShapedArray(float64[17]):JaxprTrace(level=1/0)>,), out_tracer_refs=[<weakref at 0x7f186767f650; to 'JaxprTracer' at 0x7f1867fc7ec0>], out_avals=[ShapedArray(float64[])], primitive=pjit, params={'jaxpr': { lambda ; a:f64[17]. let
+    b:f64[] = reduce_sum[axes=(0,)] a
+    c:f64[] = div b 17.0
+  in (c,) }, 'in_shardings': (UnspecifiedValue,), 'out_shardings': (UnspecifiedValue,), 'resource_env': None, 'donated_invars': (False,), 'name': '_average', 'keep_unused': False, 'inline': True}, effects=set(), source_info=SourceInfo(traceback=<jaxlib.xla_extension.Traceback object at 0x7f196c12abf0>, name_stack=NameStack(stack=(Transform(name='jvp'),))))
+This is 16th reweight_loading results from dmff code. 2.026143790849673 Traced<ConcreteArray(2.026143790849673, dtype=float64)>with<JVPTrace(level=2/0)> with
+  primal = Array(2.02614379, dtype=float64)
+  tangent = Traced<ShapedArray(float64[])>with<JaxprTrace(level=1/0)> with
+    pval = (ShapedArray(float64[]), None)
+    recipe = JaxprEqnRecipe(eqn_id=<object object at 0x7f186b2e6420>, in_tracers=(Traced<ShapedArray(float64[17]):JaxprTrace(level=1/0)>,), out_tracer_refs=[<weakref at 0x7f18699762f0; to 'JaxprTracer' at 0x7f1869975710>], out_avals=[ShapedArray(float64[])], primitive=pjit, params={'jaxpr': { lambda ; a:f64[17]. let
+    b:f64[] = reduce_sum[axes=(0,)] a
+    c:f64[] = div b 17.0
+  in (c,) }, 'in_shardings': (UnspecifiedValue,), 'out_shardings': (UnspecifiedValue,), 'resource_env': None, 'donated_invars': (False,), 'name': '_average', 'keep_unused': False, 'inline': True}, effects=set(), source_info=SourceInfo(traceback=<jaxlib.xla_extension.Traceback object at 0x7f197e508cb0>, name_stack=NameStack(stack=(Transform(name='jvp'),))))
+This is 16th reweight_loading results from dmff code. 2.0588235294117645 Traced<ConcreteArray(2.0588235294117645, dtype=float64)>with<JVPTrace(level=2/0)> with
+  primal = Array(2.05882353, dtype=float64)
+  tangent = Traced<ShapedArray(float64[])>with<JaxprTrace(level=1/0)> with
+    pval = (ShapedArray(float64[]), None)
+    recipe = JaxprEqnRecipe(eqn_id=<object object at 0x7f185a520ec0>, in_tracers=(Traced<ShapedArray(float64[17]):JaxprTrace(level=1/0)>,), out_tracer_refs=[<weakref at 0x7f187b79b970; to 'JaxprTracer' at 0x7f187b7997b0>], out_avals=[ShapedArray(float64[])], primitive=pjit, params={'jaxpr': { lambda ; a:f64[17]. let
+    b:f64[] = reduce_sum[axes=(0,)] a
+    c:f64[] = div b 17.0
+  in (c,) }, 'in_shardings': (UnspecifiedValue,), 'out_shardings': (UnspecifiedValue,), 'resource_env': None, 'donated_invars': (False,), 'name': '_average', 'keep_unused': False, 'inline': True}, effects=set(), source_info=SourceInfo(traceback=<jaxlib.xla_extension.Traceback object at 0x7f196c3918b0>, name_stack=NameStack(stack=(Transform(name='jvp'),))))
+This is 16th reweight_loading results from dmff code. 2.0686274509803924 Traced<ConcreteArray(2.0686274509803924, dtype=float64)>with<JVPTrace(level=2/0)> with
+  primal = Array(2.06862745, dtype=float64)
+  tangent = Traced<ShapedArray(float64[])>with<JaxprTrace(level=1/0)> with
+    pval = (ShapedArray(float64[]), None)
+    recipe = JaxprEqnRecipe(eqn_id=<object object at 0x7f186012c920>, in_tracers=(Traced<ShapedArray(float64[17]):JaxprTrace(level=1/0)>,), out_tracer_refs=[<weakref at 0x7f197db8fe20; to 'JaxprTracer' at 0x7f197db8c810>], out_avals=[ShapedArray(float64[])], primitive=pjit, params={'jaxpr': { lambda ; a:f64[17]. let
+    b:f64[] = reduce_sum[axes=(0,)] a
+    c:f64[] = div b 17.0
+  in (c,) }, 'in_shardings': (UnspecifiedValue,), 'out_shardings': (UnspecifiedValue,), 'resource_env': None, 'donated_invars': (False,), 'name': '_average', 'keep_unused': False, 'inline': True}, effects=set(), source_info=SourceInfo(traceback=<jaxlib.xla_extension.Traceback object at 0x7f197ea99a30>, name_stack=NameStack(stack=(Transform(name='jvp'),))))
+This is 16th reweight_loading results from dmff code. 2.0849673202614376 Traced<ConcreteArray(2.0849673202614376, dtype=float64)>with<JVPTrace(level=2/0)> with
+  primal = Array(2.08496732, dtype=float64)
+  tangent = Traced<ShapedArray(float64[])>with<JaxprTrace(level=1/0)> with
+    pval = (ShapedArray(float64[]), None)
+    recipe = JaxprEqnRecipe(eqn_id=<object object at 0x7f18673075f0>, in_tracers=(Traced<ShapedArray(float64[17]):JaxprTrace(level=1/0)>,), out_tracer_refs=[<weakref at 0x7f17647104f0; to 'JaxprTracer' at 0x7f17647104a0>], out_avals=[ShapedArray(float64[])], primitive=pjit, params={'jaxpr': { lambda ; a:f64[17]. let
+    b:f64[] = reduce_sum[axes=(0,)] a
+    c:f64[] = div b 17.0
+  in (c,) }, 'in_shardings': (UnspecifiedValue,), 'out_shardings': (UnspecifiedValue,), 'resource_env': None, 'donated_invars': (False,), 'name': '_average', 'keep_unused': False, 'inline': True}, effects=set(), source_info=SourceInfo(traceback=<jaxlib.xla_extension.Traceback object at 0x7f17646f77f0>, name_stack=NameStack(stack=(Transform(name='jvp'),))))
+This is 5th time  Loss: 4.7105357977370605 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.72473389 0.2021562  0.27431633 0.09372824 0.65757    0.22469   ]
+6 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+Aiida based GCMC sampling started.
+This is the final pk values:  299970
+[1.4850925925868323, 1.790379629584104, 1.8674629629834576, 1.9439537036827563, 1.9690277777825484, 1.981166666682447, 2.0313703703819996, 2.039916666681926, 2.1248981480811757]
+[0.6484517304189433, 1.5737704918032787, 2.098360655737705, 2.7686703096539165, 3.1183970856102, 3.3661202185792347, 4.0510018214936245, 4.408014571948998, 4.714025500910747]
+This is loss function:  11.62004386760683
+
+This is 16th reweight_loading results from dmff code. 1.522875816993464 Traced<ConcreteArray(1.522875816993464, dtype=float64)>with<JVPTrace(level=2/0)> with
+  primal = Array(1.52287582, dtype=float64)
+  tangent = Traced<ShapedArray(float64[])>with<JaxprTrace(level=1/0)> with
+    pval = (ShapedArray(float64[]), None)
+    recipe = JaxprEqnRecipe(eqn_id=<object object at 0x7f1860995190>, in_tracers=(Traced<ShapedArray(float64[17]):JaxprTrace(level=1/0)>,), out_tracer_refs=[<weakref at 0x7f18623355d0; to 'JaxprTracer' at 0x7f18689a6e80>], out_avals=[ShapedArray(float64[])], primitive=pjit, params={'jaxpr': { lambda ; a:f64[17]. let
+    b:f64[] = reduce_sum[axes=(0,)] a
+    c:f64[] = div b 17.0
+  in (c,) }, 'in_shardings': (UnspecifiedValue,), 'out_shardings': (UnspecifiedValue,), 'resource_env': None, 'donated_invars': (False,), 'name': '_average', 'keep_unused': False, 'inline': True}, effects=set(), source_info=SourceInfo(traceback=<jaxlib.xla_extension.Traceback object at 0x7f1867639ef0>, name_stack=NameStack(stack=(Transform(name='jvp'),))))
+This is 16th reweight_loading results from dmff code. 1.7745098039215685 Traced<ConcreteArray(1.7745098039215685, dtype=float64)>with<JVPTrace(level=2/0)> with
+  primal = Array(1.7745098, dtype=float64)
+  tangent = Traced<ShapedArray(float64[])>with<JaxprTrace(level=1/0)> with
+    pval = (ShapedArray(float64[]), None)
+    recipe = JaxprEqnRecipe(eqn_id=<object object at 0x7f1808fcb210>, in_tracers=(Traced<ShapedArray(float64[17]):JaxprTrace(level=1/0)>,), out_tracer_refs=[<weakref at 0x7f196e160770; to 'JaxprTracer' at 0x7f18a02c5530>], out_avals=[ShapedArray(float64[])], primitive=pjit, params={'jaxpr': { lambda ; a:f64[17]. let
+    b:f64[] = reduce_sum[axes=(0,)] a
+    c:f64[] = div b 17.0
+  in (c,) }, 'in_shardings': (UnspecifiedValue,), 'out_shardings': (UnspecifiedValue,), 'resource_env': None, 'donated_invars': (False,), 'name': '_average', 'keep_unused': False, 'inline': True}, effects=set(), source_info=SourceInfo(traceback=<jaxlib.xla_extension.Traceback object at 0x7f18a8348ab0>, name_stack=NameStack(stack=(Transform(name='jvp'),))))
+This is 16th reweight_loading results from dmff code. 1.8594771241830066 Traced<ConcreteArray(1.8594771241830066, dtype=float64)>with<JVPTrace(level=2/0)> with
+  primal = Array(1.85947712, dtype=float64)
+  tangent = Traced<ShapedArray(float64[])>with<JaxprTrace(level=1/0)> with
+    pval = (ShapedArray(float64[]), None)
+    recipe = JaxprEqnRecipe(eqn_id=<object object at 0x7f186a461ca0>, in_tracers=(Traced<ShapedArray(float64[17]):JaxprTrace(level=1/0)>,), out_tracer_refs=[<weakref at 0x7f1883ebdb70; to 'JaxprTracer' at 0x7f1883ebe660>], out_avals=[ShapedArray(float64[])], primitive=pjit, params={'jaxpr': { lambda ; a:f64[17]. let
+    b:f64[] = reduce_sum[axes=(0,)] a
+    c:f64[] = div b 17.0
+  in (c,) }, 'in_shardings': (UnspecifiedValue,), 'out_shardings': (UnspecifiedValue,), 'resource_env': None, 'donated_invars': (False,), 'name': '_average', 'keep_unused': False, 'inline': True}, effects=set(), source_info=SourceInfo(traceback=<jaxlib.xla_extension.Traceback object at 0x7f186a0bd730>, name_stack=NameStack(stack=(Transform(name='jvp'),))))
+This is 16th reweight_loading results from dmff code. 1.9705882352941175 Traced<ConcreteArray(1.9705882352941175, dtype=float64)>with<JVPTrace(level=2/0)> with
+  primal = Array(1.97058824, dtype=float64)
+  tangent = Traced<ShapedArray(float64[])>with<JaxprTrace(level=1/0)> with
+    pval = (ShapedArray(float64[]), None)
+    recipe = JaxprEqnRecipe(eqn_id=<object object at 0x7f17b4d34b90>, in_tracers=(Traced<ShapedArray(float64[17]):JaxprTrace(level=1/0)>,), out_tracer_refs=[<weakref at 0x7f18647b4810; to 'JaxprTracer' at 0x7f18647b56c0>], out_avals=[ShapedArray(float64[])], primitive=pjit, params={'jaxpr': { lambda ; a:f64[17]. let
+    b:f64[] = reduce_sum[axes=(0,)] a
+    c:f64[] = div b 17.0
+  in (c,) }, 'in_shardings': (UnspecifiedValue,), 'out_shardings': (UnspecifiedValue,), 'resource_env': None, 'donated_invars': (False,), 'name': '_average', 'keep_unused': False, 'inline': True}, effects=set(), source_info=SourceInfo(traceback=<jaxlib.xla_extension.Traceback object at 0x7f1861990430>, name_stack=NameStack(stack=(Transform(name='jvp'),))))
+This is 16th reweight_loading results from dmff code. 1.96078431372549 Traced<ConcreteArray(1.96078431372549, dtype=float64)>with<JVPTrace(level=2/0)> with
+  primal = Array(1.96078431, dtype=float64)
+  tangent = Traced<ShapedArray(float64[])>with<JaxprTrace(level=1/0)> with
+    pval = (ShapedArray(float64[]), None)
+    recipe = JaxprEqnRecipe(eqn_id=<object object at 0x7f197de52d90>, in_tracers=(Traced<ShapedArray(float64[17]):JaxprTrace(level=1/0)>,), out_tracer_refs=[<weakref at 0x7f18609ac630; to 'JaxprTracer' at 0x7f18609adb70>], out_avals=[ShapedArray(float64[])], primitive=pjit, params={'jaxpr': { lambda ; a:f64[17]. let
+    b:f64[] = reduce_sum[axes=(0,)] a
+    c:f64[] = div b 17.0
+  in (c,) }, 'in_shardings': (UnspecifiedValue,), 'out_shardings': (UnspecifiedValue,), 'resource_env': None, 'donated_invars': (False,), 'name': '_average', 'keep_unused': False, 'inline': True}, effects=set(), source_info=SourceInfo(traceback=<jaxlib.xla_extension.Traceback object at 0x7f197ec438b0>, name_stack=NameStack(stack=(Transform(name='jvp'),))))
+This is 16th reweight_loading results from dmff code. 1.9967320261437906 Traced<ConcreteArray(1.9967320261437906, dtype=float64)>with<JVPTrace(level=2/0)> with
+  primal = Array(1.99673203, dtype=float64)
+  tangent = Traced<ShapedArray(float64[])>with<JaxprTrace(level=1/0)> with
+    pval = (ShapedArray(float64[]), None)
+    recipe = JaxprEqnRecipe(eqn_id=<object object at 0x7f185a6d1410>, in_tracers=(Traced<ShapedArray(float64[17]):JaxprTrace(level=1/0)>,), out_tracer_refs=[<weakref at 0x7f18a8685800; to 'JaxprTracer' at 0x7f1809affb50>], out_avals=[ShapedArray(float64[])], primitive=pjit, params={'jaxpr': { lambda ; a:f64[17]. let
+    b:f64[] = reduce_sum[axes=(0,)] a
+    c:f64[] = div b 17.0
+  in (c,) }, 'in_shardings': (UnspecifiedValue,), 'out_shardings': (UnspecifiedValue,), 'resource_env': None, 'donated_invars': (False,), 'name': '_average', 'keep_unused': False, 'inline': True}, effects=set(), source_info=SourceInfo(traceback=<jaxlib.xla_extension.Traceback object at 0x7f1883dd20b0>, name_stack=NameStack(stack=(Transform(name='jvp'),))))
+This is 16th reweight_loading results from dmff code. 2.009803921568628 Traced<ConcreteArray(2.009803921568628, dtype=float64)>with<JVPTrace(level=2/0)> with
+  primal = Array(2.00980392, dtype=float64)
+  tangent = Traced<ShapedArray(float64[])>with<JaxprTrace(level=1/0)> with
+    pval = (ShapedArray(float64[]), None)
+    recipe = JaxprEqnRecipe(eqn_id=<object object at 0x7f197edef850>, in_tracers=(Traced<ShapedArray(float64[17]):JaxprTrace(level=1/0)>,), out_tracer_refs=[<weakref at 0x7f18730cf650; to 'JaxprTracer' at 0x7f18730ce570>], out_avals=[ShapedArray(float64[])], primitive=pjit, params={'jaxpr': { lambda ; a:f64[17]. let
+    b:f64[] = reduce_sum[axes=(0,)] a
+    c:f64[] = div b 17.0
+  in (c,) }, 'in_shardings': (UnspecifiedValue,), 'out_shardings': (UnspecifiedValue,), 'resource_env': None, 'donated_invars': (False,), 'name': '_average', 'keep_unused': False, 'inline': True}, effects=set(), source_info=SourceInfo(traceback=<jaxlib.xla_extension.Traceback object at 0x7f197d826a30>, name_stack=NameStack(stack=(Transform(name='jvp'),))))
+This is 16th reweight_loading results from dmff code. 2.0326797385620914 Traced<ConcreteArray(2.0326797385620914, dtype=float64)>with<JVPTrace(level=2/0)> with
+  primal = Array(2.03267974, dtype=float64)
+  tangent = Traced<ShapedArray(float64[])>with<JaxprTrace(level=1/0)> with
+    pval = (ShapedArray(float64[]), None)
+    recipe = JaxprEqnRecipe(eqn_id=<object object at 0x7f186802da50>, in_tracers=(Traced<ShapedArray(float64[17]):JaxprTrace(level=1/0)>,), out_tracer_refs=[<weakref at 0x7f17b538b790; to 'JaxprTracer' at 0x7f17b5389710>], out_avals=[ShapedArray(float64[])], primitive=pjit, params={'jaxpr': { lambda ; a:f64[17]. let
+    b:f64[] = reduce_sum[axes=(0,)] a
+    c:f64[] = div b 17.0
+  in (c,) }, 'in_shardings': (UnspecifiedValue,), 'out_shardings': (UnspecifiedValue,), 'resource_env': None, 'donated_invars': (False,), 'name': '_average', 'keep_unused': False, 'inline': True}, effects=set(), source_info=SourceInfo(traceback=<jaxlib.xla_extension.Traceback object at 0x7f17b7dae4b0>, name_stack=NameStack(stack=(Transform(name='jvp'),))))
+This is 16th reweight_loading results from dmff code. 2.1143790849673203 Traced<ConcreteArray(2.1143790849673203, dtype=float64)>with<JVPTrace(level=2/0)> with
+  primal = Array(2.11437908, dtype=float64)
+  tangent = Traced<ShapedArray(float64[])>with<JaxprTrace(level=1/0)> with
+    pval = (ShapedArray(float64[]), None)
+    recipe = JaxprEqnRecipe(eqn_id=<object object at 0x7f185b0c9c30>, in_tracers=(Traced<ShapedArray(float64[17]):JaxprTrace(level=1/0)>,), out_tracer_refs=[<weakref at 0x7f196d4cfb00; to 'JaxprTracer' at 0x7f196d4cc9a0>], out_avals=[ShapedArray(float64[])], primitive=pjit, params={'jaxpr': { lambda ; a:f64[17]. let
+    b:f64[] = reduce_sum[axes=(0,)] a
+    c:f64[] = div b 17.0
+  in (c,) }, 'in_shardings': (UnspecifiedValue,), 'out_shardings': (UnspecifiedValue,), 'resource_env': None, 'donated_invars': (False,), 'name': '_average', 'keep_unused': False, 'inline': True}, effects=set(), source_info=SourceInfo(traceback=<jaxlib.xla_extension.Traceback object at 0x7f185eddeeb0>, name_stack=NameStack(stack=(Transform(name='jvp'),))))
+This is 6th time  Loss: 4.746483510155361 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.71493189 0.19226474 0.26832814 0.08427178 0.65757    0.22469   ]
+7 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+Aiida based GCMC sampling started.
+This is the final pk values:  300102
+[1.484138888886843, 1.7376666666846066, 1.7964259258840525, 1.9307592592828984, 1.9641388888825855, 1.9820925925824244, 1.9999074073822578, 2.0729444443815894, 2.1072777777813223]
+[0.6484517304189433, 1.5737704918032787, 2.098360655737705, 2.7686703096539165, 3.1183970856102, 3.3661202185792347, 4.0510018214936245, 4.408014571948998, 4.714025500910747]
+This is loss function:  11.670627201106523
+
+This is 16th reweight_loading results from dmff code. 1.4901960784313726 Traced<ConcreteArray(1.4901960784313726, dtype=float64)>with<JVPTrace(level=2/0)> with
+  primal = Array(1.49019608, dtype=float64)
+  tangent = Traced<ShapedArray(float64[])>with<JaxprTrace(level=1/0)> with
+    pval = (ShapedArray(float64[]), None)
+    recipe = JaxprEqnRecipe(eqn_id=<object object at 0x7f171368a500>, in_tracers=(Traced<ShapedArray(float64[17]):JaxprTrace(level=1/0)>,), out_tracer_refs=[<weakref at 0x7f18a855f7e0; to 'JaxprTracer' at 0x7f18a855f380>], out_avals=[ShapedArray(float64[])], primitive=pjit, params={'jaxpr': { lambda ; a:f64[17]. let
+    b:f64[] = reduce_sum[axes=(0,)] a
+    c:f64[] = div b 17.0
+  in (c,) }, 'in_shardings': (UnspecifiedValue,), 'out_shardings': (UnspecifiedValue,), 'resource_env': None, 'donated_invars': (False,), 'name': '_average', 'keep_unused': False, 'inline': True}, effects=set(), source_info=SourceInfo(traceback=<jaxlib.xla_extension.Traceback object at 0x7f197dd28ff0>, name_stack=NameStack(stack=(Transform(name='jvp'),))))
+This is 16th reweight_loading results from dmff code. 1.7287581699346406 Traced<ConcreteArray(1.7287581699346406, dtype=float64)>with<JVPTrace(level=2/0)> with
+  primal = Array(1.72875817, dtype=float64)
+  tangent = Traced<ShapedArray(float64[])>with<JaxprTrace(level=1/0)> with
+    pval = (ShapedArray(float64[]), None)
+    recipe = JaxprEqnRecipe(eqn_id=<object object at 0x7f18c817c530>, in_tracers=(Traced<ShapedArray(float64[17]):JaxprTrace(level=1/0)>,), out_tracer_refs=[<weakref at 0x7f186a5d2840; to 'JaxprTracer' at 0x7f1872fe5e40>], out_avals=[ShapedArray(float64[])], primitive=pjit, params={'jaxpr': { lambda ; a:f64[17]. let
+    b:f64[] = reduce_sum[axes=(0,)] a
+    c:f64[] = div b 17.0
+  in (c,) }, 'in_shardings': (UnspecifiedValue,), 'out_shardings': (UnspecifiedValue,), 'resource_env': None, 'donated_invars': (False,), 'name': '_average', 'keep_unused': False, 'inline': True}, effects=set(), source_info=SourceInfo(traceback=<jaxlib.xla_extension.Traceback object at 0x7f17b7f79630>, name_stack=NameStack(stack=(Transform(name='jvp'),))))
+This is 16th reweight_loading results from dmff code. 1.8104575163398693 Traced<ConcreteArray(1.8104575163398693, dtype=float64)>with<JVPTrace(level=2/0)> with
+  primal = Array(1.81045752, dtype=float64)
+  tangent = Traced<ShapedArray(float64[])>with<JaxprTrace(level=1/0)> with
+    pval = (ShapedArray(float64[]), None)
+    recipe = JaxprEqnRecipe(eqn_id=<object object at 0x7f186a4991e0>, in_tracers=(Traced<ShapedArray(float64[17]):JaxprTrace(level=1/0)>,), out_tracer_refs=[<weakref at 0x7f1867cfa6b0; to 'JaxprTracer' at 0x7f186a14a570>], out_avals=[ShapedArray(float64[])], primitive=pjit, params={'jaxpr': { lambda ; a:f64[17]. let
+    b:f64[] = reduce_sum[axes=(0,)] a
+    c:f64[] = div b 17.0
+  in (c,) }, 'in_shardings': (UnspecifiedValue,), 'out_shardings': (UnspecifiedValue,), 'resource_env': None, 'donated_invars': (False,), 'name': '_average', 'keep_unused': False, 'inline': True}, effects=set(), source_info=SourceInfo(traceback=<jaxlib.xla_extension.Traceback object at 0x7f18ec616370>, name_stack=NameStack(stack=(Transform(name='jvp'),))))
+This is 16th reweight_loading results from dmff code. 1.8954248366013071 Traced<ConcreteArray(1.8954248366013071, dtype=float64)>with<JVPTrace(level=2/0)> with
+  primal = Array(1.89542484, dtype=float64)
+  tangent = Traced<ShapedArray(float64[])>with<JaxprTrace(level=1/0)> with
+    pval = (ShapedArray(float64[]), None)
+    recipe = JaxprEqnRecipe(eqn_id=<object object at 0x7f186867ac40>, in_tracers=(Traced<ShapedArray(float64[17]):JaxprTrace(level=1/0)>,), out_tracer_refs=[<weakref at 0x7f197ddb7330; to 'JaxprTracer' at 0x7f197ddb6520>], out_avals=[ShapedArray(float64[])], primitive=pjit, params={'jaxpr': { lambda ; a:f64[17]. let
+    b:f64[] = reduce_sum[axes=(0,)] a
+    c:f64[] = div b 17.0
+  in (c,) }, 'in_shardings': (UnspecifiedValue,), 'out_shardings': (UnspecifiedValue,), 'resource_env': None, 'donated_invars': (False,), 'name': '_average', 'keep_unused': False, 'inline': True}, effects=set(), source_info=SourceInfo(traceback=<jaxlib.xla_extension.Traceback object at 0x7f185d05b0f0>, name_stack=NameStack(stack=(Transform(name='jvp'),))))
+This is 16th reweight_loading results from dmff code. 1.983660130718954 Traced<ConcreteArray(1.983660130718954, dtype=float64)>with<JVPTrace(level=2/0)> with
+  primal = Array(1.98366013, dtype=float64)
+  tangent = Traced<ShapedArray(float64[])>with<JaxprTrace(level=1/0)> with
+    pval = (ShapedArray(float64[]), None)
+    recipe = JaxprEqnRecipe(eqn_id=<object object at 0x7f197e13bc00>, in_tracers=(Traced<ShapedArray(float64[17]):JaxprTrace(level=1/0)>,), out_tracer_refs=[<weakref at 0x7f196e588180; to 'JaxprTracer' at 0x7f19083548b0>], out_avals=[ShapedArray(float64[])], primitive=pjit, params={'jaxpr': { lambda ; a:f64[17]. let
+    b:f64[] = reduce_sum[axes=(0,)] a
+    c:f64[] = div b 17.0
+  in (c,) }, 'in_shardings': (UnspecifiedValue,), 'out_shardings': (UnspecifiedValue,), 'resource_env': None, 'donated_invars': (False,), 'name': '_average', 'keep_unused': False, 'inline': True}, effects=set(), source_info=SourceInfo(traceback=<jaxlib.xla_extension.Traceback object at 0x7f1867c926f0>, name_stack=NameStack(stack=(Transform(name='jvp'),))))
+This is 16th reweight_loading results from dmff code. 1.9901960784313726 Traced<ConcreteArray(1.9901960784313726, dtype=float64)>with<JVPTrace(level=2/0)> with
+  primal = Array(1.99019608, dtype=float64)
+  tangent = Traced<ShapedArray(float64[])>with<JaxprTrace(level=1/0)> with
+    pval = (ShapedArray(float64[]), None)
+    recipe = JaxprEqnRecipe(eqn_id=<object object at 0x7f1865686260>, in_tracers=(Traced<ShapedArray(float64[17]):JaxprTrace(level=1/0)>,), out_tracer_refs=[<weakref at 0x7f186925afc0; to 'JaxprTracer' at 0x7f1867a5b0b0>], out_avals=[ShapedArray(float64[])], primitive=pjit, params={'jaxpr': { lambda ; a:f64[17]. let
+    b:f64[] = reduce_sum[axes=(0,)] a
+    c:f64[] = div b 17.0
+  in (c,) }, 'in_shardings': (UnspecifiedValue,), 'out_shardings': (UnspecifiedValue,), 'resource_env': None, 'donated_invars': (False,), 'name': '_average', 'keep_unused': False, 'inline': True}, effects=set(), source_info=SourceInfo(traceback=<jaxlib.xla_extension.Traceback object at 0x7f18a834fdf0>, name_stack=NameStack(stack=(Transform(name='jvp'),))))
+This is 16th reweight_loading results from dmff code. 2.0196078431372544 Traced<ConcreteArray(2.0196078431372544, dtype=float64)>with<JVPTrace(level=2/0)> with
+  primal = Array(2.01960784, dtype=float64)
+  tangent = Traced<ShapedArray(float64[])>with<JaxprTrace(level=1/0)> with
+    pval = (ShapedArray(float64[]), None)
+    recipe = JaxprEqnRecipe(eqn_id=<object object at 0x7f18624fe0d0>, in_tracers=(Traced<ShapedArray(float64[17]):JaxprTrace(level=1/0)>,), out_tracer_refs=[<weakref at 0x7f186b331760; to 'JaxprTracer' at 0x7f185cbb1c60>], out_avals=[ShapedArray(float64[])], primitive=pjit, params={'jaxpr': { lambda ; a:f64[17]. let
+    b:f64[] = reduce_sum[axes=(0,)] a
+    c:f64[] = div b 17.0
+  in (c,) }, 'in_shardings': (UnspecifiedValue,), 'out_shardings': (UnspecifiedValue,), 'resource_env': None, 'donated_invars': (False,), 'name': '_average', 'keep_unused': False, 'inline': True}, effects=set(), source_info=SourceInfo(traceback=<jaxlib.xla_extension.Traceback object at 0x7f17b805ccf0>, name_stack=NameStack(stack=(Transform(name='jvp'),))))
+This is 16th reweight_loading results from dmff code. 2.0424836601307192 Traced<ConcreteArray(2.0424836601307192, dtype=float64)>with<JVPTrace(level=2/0)> with
+  primal = Array(2.04248366, dtype=float64)
+  tangent = Traced<ShapedArray(float64[])>with<JaxprTrace(level=1/0)> with
+    pval = (ShapedArray(float64[]), None)
+    recipe = JaxprEqnRecipe(eqn_id=<object object at 0x7f1868dfecf0>, in_tracers=(Traced<ShapedArray(float64[17]):JaxprTrace(level=1/0)>,), out_tracer_refs=[<weakref at 0x7f185d69cd10; to 'JaxprTracer' at 0x7f18611325c0>], out_avals=[ShapedArray(float64[])], primitive=pjit, params={'jaxpr': { lambda ; a:f64[17]. let
+    b:f64[] = reduce_sum[axes=(0,)] a
+    c:f64[] = div b 17.0
+  in (c,) }, 'in_shardings': (UnspecifiedValue,), 'out_shardings': (UnspecifiedValue,), 'resource_env': None, 'donated_invars': (False,), 'name': '_average', 'keep_unused': False, 'inline': True}, effects=set(), source_info=SourceInfo(traceback=<jaxlib.xla_extension.Traceback object at 0x7f17648ecf30>, name_stack=NameStack(stack=(Transform(name='jvp'),))))
+This is 16th reweight_loading results from dmff code. 2.1111111111111107 Traced<ConcreteArray(2.1111111111111107, dtype=float64)>with<JVPTrace(level=2/0)> with
+  primal = Array(2.11111111, dtype=float64)
+  tangent = Traced<ShapedArray(float64[])>with<JaxprTrace(level=1/0)> with
+    pval = (ShapedArray(float64[]), None)
+    recipe = JaxprEqnRecipe(eqn_id=<object object at 0x7f197ebb20b0>, in_tracers=(Traced<ShapedArray(float64[17]):JaxprTrace(level=1/0)>,), out_tracer_refs=[<weakref at 0x7f1714e810d0; to 'JaxprTracer' at 0x7f1714e80400>], out_avals=[ShapedArray(float64[])], primitive=pjit, params={'jaxpr': { lambda ; a:f64[17]. let
+    b:f64[] = reduce_sum[axes=(0,)] a
+    c:f64[] = div b 17.0
+  in (c,) }, 'in_shardings': (UnspecifiedValue,), 'out_shardings': (UnspecifiedValue,), 'resource_env': None, 'donated_invars': (False,), 'name': '_average', 'keep_unused': False, 'inline': True}, effects=set(), source_info=SourceInfo(traceback=<jaxlib.xla_extension.Traceback object at 0x7f17649d29f0>, name_stack=NameStack(stack=(Transform(name='jvp'),))))
+This is 7th time  Loss: 4.563476974207649 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.70498061 0.18231307 0.26124875 0.07462855 0.65757    0.22469   ]
+8 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+Aiida based GCMC sampling started.
+This is the final pk values:  300234
+[1.3882407406876645, 1.642361111085427, 1.783796296284181, 1.9047129629831272, 1.951657407382686, 1.9718425925825152, 1.980268518482426, 2.0336296295819465, 2.087675925881469]
+[0.6484517304189433, 1.5737704918032787, 2.098360655737705, 2.7686703096539165, 3.1183970856102, 3.3661202185792347, 4.0510018214936245, 4.408014571948998, 4.714025500910747]
+This is loss function:  11.619386460306945
+
+This is 16th reweight_loading results from dmff code. 1.3660130718954249 Traced<ConcreteArray(1.3660130718954249, dtype=float64)>with<JVPTrace(level=2/0)> with
+  primal = Array(1.36601307, dtype=float64)
+  tangent = Traced<ShapedArray(float64[])>with<JaxprTrace(level=1/0)> with
+    pval = (ShapedArray(float64[]), None)
+    recipe = JaxprEqnRecipe(eqn_id=<object object at 0x7f1872a13430>, in_tracers=(Traced<ShapedArray(float64[17]):JaxprTrace(level=1/0)>,), out_tracer_refs=[<weakref at 0x7f1809a96ed0; to 'JaxprTracer' at 0x7f1809a96980>], out_avals=[ShapedArray(float64[])], primitive=pjit, params={'jaxpr': { lambda ; a:f64[17]. let
+    b:f64[] = reduce_sum[axes=(0,)] a
+    c:f64[] = div b 17.0
+  in (c,) }, 'in_shardings': (UnspecifiedValue,), 'out_shardings': (UnspecifiedValue,), 'resource_env': None, 'donated_invars': (False,), 'name': '_average', 'keep_unused': False, 'inline': True}, effects=set(), source_info=SourceInfo(traceback=<jaxlib.xla_extension.Traceback object at 0x7f18613df5f0>, name_stack=NameStack(stack=(Transform(name='jvp'),))))
+This is 16th reweight_loading results from dmff code. 1.6176470588235292 Traced<ConcreteArray(1.6176470588235292, dtype=float64)>with<JVPTrace(level=2/0)> with
+  primal = Array(1.61764706, dtype=float64)
+  tangent = Traced<ShapedArray(float64[])>with<JaxprTrace(level=1/0)> with
+    pval = (ShapedArray(float64[]), None)
+    recipe = JaxprEqnRecipe(eqn_id=<object object at 0x7f18660254a0>, in_tracers=(Traced<ShapedArray(float64[17]):JaxprTrace(level=1/0)>,), out_tracer_refs=[<weakref at 0x7f1865f8bb00; to 'JaxprTracer' at 0x7f187b934770>], out_avals=[ShapedArray(float64[])], primitive=pjit, params={'jaxpr': { lambda ; a:f64[17]. let
+    b:f64[] = reduce_sum[axes=(0,)] a
+    c:f64[] = div b 17.0
+  in (c,) }, 'in_shardings': (UnspecifiedValue,), 'out_shardings': (UnspecifiedValue,), 'resource_env': None, 'donated_invars': (False,), 'name': '_average', 'keep_unused': False, 'inline': True}, effects=set(), source_info=SourceInfo(traceback=<jaxlib.xla_extension.Traceback object at 0x7f185b32c670>, name_stack=NameStack(stack=(Transform(name='jvp'),))))
+This is 16th reweight_loading results from dmff code. 1.7614379084967322 Traced<ConcreteArray(1.7614379084967322, dtype=float64)>with<JVPTrace(level=2/0)> with
+  primal = Array(1.76143791, dtype=float64)
+  tangent = Traced<ShapedArray(float64[])>with<JaxprTrace(level=1/0)> with
+    pval = (ShapedArray(float64[]), None)
+    recipe = JaxprEqnRecipe(eqn_id=<object object at 0x7f17b7d03f10>, in_tracers=(Traced<ShapedArray(float64[17]):JaxprTrace(level=1/0)>,), out_tracer_refs=[<weakref at 0x7f196ca5c360; to 'JaxprTracer' at 0x7f196ca5ee80>], out_avals=[ShapedArray(float64[])], primitive=pjit, params={'jaxpr': { lambda ; a:f64[17]. let
+    b:f64[] = reduce_sum[axes=(0,)] a
+    c:f64[] = div b 17.0
+  in (c,) }, 'in_shardings': (UnspecifiedValue,), 'out_shardings': (UnspecifiedValue,), 'resource_env': None, 'donated_invars': (False,), 'name': '_average', 'keep_unused': False, 'inline': True}, effects=set(), source_info=SourceInfo(traceback=<jaxlib.xla_extension.Traceback object at 0x7f187b3cad70>, name_stack=NameStack(stack=(Transform(name='jvp'),))))
+This is 16th reweight_loading results from dmff code. 1.9215686274509802 Traced<ConcreteArray(1.9215686274509802, dtype=float64)>with<JVPTrace(level=2/0)> with
+  primal = Array(1.92156863, dtype=float64)
+  tangent = Traced<ShapedArray(float64[])>with<JaxprTrace(level=1/0)> with
+    pval = (ShapedArray(float64[]), None)
+    recipe = JaxprEqnRecipe(eqn_id=<object object at 0x7f18696a12e0>, in_tracers=(Traced<ShapedArray(float64[17]):JaxprTrace(level=1/0)>,), out_tracer_refs=[<weakref at 0x7f18a8535170; to 'JaxprTracer' at 0x7f18a8535300>], out_avals=[ShapedArray(float64[])], primitive=pjit, params={'jaxpr': { lambda ; a:f64[17]. let
+    b:f64[] = reduce_sum[axes=(0,)] a
+    c:f64[] = div b 17.0
+  in (c,) }, 'in_shardings': (UnspecifiedValue,), 'out_shardings': (UnspecifiedValue,), 'resource_env': None, 'donated_invars': (False,), 'name': '_average', 'keep_unused': False, 'inline': True}, effects=set(), source_info=SourceInfo(traceback=<jaxlib.xla_extension.Traceback object at 0x7f1934090db0>, name_stack=NameStack(stack=(Transform(name='jvp'),))))
+This is 16th reweight_loading results from dmff code. 1.9673202614379084 Traced<ConcreteArray(1.9673202614379084, dtype=float64)>with<JVPTrace(level=2/0)> with
+  primal = Array(1.96732026, dtype=float64)
+  tangent = Traced<ShapedArray(float64[])>with<JaxprTrace(level=1/0)> with
+    pval = (ShapedArray(float64[]), None)
+    recipe = JaxprEqnRecipe(eqn_id=<object object at 0x7f1872a76480>, in_tracers=(Traced<ShapedArray(float64[17]):JaxprTrace(level=1/0)>,), out_tracer_refs=[<weakref at 0x7f197e4f1da0; to 'JaxprTracer' at 0x7f197e4f0720>], out_avals=[ShapedArray(float64[])], primitive=pjit, params={'jaxpr': { lambda ; a:f64[17]. let
+    b:f64[] = reduce_sum[axes=(0,)] a
+    c:f64[] = div b 17.0
+  in (c,) }, 'in_shardings': (UnspecifiedValue,), 'out_shardings': (UnspecifiedValue,), 'resource_env': None, 'donated_invars': (False,), 'name': '_average', 'keep_unused': False, 'inline': True}, effects=set(), source_info=SourceInfo(traceback=<jaxlib.xla_extension.Traceback object at 0x7f193c1249f0>, name_stack=NameStack(stack=(Transform(name='jvp'),))))
+This is 16th reweight_loading results from dmff code. 1.964052287581699 Traced<ConcreteArray(1.964052287581699, dtype=float64)>with<JVPTrace(level=2/0)> with
+  primal = Array(1.96405229, dtype=float64)
+  tangent = Traced<ShapedArray(float64[])>with<JaxprTrace(level=1/0)> with
+    pval = (ShapedArray(float64[]), None)
+    recipe = JaxprEqnRecipe(eqn_id=<object object at 0x7f1865ae8f20>, in_tracers=(Traced<ShapedArray(float64[17]):JaxprTrace(level=1/0)>,), out_tracer_refs=[<weakref at 0x7f1865f754e0; to 'JaxprTracer' at 0x7f1865f74ef0>], out_avals=[ShapedArray(float64[])], primitive=pjit, params={'jaxpr': { lambda ; a:f64[17]. let
+    b:f64[] = reduce_sum[axes=(0,)] a
+    c:f64[] = div b 17.0
+  in (c,) }, 'in_shardings': (UnspecifiedValue,), 'out_shardings': (UnspecifiedValue,), 'resource_env': None, 'donated_invars': (False,), 'name': '_average', 'keep_unused': False, 'inline': True}, effects=set(), source_info=SourceInfo(traceback=<jaxlib.xla_extension.Traceback object at 0x7f18a81631b0>, name_stack=NameStack(stack=(Transform(name='jvp'),))))
+This is 16th reweight_loading results from dmff code. 1.9705882352941175 Traced<ConcreteArray(1.9705882352941175, dtype=float64)>with<JVPTrace(level=2/0)> with
+  primal = Array(1.97058824, dtype=float64)
+  tangent = Traced<ShapedArray(float64[])>with<JaxprTrace(level=1/0)> with
+    pval = (ShapedArray(float64[]), None)
+    recipe = JaxprEqnRecipe(eqn_id=<object object at 0x7f193c7c8fa0>, in_tracers=(Traced<ShapedArray(float64[17]):JaxprTrace(level=1/0)>,), out_tracer_refs=[<weakref at 0x7f196e81fa60; to 'JaxprTracer' at 0x7f187b2434c0>], out_avals=[ShapedArray(float64[])], primitive=pjit, params={'jaxpr': { lambda ; a:f64[17]. let
+    b:f64[] = reduce_sum[axes=(0,)] a
+    c:f64[] = div b 17.0
+  in (c,) }, 'in_shardings': (UnspecifiedValue,), 'out_shardings': (UnspecifiedValue,), 'resource_env': None, 'donated_invars': (False,), 'name': '_average', 'keep_unused': False, 'inline': True}, effects=set(), source_info=SourceInfo(traceback=<jaxlib.xla_extension.Traceback object at 0x7f185f0469f0>, name_stack=NameStack(stack=(Transform(name='jvp'),))))
+This is 16th reweight_loading results from dmff code. 2.0424836601307192 Traced<ConcreteArray(2.0424836601307192, dtype=float64)>with<JVPTrace(level=2/0)> with
+  primal = Array(2.04248366, dtype=float64)
+  tangent = Traced<ShapedArray(float64[])>with<JaxprTrace(level=1/0)> with
+    pval = (ShapedArray(float64[]), None)
+    recipe = JaxprEqnRecipe(eqn_id=<object object at 0x7f18608bda60>, in_tracers=(Traced<ShapedArray(float64[17]):JaxprTrace(level=1/0)>,), out_tracer_refs=[<weakref at 0x7f196e4a3b50; to 'JaxprTracer' at 0x7f186a6c0db0>], out_avals=[ShapedArray(float64[])], primitive=pjit, params={'jaxpr': { lambda ; a:f64[17]. let
+    b:f64[] = reduce_sum[axes=(0,)] a
+    c:f64[] = div b 17.0
+  in (c,) }, 'in_shardings': (UnspecifiedValue,), 'out_shardings': (UnspecifiedValue,), 'resource_env': None, 'donated_invars': (False,), 'name': '_average', 'keep_unused': False, 'inline': True}, effects=set(), source_info=SourceInfo(traceback=<jaxlib.xla_extension.Traceback object at 0x7f196c9cbbf0>, name_stack=NameStack(stack=(Transform(name='jvp'),))))
+This is 16th reweight_loading results from dmff code. 2.084967320261438 Traced<ConcreteArray(2.084967320261438, dtype=float64)>with<JVPTrace(level=2/0)> with
+  primal = Array(2.08496732, dtype=float64)
+  tangent = Traced<ShapedArray(float64[])>with<JaxprTrace(level=1/0)> with
+    pval = (ShapedArray(float64[]), None)
+    recipe = JaxprEqnRecipe(eqn_id=<object object at 0x7f1869f007b0>, in_tracers=(Traced<ShapedArray(float64[17]):JaxprTrace(level=1/0)>,), out_tracer_refs=[<weakref at 0x7f167266ef70; to 'JaxprTracer' at 0x7f167266ef20>], out_avals=[ShapedArray(float64[])], primitive=pjit, params={'jaxpr': { lambda ; a:f64[17]. let
+    b:f64[] = reduce_sum[axes=(0,)] a
+    c:f64[] = div b 17.0
+  in (c,) }, 'in_shardings': (UnspecifiedValue,), 'out_shardings': (UnspecifiedValue,), 'resource_env': None, 'donated_invars': (False,), 'name': '_average', 'keep_unused': False, 'inline': True}, effects=set(), source_info=SourceInfo(traceback=<jaxlib.xla_extension.Traceback object at 0x7f18697ee7b0>, name_stack=NameStack(stack=(Transform(name='jvp'),))))
+This is 8th time  Loss: 4.301998637576699 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.69488738 0.1722236  0.25332213 0.07462855 0.65757    0.22469   ]
+9 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+Aiida based GCMC sampling started.
+This is the final pk values:  300366
+[1.3231018518882425, 1.6016759258857796, 1.7549999999844343, 1.9007870369831206, 1.9410092592828072, 1.9512129629827146, 2.019425925882074, 2.042175925881873, 2.09213888888145]
+[0.6484517304189433, 1.5737704918032787, 2.098360655737705, 2.7686703096539165, 3.1183970856102, 3.3661202185792347, 4.0510018214936245, 4.408014571948998, 4.714025500910747]
+This is loss function:  11.52539571960775
+
+This is 16th reweight_loading results from dmff code. 1.3366013071895424 Traced<ConcreteArray(1.3366013071895424, dtype=float64)>with<JVPTrace(level=2/0)> with
+  primal = Array(1.33660131, dtype=float64)
+  tangent = Traced<ShapedArray(float64[])>with<JaxprTrace(level=1/0)> with
+    pval = (ShapedArray(float64[]), None)
+    recipe = JaxprEqnRecipe(eqn_id=<object object at 0x7f185b917340>, in_tracers=(Traced<ShapedArray(float64[17]):JaxprTrace(level=1/0)>,), out_tracer_refs=[<weakref at 0x7f1714e5d3a0; to 'JaxprTracer' at 0x7f1714e5d260>], out_avals=[ShapedArray(float64[])], primitive=pjit, params={'jaxpr': { lambda ; a:f64[17]. let
+    b:f64[] = reduce_sum[axes=(0,)] a
+    c:f64[] = div b 17.0
+  in (c,) }, 'in_shardings': (UnspecifiedValue,), 'out_shardings': (UnspecifiedValue,), 'resource_env': None, 'donated_invars': (False,), 'name': '_average', 'keep_unused': False, 'inline': True}, effects=set(), source_info=SourceInfo(traceback=<jaxlib.xla_extension.Traceback object at 0x7f185a475eb0>, name_stack=NameStack(stack=(Transform(name='jvp'),))))
+This is 16th reweight_loading results from dmff code. 1.611111111111111 Traced<ConcreteArray(1.611111111111111, dtype=float64)>with<JVPTrace(level=2/0)> with
+  primal = Array(1.61111111, dtype=float64)
+  tangent = Traced<ShapedArray(float64[])>with<JaxprTrace(level=1/0)> with
+    pval = (ShapedArray(float64[]), None)
+    recipe = JaxprEqnRecipe(eqn_id=<object object at 0x7f186b79bc80>, in_tracers=(Traced<ShapedArray(float64[17]):JaxprTrace(level=1/0)>,), out_tracer_refs=[<weakref at 0x7f193c0d0e50; to 'JaxprTracer' at 0x7f193c0d13a0>], out_avals=[ShapedArray(float64[])], primitive=pjit, params={'jaxpr': { lambda ; a:f64[17]. let
+    b:f64[] = reduce_sum[axes=(0,)] a
+    c:f64[] = div b 17.0
+  in (c,) }, 'in_shardings': (UnspecifiedValue,), 'out_shardings': (UnspecifiedValue,), 'resource_env': None, 'donated_invars': (False,), 'name': '_average', 'keep_unused': False, 'inline': True}, effects=set(), source_info=SourceInfo(traceback=<jaxlib.xla_extension.Traceback object at 0x7f17b850f130>, name_stack=NameStack(stack=(Transform(name='jvp'),))))
+This is 16th reweight_loading results from dmff code. 1.7222222222222223 Traced<ConcreteArray(1.7222222222222223, dtype=float64)>with<JVPTrace(level=2/0)> with
+  primal = Array(1.72222222, dtype=float64)
+  tangent = Traced<ShapedArray(float64[])>with<JaxprTrace(level=1/0)> with
+    pval = (ShapedArray(float64[]), None)
+    recipe = JaxprEqnRecipe(eqn_id=<object object at 0x7f1863145020>, in_tracers=(Traced<ShapedArray(float64[17]):JaxprTrace(level=1/0)>,), out_tracer_refs=[<weakref at 0x7f197d6e9ad0; to 'JaxprTracer' at 0x7f197d6e8770>], out_avals=[ShapedArray(float64[])], primitive=pjit, params={'jaxpr': { lambda ; a:f64[17]. let
+    b:f64[] = reduce_sum[axes=(0,)] a
+    c:f64[] = div b 17.0
+  in (c,) }, 'in_shardings': (UnspecifiedValue,), 'out_shardings': (UnspecifiedValue,), 'resource_env': None, 'donated_invars': (False,), 'name': '_average', 'keep_unused': False, 'inline': True}, effects=set(), source_info=SourceInfo(traceback=<jaxlib.xla_extension.Traceback object at 0x7f187b75c730>, name_stack=NameStack(stack=(Transform(name='jvp'),))))
+This is 16th reweight_loading results from dmff code. 1.9019607843137256 Traced<ConcreteArray(1.9019607843137256, dtype=float64)>with<JVPTrace(level=2/0)> with
+  primal = Array(1.90196078, dtype=float64)
+  tangent = Traced<ShapedArray(float64[])>with<JaxprTrace(level=1/0)> with
+    pval = (ShapedArray(float64[]), None)
+    recipe = JaxprEqnRecipe(eqn_id=<object object at 0x7f197c0cd090>, in_tracers=(Traced<ShapedArray(float64[17]):JaxprTrace(level=1/0)>,), out_tracer_refs=[<weakref at 0x7f18683b3330; to 'JaxprTracer' at 0x7f196eea7f60>], out_avals=[ShapedArray(float64[])], primitive=pjit, params={'jaxpr': { lambda ; a:f64[17]. let
+    b:f64[] = reduce_sum[axes=(0,)] a
+    c:f64[] = div b 17.0
+  in (c,) }, 'in_shardings': (UnspecifiedValue,), 'out_shardings': (UnspecifiedValue,), 'resource_env': None, 'donated_invars': (False,), 'name': '_average', 'keep_unused': False, 'inline': True}, effects=set(), source_info=SourceInfo(traceback=<jaxlib.xla_extension.Traceback object at 0x7f1714c8e2f0>, name_stack=NameStack(stack=(Transform(name='jvp'),))))
+This is 16th reweight_loading results from dmff code. 1.9150326797385622 Traced<ConcreteArray(1.9150326797385622, dtype=float64)>with<JVPTrace(level=2/0)> with
+  primal = Array(1.91503268, dtype=float64)
+  tangent = Traced<ShapedArray(float64[])>with<JaxprTrace(level=1/0)> with
+    pval = (ShapedArray(float64[]), None)
+    recipe = JaxprEqnRecipe(eqn_id=<object object at 0x7f186802f970>, in_tracers=(Traced<ShapedArray(float64[17]):JaxprTrace(level=1/0)>,), out_tracer_refs=[<weakref at 0x7f18ec096a70; to 'JaxprTracer' at 0x7f18ec0958a0>], out_avals=[ShapedArray(float64[])], primitive=pjit, params={'jaxpr': { lambda ; a:f64[17]. let
+    b:f64[] = reduce_sum[axes=(0,)] a
+    c:f64[] = div b 17.0
+  in (c,) }, 'in_shardings': (UnspecifiedValue,), 'out_shardings': (UnspecifiedValue,), 'resource_env': None, 'donated_invars': (False,), 'name': '_average', 'keep_unused': False, 'inline': True}, effects=set(), source_info=SourceInfo(traceback=<jaxlib.xla_extension.Traceback object at 0x7f197e9939b0>, name_stack=NameStack(stack=(Transform(name='jvp'),))))
+This is 16th reweight_loading results from dmff code. 1.9542483660130723 Traced<ConcreteArray(1.9542483660130723, dtype=float64)>with<JVPTrace(level=2/0)> with
+  primal = Array(1.95424837, dtype=float64)
+  tangent = Traced<ShapedArray(float64[])>with<JaxprTrace(level=1/0)> with
+    pval = (ShapedArray(float64[]), None)
+    recipe = JaxprEqnRecipe(eqn_id=<object object at 0x7f18608df5f0>, in_tracers=(Traced<ShapedArray(float64[17]):JaxprTrace(level=1/0)>,), out_tracer_refs=[<weakref at 0x7f176489f790; to 'JaxprTracer' at 0x7f176489eca0>], out_avals=[ShapedArray(float64[])], primitive=pjit, params={'jaxpr': { lambda ; a:f64[17]. let
+    b:f64[] = reduce_sum[axes=(0,)] a
+    c:f64[] = div b 17.0
+  in (c,) }, 'in_shardings': (UnspecifiedValue,), 'out_shardings': (UnspecifiedValue,), 'resource_env': None, 'donated_invars': (False,), 'name': '_average', 'keep_unused': False, 'inline': True}, effects=set(), source_info=SourceInfo(traceback=<jaxlib.xla_extension.Traceback object at 0x7f1857653630>, name_stack=NameStack(stack=(Transform(name='jvp'),))))
+This is 16th reweight_loading results from dmff code. 2.0130718954248366 Traced<ConcreteArray(2.0130718954248366, dtype=float64)>with<JVPTrace(level=2/0)> with
+  primal = Array(2.0130719, dtype=float64)
+  tangent = Traced<ShapedArray(float64[])>with<JaxprTrace(level=1/0)> with
+    pval = (ShapedArray(float64[]), None)
+    recipe = JaxprEqnRecipe(eqn_id=<object object at 0x7f197e13baf0>, in_tracers=(Traced<ShapedArray(float64[17]):JaxprTrace(level=1/0)>,), out_tracer_refs=[<weakref at 0x7f187b52e070; to 'JaxprTracer' at 0x7f185a91c090>], out_avals=[ShapedArray(float64[])], primitive=pjit, params={'jaxpr': { lambda ; a:f64[17]. let
+    b:f64[] = reduce_sum[axes=(0,)] a
+    c:f64[] = div b 17.0
+  in (c,) }, 'in_shardings': (UnspecifiedValue,), 'out_shardings': (UnspecifiedValue,), 'resource_env': None, 'donated_invars': (False,), 'name': '_average', 'keep_unused': False, 'inline': True}, effects=set(), source_info=SourceInfo(traceback=<jaxlib.xla_extension.Traceback object at 0x7f18a86e55b0>, name_stack=NameStack(stack=(Transform(name='jvp'),))))
+This is 16th reweight_loading results from dmff code. 2.0490196078431375 Traced<ConcreteArray(2.0490196078431375, dtype=float64)>with<JVPTrace(level=2/0)> with
+  primal = Array(2.04901961, dtype=float64)
+  tangent = Traced<ShapedArray(float64[])>with<JaxprTrace(level=1/0)> with
+    pval = (ShapedArray(float64[]), None)
+    recipe = JaxprEqnRecipe(eqn_id=<object object at 0x7f17b81c02e0>, in_tracers=(Traced<ShapedArray(float64[17]):JaxprTrace(level=1/0)>,), out_tracer_refs=[<weakref at 0x7f18730e39c0; to 'JaxprTracer' at 0x7f18730e3dd0>], out_avals=[ShapedArray(float64[])], primitive=pjit, params={'jaxpr': { lambda ; a:f64[17]. let
+    b:f64[] = reduce_sum[axes=(0,)] a
+    c:f64[] = div b 17.0
+  in (c,) }, 'in_shardings': (UnspecifiedValue,), 'out_shardings': (UnspecifiedValue,), 'resource_env': None, 'donated_invars': (False,), 'name': '_average', 'keep_unused': False, 'inline': True}, effects=set(), source_info=SourceInfo(traceback=<jaxlib.xla_extension.Traceback object at 0x7f1714fcc270>, name_stack=NameStack(stack=(Transform(name='jvp'),))))
+This is 16th reweight_loading results from dmff code. 2.101307189542484 Traced<ConcreteArray(2.101307189542484, dtype=float64)>with<JVPTrace(level=2/0)> with
+  primal = Array(2.10130719, dtype=float64)
+  tangent = Traced<ShapedArray(float64[])>with<JaxprTrace(level=1/0)> with
+    pval = (ShapedArray(float64[]), None)
+    recipe = JaxprEqnRecipe(eqn_id=<object object at 0x7f186b4b97d0>, in_tracers=(Traced<ShapedArray(float64[17]):JaxprTrace(level=1/0)>,), out_tracer_refs=[<weakref at 0x7f1872fafd80; to 'JaxprTracer' at 0x7f197d883ec0>], out_avals=[ShapedArray(float64[])], primitive=pjit, params={'jaxpr': { lambda ; a:f64[17]. let
+    b:f64[] = reduce_sum[axes=(0,)] a
+    c:f64[] = div b 17.0
+  in (c,) }, 'in_shardings': (UnspecifiedValue,), 'out_shardings': (UnspecifiedValue,), 'resource_env': None, 'donated_invars': (False,), 'name': '_average', 'keep_unused': False, 'inline': True}, effects=set(), source_info=SourceInfo(traceback=<jaxlib.xla_extension.Traceback object at 0x7f186979b8f0>, name_stack=NameStack(stack=(Transform(name='jvp'),))))
+This is 9th time  Loss: 4.102692660482159 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.68468385 0.16200211 0.24483689 0.07462855 0.65757    0.22469   ]

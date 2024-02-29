@@ -1,0 +1,92 @@
+Warning on use of the timeseries module: If the inherent timescales of the system are long compared to those being analyzed, this statistical inefficiency may be an underestimate.  The estimate presumes the use of many statistically independent samples.  Tests should be performed to assess whether this condition is satisfied.   Be cautious in the interpretation of the data.
+0 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+Aiida based GCMC sampling started.
+This is the final pk values:  343599
+[0.6671203703940997, 0.9308796295917271]
+[0.24030165348645946, 0.4320029725599273]
+This is loss function:  0.92569537393944
+
+This is 0th time  Loss: 0.9812901451954432 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.56065054 0.11956916 0.03939106 0.06208707 0.65757    0.22469   ]
+1 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+Aiida based GCMC sampling started.
+This is the final pk values:  343728
+[0.49801851849557255, 0.8239814814927022]
+[0.24030165348645946, 0.4320029725599273]
+This is loss function:  0.649695373941888
+
+This is 1th time  Loss: 0.6087411255876002 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.55077785 0.10979661 0.02975039 0.05234471 0.65757    0.22469   ]
+2 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+Aiida based GCMC sampling started.
+This is the final pk values:  343810
+[0.44261111109607304, 0.6614537036941313]
+[0.24030165348645946, 0.4320029725599273]
+This is loss function:  0.4317601887438175
+
+This is 2th time  Loss: 0.4551463543457701 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.54082787 0.09990487 0.02160825 0.04249964 0.65757    0.22469   ]
+3 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+Aiida based GCMC sampling started.
+This is the final pk values:  343924
+[0.3242592592971221, 0.5338611110952588]
+[0.24030165348645946, 0.4320029725599273]
+This is loss function:  0.18581574434599415
+
+This is 3th time  Loss: 0.24926400140459368 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.53152214 0.0906002  0.01380113 0.03343031 0.65757    0.22469   ]
+4 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+Aiida based GCMC sampling started.
+This is the final pk values:  344172
+[0.2534722221977542, 0.43133333329617546]
+[0.24030165348645946, 0.4320029725599273]
+This is loss function:  0.01384020797504662
+
+This is 4th time  Loss: 0.03483857397542864 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.52441007 0.08343713 0.01380113 0.02642107 0.65757    0.22469   ]
+5 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+
+This is 5th time  Loss: 0.15596475676534108 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.51901898 0.07815652 0.01380113 0.02125044 0.65757    0.22469   ]
+6 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+
+This is 6th time  Loss: 0.24746802473919724 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.51547397 0.07504575 0.01380113 0.02125044 0.65757    0.22469   ]
+7 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+
+Traceback (most recent call last):
+  File "/home/yutao/project/github/DMFF/UFF_opt/long_opt.py", line 297, in <module>
+    traj_dict = analyse_traj(paramset, lj_gen, dest_path="./traj1/", interval=15)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yutao/project/github/DMFF/UFF_opt/long_opt.py", line 236, in analyse_traj
+    topo, pos, num = simple_merge("scaled_frame.pdb",os.path.join(gas_dir,gas_path))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yutao/project/github/DMFF/UFF_opt/utils.py", line 199, in simple_merge
+    gas = app.PDBFile(loading)
+          ^^^^^^^^^^^^^^^^^^^^
+  File "/home/yutao/anaconda3/envs/dmff/lib/python3.11/site-packages/openmm/app/pdbfile.py", line 95, in __init__
+    pdb = PdbStructure(inputfile, load_all_models=True, extraParticleIdentifier=extraParticleIdentifier)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yutao/anaconda3/envs/dmff/lib/python3.11/site-packages/openmm/app/internal/pdbstructure.py", line 153, in __init__
+    self._load(input_stream)
+  File "/home/yutao/anaconda3/envs/dmff/lib/python3.11/site-packages/openmm/app/internal/pdbstructure.py", line 186, in _load
+    self._current_model._finalize()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute '_finalize'
