@@ -1,0 +1,25 @@
+Warning on use of the timeseries module: If the inherent timescales of the system are long compared to those being analyzed, this statistical inefficiency may be an underestimate.  The estimate presumes the use of many statistically independent samples.  Tests should be performed to assess whether this condition is satisfied.   Be cautious in the interpretation of the data.
+/home/yutao/anaconda3/envs/dmff/lib/python3.11/site-packages/ase/utils/__init__.py:62: FutureWarning: Please use atoms.cell.cellpar() instead
+  warnings.warn(warning)
+0 optimization started
+As long as it finishes, 1
+Script encountered an error: 03/21/2024 09:14:27 PM <2345750> aiida.orm.nodes.process.workflow.workchain.WorkChainNode: [REPORT] [513102|IsothermWorkChain|run_zeopp]: Running zeo++ block and volpo for CO2 Calculation<513111>
+03/21/2024 09:16:30 PM <2345750> aiida.orm.nodes.process.workflow.workchain.WorkChainNode: [REPORT] [513102|IsothermWorkChain|should_run_widom]: No accessible pore volume to CO2: stop
+03/21/2024 09:16:30 PM <2345750> aiida.orm.nodes.process.workflow.workchain.WorkChainNode: [REPORT] [513102|IsothermWorkChain|return_output_parameters]: Isotherm CO2 @ 303K computed: ouput Dict<513148>
+/home/yutao/.aiida_venvs/aiida/lib/python3.9/site-packages/aiida/orm/querybuilder.py:1385: AiidaEntryPointWarning: Process type 'aiida_raspa.workchains.base.RaspaBaseWorkChain' does not correspond to a registered entry. This risks queries to fail once the location of the process class changes. Add an entry point for 'aiida_raspa.workchains.base.RaspaBaseWorkChain' to remove this warning.
+  warnings.warn(
+Traceback (most recent call last):
+  File "/home/yutao/project/aiida/applications/./isotherm_workchain.py", line 128, in <module>
+    p_ls = outdict_ls[0][0].get_dict()['isotherm']['pressure']
+KeyError: 'isotherm'
+
+Traceback (most recent call last):
+  File "/home/yutao/project/github/DMFF/UFF_opt/fit_isotherm_copy.py", line 388, in <module>
+    v, g = v_and_g(paramset)
+           ^^^^^^^^^^^^^^^^^
+  File "/home/yutao/project/github/DMFF/UFF_opt/fit_isotherm_copy.py", line 374, in loss
+    for jdx in range(len(traj_dict[idx]['structure'])):  
+                         ~~~~~~~~~^^^^^
+KeyError: 1
+--------------------
+For simplicity, JAX has removed its internal frames from the traceback of the following exception. Set JAX_TRACEBACK_FILTERING=off to include these.

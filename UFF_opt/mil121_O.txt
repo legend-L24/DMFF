@@ -1,0 +1,1429 @@
+Warning on use of the timeseries module: If the inherent timescales of the system are long compared to those being analyzed, this statistical inefficiency may be an underestimate.  The estimate presumes the use of many statistically independent samples.  Tests should be performed to assess whether this condition is satisfied.   Be cautious in the interpretation of the data.
+/home/yutao/anaconda3/envs/dmff/lib/python3.11/site-packages/ase/utils/__init__.py:62: FutureWarning: Please use atoms.cell.cellpar() instead
+  warnings.warn(warning)
+0 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+This is the final pk values:  553247
+[1.588402777766447, 1.772263888862567, 1.918499999959453]
+[0.12809589661779805, 0.18814084815739018, 0.2581932916202488]
+This is loss function:  4.70473663019303
+
+Directory created: ./traj4/1
+Directory created: ./traj4/2
+Directory created: ./traj4/3
+Range of energy: -610.4937427734062 -- -346.8769548804662
+Range of energy: -672.7730112740337 -- -351.96154342180023
+Range of energy: -698.1582539155354 -- -390.21568869050054
+This is before derivative [0.46264167 7.8320344  0.30076677 6.69854797 8.89703066 7.16608524]
+This is 0th time  Loss: 3.360569963604563 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [2.10525 0.43979 0.18436 0.24079 0.65757 0.22469]
+1 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+This is the final pk values:  553559
+[1.5639305555669523, 1.7316249999634317, 1.8642361110605765]
+[0.12809589661779805, 0.18814084815739018, 0.2581932916202488]
+This is loss function:  4.585361630195523
+
+Range of energy: -622.1541422336749 -- -323.5726598866762
+Range of energy: -665.7572039603551 -- -416.2007639971464
+Range of energy: -779.907723415883 -- -435.9573096464996
+This is before derivative [ 0.55721059  9.80223971  2.08417971  8.61728449 11.3886292   9.00817835]
+This is 1th time  Loss: 3.270569963604563 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [2.09524458 0.43979    0.18436    0.23080275 0.65757    0.22469   ]
+2 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+This is the final pk values:  555338
+[1.5369027777675353, 1.7168611110637204, 1.8720277777604233]
+[0.12809589661779805, 0.18814084815739018, 0.2581932916202488]
+This is loss function:  4.551361630196242
+
+Range of energy: -595.9753410865821 -- -228.86060515981956
+Range of energy: -626.8603026937759 -- -408.41633935803
+Range of energy: -735.814450888953 -- -458.3769256682159
+This is before derivative [0.46759433 8.12830525 1.40427099 7.2220845  9.48922877 7.3633493 ]
+This is 2th time  Loss: 3.205569963604563 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [2.0852816  0.43979    0.18436    0.22083897 0.65757    0.22469   ]
+3 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+This is the final pk values:  557535
+[1.4324583332697138, 1.6101666666659518, 1.7764027777624736]
+[0.12809589661779805, 0.18814084815739018, 0.2581932916202488]
+This is loss function:  4.244597741302702
+
+Range of energy: -618.8486195106318 -- -311.58099395297586
+Range of energy: -686.7968972827234 -- -308.6181118426023
+Range of energy: -714.1496945911832 -- -368.01081467965014
+This is before derivative [ 0.59721462 10.8027933   1.90159794  9.23292491 12.31475443  9.40288708]
+This is 3th time  Loss: 3.0655699636045632 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [2.07526369 0.43979    0.18436    0.21081983 0.65757    0.22469   ]
+4 optimization started
+As long as it finishes, 1
+Script encountered an error: 04/04/2024 07:40:18 PM <37724> aiida.orm.nodes.process.workflow.workchain.WorkChainNode: [REPORT] [559469|IsothermWorkChain|run_zeopp]: Running zeo++ block and volpo for CO2 Calculation<559478>
+04/04/2024 07:42:21 PM <37724> aiida.orm.nodes.process.workflow.workchain.WorkChainNode: [REPORT] [559469|IsothermWorkChain|should_run_widom]: Found accessible pore volume for CO2: continue
+04/04/2024 07:42:21 PM <37724> aiida.orm.nodes.process.workflow.workchain.WorkChainNode: [REPORT] [559469|IsothermWorkChain|should_run_widom]: Found 0 blocking spheres
+04/04/2024 07:42:22 PM <37724> aiida.orm.nodes.process.workflow.workchain.WorkChainNode: [REPORT] [559469|IsothermWorkChain|run_raspa_widom]: Running Raspa Widom CO2 @ 273K for the Henry coefficient
+04/04/2024 07:42:22 PM <37724> aiida.orm.nodes.process.workflow.workchain.WorkChainNode: [REPORT] [559593|RaspaBaseWorkChain|run_process]: launching RaspaCalculation<559597> iteration #1
+04/04/2024 07:44:25 PM <37724> aiida.orm.nodes.process.workflow.workchain.WorkChainNode: [REPORT] [559593|RaspaBaseWorkChain|results]: work chain completed after 1 iterations
+04/04/2024 07:44:25 PM <37724> aiida.orm.nodes.process.workflow.workchain.WorkChainNode: [REPORT] [559593|RaspaBaseWorkChain|on_terminated]: remote folders will not be cleaned
+04/04/2024 07:44:25 PM <37724> aiida.orm.nodes.process.workflow.workchain.WorkChainNode: [REPORT] [559469|IsothermWorkChain|should_run_gcmc]: kH larger than the threshold for CO2: continue
+04/04/2024 07:44:26 PM <37724> aiida.orm.nodes.process.workflow.workchain.WorkChainNode: [REPORT] [559469|IsothermWorkChain|init_raspa_gcmc]: CO2: Kh(mol/kg/Pa)=7.86e-04 POAV(cm3/g)=0.367 Qsat(mol/kg)=7.79
+04/04/2024 07:44:26 PM <37724> aiida.orm.nodes.process.workflow.workchain.WorkChainNode: [REPORT] [559469|IsothermWorkChain|init_raspa_gcmc]: Now evaluating the isotherm CO2 @ 273K for 3 pressure points
+04/04/2024 07:44:26 PM <37724> aiida.orm.nodes.process.workflow.workchain.WorkChainNode: [REPORT] [559469|IsothermWorkChain|run_raspa_gcmc]: Running Raspa GCMC CO2 @ 273K/0.047bar (pressure 1 of 3)
+04/04/2024 07:44:26 PM <37724> aiida.orm.nodes.process.workflow.workchain.WorkChainNode: [REPORT] [559722|RaspaBaseWorkChain|run_process]: launching RaspaCalculation<559726> iteration #1
+04/04/2024 07:49:52 PM <37724> aiida.orm.nodes.process.workflow.workchain.WorkChainNode: [REPORT] [559722|RaspaBaseWorkChain|results]: work chain completed after 1 iterations
+04/04/2024 07:49:52 PM <37724> aiida.orm.nodes.process.workflow.workchain.WorkChainNode: [REPORT] [559722|RaspaBaseWorkChain|on_terminated]: remote folders will not be cleaned
+04/04/2024 07:49:52 PM <37724> aiida.orm.nodes.process.workflow.workchain.WorkChainNode: [REPORT] [559469|IsothermWorkChain|run_raspa_gcmc]: Running Raspa GCMC CO2 @ 273K/0.062bar (pressure 2 of 3)
+04/04/2024 07:49:53 PM <37724> aiida.orm.nodes.process.workflow.workchain.WorkChainNode: [REPORT] [560060|RaspaBaseWorkChain|run_process]: launching RaspaCalculation<560064> iteration #1
+04/04/2024 07:55:18 PM <37724> aiida.orm.nodes.process.workflow.workchain.WorkChainNode: [REPORT] [560060|RaspaBaseWorkChain|results]: work chain completed after 1 iterations
+04/04/2024 07:55:18 PM <37724> aiida.orm.nodes.process.workflow.workchain.WorkChainNode: [REPORT] [560060|RaspaBaseWorkChain|on_terminated]: remote folders will not be cleaned
+04/04/2024 07:55:18 PM <37724> aiida.orm.nodes.process.workflow.workchain.WorkChainNode: [REPORT] [559469|IsothermWorkChain|run_raspa_gcmc]: Running Raspa GCMC CO2 @ 273K/0.081bar (pressure 3 of 3)
+04/04/2024 07:55:19 PM <37724> aiida.orm.nodes.process.workflow.workchain.WorkChainNode: [REPORT] [560327|RaspaBaseWorkChain|run_process]: launching RaspaCalculation<560331> iteration #1
+04/04/2024 08:00:44 PM <37724> aiida.orm.nodes.process.workflow.workchain.WorkChainNode: [REPORT] [560327|RaspaBaseWorkChain|results]: work chain completed after 1 iterations
+04/04/2024 08:00:44 PM <37724> aiida.orm.nodes.process.workflow.workchain.WorkChainNode: [REPORT] [560327|RaspaBaseWorkChain|on_terminated]: remote folders will not be cleaned
+04/04/2024 08:00:44 PM <37724> aiida.orm.nodes.process.workflow.workchain.WorkChainNode: [REPORT] [559469|IsothermWorkChain|return_output_parameters]: Isotherm CO2 @ 273K computed: ouput Dict<560554>
+/home/yutao/.aiida_venvs/aiida/lib/python3.9/site-packages/aiida/orm/querybuilder.py:1385: AiidaEntryPointWarning: Process type 'aiida_raspa.workchains.base.RaspaBaseWorkChain' does not correspond to a registered entry. This risks queries to fail once the location of the process class changes. Add an entry point for 'aiida_raspa.workchains.base.RaspaBaseWorkChain' to remove this warning.
+  warnings.warn(
+Traceback (most recent call last):
+  File "/home/yutao/project/aiida/applications/./isotherm_workchain.py", line 112, in <module>
+    raise ValueError("Wrong number of files")
+ValueError: Wrong number of files
+
+Range of energy: -615.0883193118673 -- -309.6200235337868
+Range of energy: -683.0071770847485 -- -306.69698601425426
+Range of energy: -682.057703873656 -- -365.2654450709955
+This is before derivative [ 0.59968228 10.93717408  1.08454533  9.38602756 11.95486148  9.30094312]
+This is 4th time  Loss: 3.050569963604563 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [2.0652051 0.43979   0.18436   0.2007553 0.65757   0.22469  ]
+5 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+This is the final pk values:  560647
+[1.352763888871433, 1.524111111067794, 1.7020694443640216]
+[0.12809589661779805, 0.18814084815739018, 0.2581932916202488]
+This is loss function:  4.004514407907812
+
+Range of energy: -585.798809838518 -- -282.2014788050852
+Range of energy: -695.130268963549 -- -288.984999187877
+Range of energy: -618.2192281819957 -- -368.50216683559177
+This is before derivative [ 0.66230979 10.25392934  1.3444018   9.83875164 11.28077572  9.11629578]
+This is 5th time  Loss: 2.8755699636045633 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [2.05509313 0.43979    0.18436    0.19064557 0.65757    0.22469   ]
+6 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+This is the final pk values:  561683
+[1.2994861110725122, 1.4763749999688265, 1.670916666664668]
+[0.12809589661779805, 0.18814084815739018, 0.2581932916202488]
+This is loss function:  3.87234774131057
+
+Range of energy: -553.6787697423256 -- -232.91941327705825
+Range of energy: -577.1443969313677 -- -331.02621422066557
+Range of energy: -635.5859918278383 -- -390.2592386500652
+This is before derivative [0.55705151 9.06094427 1.41666465 8.26537076 9.67489515 7.73381546]
+This is 6th time  Loss: 2.775569963604563 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [2.0450073  0.43979    0.18436    0.18057502 0.65757    0.22469   ]
+7 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+This is the final pk values:  562795
+[1.2530555555734935, 1.4596527777691681, 1.640152777765353]
+[0.12809589661779805, 0.18814084815739018, 0.2581932916202488]
+This is loss function:  3.7784310747125778
+
+Range of energy: -461.1071491567521 -- -188.65029793848566
+Range of energy: -520.9506763350786 -- -302.0360890308549
+Range of energy: -568.189389661462 -- -410.70370085689086
+This is before derivative [0.30701131 6.16904556 1.18847415 5.67390072 6.77501894 5.02482621]
+This is 7th time  Loss: 2.658069963604563 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [2.03529578 0.43979    0.18436    0.1707555  0.65757    0.22469   ]
+8 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+This is the final pk values:  563728
+[1.173222222175216, 1.3584861110712654, 1.5650833332669398]
+[0.12809589661779805, 0.18814084815739018, 0.2581932916202488]
+This is loss function:  3.522361630117984
+
+Range of energy: -438.79037428844595 -- -138.02690088216957
+Range of energy: -498.15358990746347 -- -254.40381930439372
+Range of energy: -664.3373373418849 -- -289.3462995469992
+This is before derivative [0.53131413 9.07212454 1.24995534 9.01183701 9.62074393 7.29130594]
+This is 8th time  Loss: 2.493069963604563 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [2.02554247 0.43979    0.18436    0.16086071 0.65757    0.22469   ]
+9 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+This is the final pk values:  564544
+[1.1380972221759291, 1.3315555555718341, 1.5448749999673201]
+[0.12809589661779805, 0.18814084815739018, 0.2581932916202488]
+This is loss function:  3.4400977413196463
+
+Range of energy: -410.7016565027687 -- -97.50322763593076
+Range of energy: -547.5034750828335 -- -214.3168955972438
+Range of energy: -583.5263161828907 -- -375.12228088883285
+This is before derivative [0.54883743 9.45815834 1.45437033 9.85094175 9.82124768 7.68593715]
+This is 9th time  Loss: 2.430569963604563 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [2.01573827 0.43979    0.18436    0.15086706 0.65757    0.22469   ]
+10 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+This is the final pk values:  565163
+[1.1209027777763274, 1.2818333332729266, 1.4580277777691732]
+[0.12809589661779805, 0.18814084815739018, 0.2581932916202488]
+This is loss function:  3.286333852422991
+
+Range of energy: -571.8556648363531 -- -197.06123477347984
+Range of energy: -479.4483450941255 -- -265.0817548928113
+Range of energy: -510.47360925222415 -- -266.7534786141465
+This is before derivative [ 0.64827658 10.29279327  1.33042738 11.75500957 10.87878631  8.56852676]
+This is 10th time  Loss: 2.365569963604563 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [2.00580908 0.43979    0.18436    0.14072814 0.65757    0.22469   ]
+11 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+This is the final pk values:  565750
+[1.032013888878212, 1.1640277777753867, 1.363847222171158]
+[0.12809589661779805, 0.18814084815739018, 0.2581932916202488]
+This is loss function:  2.9854588524293195
+
+Range of energy: -374.2277683006302 -- -138.21659063013783
+Range of energy: -456.22682153459994 -- -220.00578552657814
+Range of energy: -506.2330624975816 -- -232.19757549749437
+This is before derivative [ 0.44900477  8.37843191  1.35172089 10.01498343  8.63674332  6.51436996]
+This is 11th time  Loss: 2.138069963604563 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.99598589 0.43979    0.18436    0.13054341 0.65757    0.22469   ]
+12 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+This is the final pk values:  566357
+[0.9627361110796294, 1.1248472221762091, 1.392041666670591]
+[0.12809589661779805, 0.18814084815739018, 0.2581932916202488]
+This is loss function:  2.9051949635309926
+
+Range of energy: -365.6874479333801 -- -170.99406968134178
+Range of energy: -470.881909436654 -- -178.31296609225063
+Range of energy: -524.739872068722 -- -263.32977266049136
+This is before derivative [0.50797392 8.16012395 1.09775447 9.16676948 7.93623456 6.31061865]
+This is 12th time  Loss: 2.115569963604563 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.98617547 0.43979    0.18436    0.12036971 0.65757    0.22469   ]
+13 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+This is the final pk values:  566906
+[0.8996944443810088, 1.1291111110761425, 1.2757083332730266]
+[0.12809589661779805, 0.18814084815739018, 0.2581932916202488]
+This is loss function:  2.730083852334741
+
+Range of energy: -397.0929345377787 -- -109.03781015366567
+Range of energy: -420.96580831048834 -- -161.41676738819862
+Range of energy: -538.7131610900838 -- -278.40219632089213
+This is before derivative [ 0.5593871   9.67243857  0.88278287 12.04717984  9.69960489  7.56871528]
+This is 13th time  Loss: 1.810569963604563 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.97631787 0.43979    0.18436    0.11006667 0.65757    0.22469   ]
+14 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+This is the final pk values:  567455
+[0.8358888888823278, 1.0262222221783228, 1.202305555574566]
+[0.12809589661779805, 0.18814084815739018, 0.2581932916202488]
+This is loss function:  2.4899866302397795
+
+Range of energy: -448.14504417058214 -- -128.00625049045954
+Range of energy: -382.3996729432125 -- -133.20822071796343
+Range of energy: -447.114524769663 -- -239.44023033924591
+This is before derivative [0.47957105 8.41639463 1.03688497 9.28174827 8.19491515 6.45278034]
+This is 14th time  Loss: 1.745569963604563 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.96651322 0.43979    0.18436    0.09979772 0.65757    0.22469   ]
+15 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+This is the final pk values:  567963
+[0.7755972221835904, 0.9908611110790643, 1.1571111110755505]
+[0.12809589661779805, 0.18814084815739018, 0.2581932916202488]
+This is loss function:  2.349139407942768
+
+Range of energy: -313.0100820770724 -- -104.5907458092278
+Range of energy: -373.5674774438697 -- -146.42166787455108
+Range of energy: -518.4772570284797 -- -151.22542853617526
+This is before derivative [ 0.63821787 11.48658109  1.41162254 14.4326825  11.02056421  8.49574892]
+This is 15th time  Loss: 1.680569963604563 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.95658026 0.43979    0.18436    0.08933514 0.65757    0.22469   ]
+16 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+This is the final pk values:  568367
+[0.7285833332846193, 0.8605277777818011, 1.0866666666770157]
+[0.12809589661779805, 0.18814084815739018, 0.2581932916202488]
+This is loss function:  2.1013477413479995
+
+Range of energy: -292.5464485075996 -- -47.963667538309075
+Range of energy: -289.53133292736123 -- -17.448107369229838
+Range of energy: -436.9923697090343 -- -140.22261237242446
+This is before derivative [ 0.63379248 11.17192213  1.68757438 14.65715472 10.44457523  7.79197783]
+This is 16th time  Loss: 1.283069963604563 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.94654576 0.43979    0.18436    0.07870864 0.65757    0.22469   ]
+17 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+This is the final pk values:  568730
+[0.6682361110858536, 0.8087638888829304, 1.0392361110780126]
+[0.12809589661779805, 0.18814084815739018, 0.2581932916202488]
+This is loss function:  1.9418060746513597
+
+Range of energy: -376.0023264247744 -- -95.66630861164936
+Range of energy: -333.05551306110215 -- -120.8418974679911
+Range of energy: -415.56376729839405 -- -172.09520230952353
+This is before derivative [ 0.50646604  8.95887317  0.72571935 13.31441843  8.39582798  6.42180393]
+This is 17th time  Loss: 1.4005699636045628 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.93656448 0.43979    0.18436    0.06799536 0.65757    0.22469   ]
+18 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+This is the final pk values:  569103
+[0.6041249999872612, 0.7554722221840451, 0.9283194443803745]
+[0.12809589661779805, 0.18814084815739018, 0.2581932916202488]
+This is loss function:  1.7134866301562437
+
+Range of energy: -278.8738430604034 -- -65.5283328350711
+Range of energy: -283.4261240980696 -- -54.610161097060775
+Range of energy: -371.53651611286125 -- -111.66034247515172
+This is before derivative [ 0.51421365  9.02726781  1.09682    13.4884574   8.25807509  6.35612452]
+This is 18th time  Loss: 1.150569963604563 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.92661899 0.43979    0.18436    0.05720502 0.65757    0.22469   ]
+19 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+This is the final pk values:  569454
+[0.5249444443889055, 0.6918472221853604, 0.8389861110822447]
+[0.12809589661779805, 0.18814084815739018, 0.2581932916202488]
+This is loss function:  1.4813477412610738
+
+Range of energy: -240.7675198386653 -- -36.14297711310148
+Range of energy: -304.62367115851004 -- -59.96950763124901
+Range of energy: -335.8597320159753 -- -103.6907405904991
+This is before derivative [ 0.5121005   9.6024768   1.94338769 14.58830624  8.66096733  6.48633099]
+This is 19th time  Loss: 0.953069963604563 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.91670645 0.43979    0.18436    0.04630983 0.65757    0.22469   ]
+20 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+This is the final pk values:  569762
+[0.46104166669025587, 0.5719166666879125, 0.7313611110845487]
+[0.12809589661779805, 0.18814084815739018, 0.2581932916202488]
+This is loss function:  1.1898894080672802
+
+Range of energy: -216.21666926319645 -- -35.51467339010205
+Range of energy: -253.85968685069577 -- -19.185049616696894
+Range of energy: -301.13283949399784 -- -61.76478135271029
+This is before derivative [ 0.46391432  8.78205765  1.02549108 15.39857314  7.46819059  5.63301987]
+This is 20th time  Loss: 0.818069963604563 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.90688387 0.43979    0.18436    0.03530028 0.65757    0.22469   ]
+21 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+This is the final pk values:  570069
+[0.41590277779120993, 0.5549583332882712, 0.6949999999853113]
+[0.12809589661779805, 0.18814084815739018, 0.2581932916202488]
+This is loss function:  1.0914310746693554
+
+Range of energy: -247.0180714733236 -- -19.317218185021986
+Range of energy: -251.19150672861866 -- -65.36854609353044
+Range of energy: -251.3924147355228 -- -76.82302585636242
+This is before derivative [ 0.3966803   7.34276954  0.98224383 15.0187818   6.24111351  4.65126524]
+This is 21th time  Loss: 0.6355699636045631 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.89723306 0.43979    0.18436    0.02421215 0.65757    0.22469   ]
+22 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+This is the final pk values:  570372
+[0.35081944439258567, 0.46504166669017133, 0.5894999999875411]
+[0.12809589661779805, 0.18814084815739018, 0.2581932916202488]
+This is loss function:  0.830931074674861
+
+Range of energy: -159.94351385903002 -- -24.744238562431384
+Range of energy: -240.71023698349583 -- -33.57605006507168
+Range of energy: -234.41043658766955 -- -67.2302862846137
+This is before derivative [ 0.33709044  5.76080503  0.63408472 15.17941155  4.70031132  3.64614073]
+This is 22th time  Loss: 0.5505699636045629 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.88782323 0.43979    0.18436    0.02421215 0.65757    0.22469   ]
+23 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+This is the final pk values:  570680
+[0.3685972221922098, 0.45501388889038336, 0.5861527777876118]
+[0.12809589661779805, 0.18814084815739018, 0.2581932916202488]
+This is loss function:  0.835333852474768
+
+Range of energy: -165.48630611256073 -- -33.66172538540256
+Range of energy: -186.63431018951314 -- -24.27025433695398
+Range of energy: -218.9845329541565 -- -53.00223589431955
+This is before derivative [ 0.30896313  5.33891716  0.54949177 14.04537872  4.34363325  3.41511278]
+This is 23th time  Loss: 0.45806996360456304 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.87867124 0.43979    0.18436    0.02421215 0.65757    0.22469   ]
+24 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+This is the final pk values:  570988
+[0.3599166666923931, 0.459999999990278, 0.6007222221873156]
+[0.12809589661779805, 0.18814084815739018, 0.2581932916202488]
+This is loss function:  0.8462088524745497
+
+Range of energy: -184.71465040328144 -- -34.54563756383799
+Range of energy: -226.99573539870363 -- -17.973655677372594
+Range of energy: -231.8805922723708 -- -54.30199359473953
+This is before derivative [ 0.327499    5.87529258  0.91764839 14.35256651  4.90402311  3.68240109]
+This is 24th time  Loss: 0.46306996360456304 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.86971615 0.43979    0.18436    0.02421215 0.65757    0.22469   ]
+25 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+This is the final pk values:  571302
+[0.3399999999928142, 0.43498611109080665, 0.5748055555878514]
+[0.12809589661779805, 0.18814084815739018, 0.2581932916202488]
+This is loss function:  0.7753616302760353
+
+Range of energy: -162.59606456827458 -- -16.02913447081784
+Range of energy: -169.3728111962064 -- 0.0
+Range of energy: -184.0813767302394 -- 0.0
+This is before derivative [ 0.24987695  4.72945417  0.68103419 11.40893046  3.74659681  2.82080908]
+This is 25th time  Loss: 0.37556996360456296 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.86106839 0.43979    0.18436    0.02421215 0.65757    0.22469   ]
+26 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+This is the final pk values:  571605
+[0.3552777777924912, 0.4565833332903503, 0.560458333288155]
+[0.12809589661779805, 0.18814084815739018, 0.2581932916202488]
+This is loss function:  0.7978894079755594
+
+Range of energy: -186.2900709549786 -- -16.5839448919157
+Range of energy: -199.44438272895047 -- 0.0
+Range of energy: -213.9951297041904 -- -51.1758311338436
+This is before derivative [ 0.31904692  6.12196603  1.06050602 13.04222847  5.01780448  3.78392063]
+This is 26th time  Loss: 0.43806996360456296 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.85257216 0.43979    0.18436    0.02421215 0.65757    0.22469   ]
+27 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+This is the final pk values:  571908
+[0.34011111109281184, 0.4597361110902836, 0.5730138888878894]
+[0.12809589661779805, 0.18814084815739018, 0.2581932916202488]
+This is loss function:  0.7984310746755479
+
+Range of energy: -177.0423242370239 -- -33.546454572716144
+Range of energy: -171.16464736900903 -- -21.6474125174031
+Range of energy: -208.87164897228962 -- -51.69120230071552
+This is before derivative [ 0.28306616  5.5028429   0.94658606 11.08803262  4.45085974  3.43265709]
+This is 27th time  Loss: 0.47056996360456305 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.84427207 0.43979    0.18436    0.02421215 0.65757    0.22469   ]
+28 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+This is the final pk values:  572196
+[0.33737499999286963, 0.43948611109071156, 0.5540833332882897]
+[0.12809589661779805, 0.18814084815739018, 0.2581932916202488]
+This is loss function:  0.7565144079764339
+
+Range of energy: -148.41908226780757 -- -18.357116094824125
+Range of energy: -218.4589551892739 -- 0.0
+Range of energy: -239.62402810692146 -- -52.99690493709908
+This is before derivative [ 0.32210379  5.53449247  0.83671037 10.44858558  4.36713183  3.44082233]
+This is 28th time  Loss: 0.35806996360456295 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.83607541 0.43979    0.18436    0.02421215 0.65757    0.22469   ]
+29 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+This is the final pk values:  572495
+[0.3454861110926983, 0.43558333329079413, 0.6194861110868839]
+[0.12809589661779805, 0.18814084815739018, 0.2581932916202488]
+This is loss function:  0.8261255190749393
+
+Range of energy: -142.84322106039596 -- 0.0
+Range of energy: -188.4803510600911 -- 0.0
+Range of energy: -328.30456955351906 -- -19.493839550816126
+This is before derivative [ 0.43122861  7.51917543  1.34431204 15.98821836  6.19100628  4.70673257]
+This is 29th time  Loss: 0.448069963604563 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.82778191 0.43979    0.18436    0.02421215 0.65757    0.22469   ]
+30 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+This is the final pk values:  572784
+[0.33204166669298224, 0.46838888889010066, 0.5687083332879806]
+[0.12809589661779805, 0.18814084815739018, 0.2581932916202488]
+This is loss function:  0.7947088524756265
+
+Range of energy: -181.02783262625456 -- 0.0
+Range of energy: -246.36895929169341 -- -35.19364647149304
+Range of energy: -228.04553282916558 -- -68.43039434772004
+This is before derivative [ 0.36575523  6.32805882  0.99578242 15.89515088  5.41001344  4.03891036]
+This is 30th time  Loss: 0.5205699636045631 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.81951021 0.43979    0.18436    0.02421215 0.65757    0.22469   ]
+31 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+This is the final pk values:  573072
+[0.3352777777929139, 0.4442083332906119, 0.5731666666878861]
+[0.12809589661779805, 0.18814084815739018, 0.2581932916202488]
+This is loss function:  0.7782227413759748
+
+Range of energy: -138.0994183187066 -- -12.972736199276907
+Range of energy: -179.68029782830757 -- -23.996393754014914
+Range of energy: -182.33880909332 -- -36.31938563692346
+This is before derivative [0.25490908 4.70230369 0.42142464 9.77437777 3.65795482 2.76560284]
+This is 31th time  Loss: 0.39056996360456303 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.81145605 0.43979    0.18436    0.02421215 0.65757    0.22469   ]
+32 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+This is the final pk values:  573360
+[0.3522083332925563, 0.42786111109095726, 0.5719444443879123]
+[0.12809589661779805, 0.18814084815739018, 0.2581932916202488]
+This is loss function:  0.7775838523759888
+
+Range of energy: -114.12561391441501 -- 0.0
+Range of energy: -177.21544324036665 -- 0.0
+Range of energy: -215.1328798897669 -- -53.58479004874653
+This is before derivative [0.25075093 4.56031484 0.91896952 9.72849477 3.58902683 2.75766315]
+This is 32th time  Loss: 0.48056996360456294 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.80360322 0.43979    0.18436    0.02421215 0.65757    0.22469   ]
+33 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+This is the final pk values:  573648
+[0.3498472221926061, 0.45858333329030804, 0.5648194443880629]
+[0.12809589661779805, 0.18814084815739018, 0.2581932916202488]
+This is loss function:  0.79881996347554
+
+Range of energy: -161.44703611016843 -- -14.636250862778066
+Range of energy: -184.9200678443416 -- -39.66121206200269
+Range of energy: -215.74215649816 -- -34.20877917434224
+This is before derivative [ 0.32401013  5.51893819  0.8418076  13.71664665  4.55064229  3.50724856]
+This is 33th time  Loss: 0.4480699636045631 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.79579043 0.43979    0.18436    0.02421215 0.65757    0.22469   ]
+34 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+This is the final pk values:  573945
+[0.3345416666929294, 0.4428333332906409, 0.5772638888877996]
+[0.12809589661779805, 0.18814084815739018, 0.2581932916202488]
+This is loss function:  0.7802088524759327
+
+Range of energy: -158.77652762303032 -- 0.0
+Range of energy: -239.94339939404892 -- -33.345449496594625
+Range of energy: -236.05685129523934 -- -52.09757866678688
+This is before derivative [ 0.31701916  5.30988837  0.8432943  13.87804705  4.37632428  3.29804424]
+This is 34th time  Loss: 0.440569963604563 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.78802359 0.43979    0.18436    0.02421215 0.65757    0.22469   ]
+35 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+This is the final pk values:  574243
+[0.3488749999926266, 0.43594444439078656, 0.5704999999879427]
+[0.12809589661779805, 0.18814084815739018, 0.2581932916202488]
+This is loss function:  0.7808894079759188
+
+Range of energy: -169.4690395547898 -- -39.318661878846996
+Range of energy: -210.7497197792028 -- -33.14200031128684
+Range of energy: -199.65124895097694 -- -61.44137091368537
+This is before derivative [0.22747598 4.69285211 0.67736316 9.87664004 3.62243717 2.78727599]
+This is 35th time  Loss: 0.4430699636045631 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.78046905 0.43979    0.18436    0.02421215 0.65757    0.22469   ]
+36 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+This is the final pk values:  574532
+[0.33891666669283693, 0.44188888889066075, 0.5501388888883729]
+[0.12809589661779805, 0.18814084815739018, 0.2581932916202488]
+This is loss function:  0.7565144080764337
+
+Range of energy: -172.65031823216492 -- -15.672412198684647
+Range of energy: -200.3426137540716 -- -25.414585889621975
+Range of energy: -225.89563649124435 -- -20.15400354958218
+This is before derivative [ 0.40123494  7.06884071  1.00904869 14.32027404  5.61820911  4.45103674]
+This is 36th time  Loss: 0.475569963604563 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.77276965 0.43979    0.18436    0.02421215 0.65757    0.22469   ]
+37 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+This is the final pk values:  574820
+[0.31915277779325474, 0.4236944443910455, 0.5498472221883792]
+[0.12809589661779805, 0.18814084815739018, 0.2581932916202488]
+This is loss function:  0.7182644079772424
+
+Range of energy: -131.33050230286318 -- -16.187163531953896
+Range of energy: -181.94036969896482 -- -33.45487033093006
+Range of energy: -190.36913964659425 -- -32.421346353990046
+This is before derivative [0.25223079 4.43657759 0.73150347 9.97023416 3.5899633  2.74430611]
+This is 37th time  Loss: 0.318069963604563 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.76522308 0.43979    0.18436    0.02421215 0.65757    0.22469   ]
+38 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+This is the final pk values:  575118
+[0.32581944439311405, 0.4468749999905554, 0.5379166666886311]
+[0.12809589661779805, 0.18814084815739018, 0.2581932916202488]
+This is loss function:  0.7361810746768636
+
+Range of energy: -132.12021340095347 -- -17.823628398444214
+Range of energy: -218.1027705676045 -- -16.75464166771679
+Range of energy: -240.6519847190914 -- -39.60470079664776
+This is before derivative [ 0.34371522  5.76871936  0.80252857 13.25079977  4.76623911  3.60004997]
+This is 38th time  Loss: 0.440569963604563 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.75763161 0.43979    0.18436    0.02421215 0.65757    0.22469   ]
+39 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+This is the final pk values:  575425
+[0.3390416666928343, 0.45240277779043847, 0.5300138888887982]
+[0.12809589661779805, 0.18814084815739018, 0.2581932916202488]
+This is loss function:  0.747028296976634
+
+Range of energy: -218.5357280120822 -- 0.0
+Range of energy: -159.19911686767205 -- -17.29763061181015
+Range of energy: -207.68743515906488 -- -49.20056595579761
+This is before derivative [0.26601107 4.80040679 0.90134475 9.44861552 3.90918136 3.00683658]
+This is 39th time  Loss: 0.37806996360456296 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.75015012 0.43979    0.18436    0.02421215 0.65757    0.22469   ]
+40 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+This is the final pk values:  575713
+[0.330694444393011, 0.42790277779095626, 0.5661111110880355]
+[0.12809589661779805, 0.18814084815739018, 0.2581932916202488]
+This is loss function:  0.7502782968765658
+
+Range of energy: -135.6655922468803 -- -17.95575490479885
+Range of energy: -256.74251621901465 -- -33.39363772891021
+Range of energy: -207.9366262727067 -- -19.593258651559708
+This is before derivative [ 0.35552708  6.72584714  1.18538234 12.08898254  5.46730622  4.13774484]
+This is 40th time  Loss: 0.368069963604563 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.74258721 0.43979    0.18436    0.02421215 0.65757    0.22469   ]
+41 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+This is the final pk values:  576006
+[0.34084722219279634, 0.44723611109054784, 0.5328749999887378]
+[0.12809589661779805, 0.18814084815739018, 0.2581932916202488]
+This is loss function:  0.7465282968766449
+
+Range of energy: -181.6652866099866 -- 0.0
+Range of energy: -196.20679398131233 -- -12.46882435781938
+Range of energy: -243.6438944524951 -- -19.840735287481404
+This is before derivative [ 0.38421508  7.17382691  1.20546019 12.59141454  5.61281706  4.40308467]
+This is 41th time  Loss: 0.353069963604563 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.7348931  0.43979    0.18436    0.02421215 0.65757    0.22469   ]
+42 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+This is the final pk values:  576309
+[0.3389027777928373, 0.4324166666908609, 0.5529722221883131]
+[0.12809589661779805, 0.18814084815739018, 0.2581932916202488]
+This is loss function:  0.7498616302765742
+
+Range of energy: -187.5664552538095 -- 0.0
+Range of energy: -213.7031475783372 -- -30.433633646531064
+Range of energy: -194.87775900721834 -- -15.750158688449549
+This is before derivative [ 0.36514388  6.40519596  0.87769832 14.38042838  5.17157649  3.9326466 ]
+This is 42th time  Loss: 0.4405699636045631 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.72711588 0.43979    0.18436    0.02421215 0.65757    0.22469   ]
+43 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+This is the final pk values:  576598
+[0.3351111110929176, 0.4300555555909107, 0.5535138888883016]
+[0.12809589661779805, 0.18814084815739018, 0.2581932916202488]
+This is loss function:  0.7442505191766928
+
+Range of energy: -151.41605822753183 -- -23.733020995593442
+Range of energy: -172.10428953744318 -- -37.27835745740717
+Range of energy: -224.68577597218774 -- -46.844238621130785
+This is before derivative [ 0.31066434  5.34195792  0.84684864 11.20681308  4.28721513  3.30343796]
+This is 43th time  Loss: 0.368069963604563 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.71936936 0.43979    0.18436    0.02421215 0.65757    0.22469   ]
+44 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+This is the final pk values:  576905
+[0.32043055559322764, 0.4318055555908737, 0.5338472221887173]
+[0.12809589661779805, 0.18814084815739018, 0.2581932916202488]
+This is loss function:  0.7116532969773817
+
+Range of energy: -175.04634783932278 -- -17.094417304408672
+Range of energy: -160.39056667537872 -- -33.13663570152693
+Range of energy: -237.91927821631845 -- -46.95385206388804
+This is before derivative [ 0.36541265  5.89739238  0.9749442  14.29771272  4.73630214  3.64062252]
+This is 44th time  Loss: 0.37806996360456296 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.71153874 0.43979    0.18436    0.02421215 0.65757    0.22469   ]
+45 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+This is the final pk values:  577204
+[0.3028749999935988, 0.42820833329095, 0.5622361110881173]
+[0.12809589661779805, 0.18814084815739018, 0.2581932916202488]
+This is loss function:  0.718889407977229
+
+Range of energy: -128.02233845191762 -- 0.0
+Range of energy: -197.69867450977978 -- 0.0
+Range of energy: -209.2928393320477 -- -55.17362608662387
+This is before derivative [ 0.35236768  5.88975617  0.66954369 13.34734084  4.75318101  3.70577655]
+This is 45th time  Loss: 0.36556996360456295 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.70365613 0.43979    0.18436    0.02421215 0.65757    0.22469   ]
+46 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+This is the final pk values:  577493
+[0.3245138888931414, 0.4222499999910759, 0.554111111088289]
+[0.12809589661779805, 0.18814084815739018, 0.2581932916202488]
+This is loss function:  0.7264449635770693
+
+Range of energy: -175.17350831816768 -- 0.0
+Range of energy: -192.00784504933523 -- -30.53249919479743
+Range of energy: -243.4392611131797 -- -19.797132722062322
+This is before derivative [ 0.3891263   6.65205722  1.02491966 12.27368469  5.30339827  4.02125003]
+This is 46th time  Loss: 0.375569963604563 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.69565191 0.43979    0.18436    0.02421215 0.65757    0.22469   ]
+47 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+This is the final pk values:  577781
+[0.3327083332929684, 0.4187083332911508, 0.5582499999882015]
+[0.12809589661779805, 0.18814084815739018, 0.2581932916202488]
+This is loss function:  0.7352366301768836
+
+Range of energy: -167.40489035559705 -- 0.0
+Range of energy: -164.21991515226307 -- -31.344768420879937
+Range of energy: -219.57200334424726 -- -15.74440825380795
+This is before derivative [ 0.37228455  6.23936172  1.31369382 14.05130478  5.08973723  3.85768845]
+This is 47th time  Loss: 0.358069963604563 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.68756996 0.43979    0.18436    0.02421215 0.65757    0.22469   ]
+48 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+This is the final pk values:  578084
+[0.33763888889286403, 0.402749999991488, 0.5594305555881764]
+[0.12809589661779805, 0.18814084815739018, 0.2581932916202488]
+This is loss function:  0.7253894080770915
+
+Range of energy: -113.3609149792078 -- 0.0
+Range of energy: -214.99245994415304 -- -18.5081101798963
+Range of energy: -237.7410153526763 -- -54.92966799679323
+This is before derivative [ 0.32537885  5.76882309  0.95233635 13.23583899  4.58034335  3.57661722]
+This is 48th time  Loss: 0.415569963604563 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.67951046 0.43979    0.18436    0.02421215 0.65757    0.22469   ]
+49 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+This is the final pk values:  578372
+[0.3137777777933683, 0.42227777779107517, 0.5498333332883795]
+[0.12809589661779805, 0.18814084815739018, 0.2581932916202488]
+This is loss function:  0.7114588524773859
+
+Range of energy: -152.28910064867495 -- -10.802792837466555
+Range of energy: -146.47792539798616 -- -18.26673820614967
+Range of energy: -276.5668199755554 -- -57.87595183735746
+This is before derivative [ 0.38341555  6.70233411  1.06734058 14.30471521  5.40673852  4.00625335]
+This is 49th time  Loss: 0.393069963604563 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.6713519  0.43979    0.18436    0.02421215 0.65757    0.22469   ]
+50 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+This is the final pk values:  578660
+[0.3249305555931325, 0.4081944443913731, 0.5330694443887338]
+[0.12809589661779805, 0.18814084815739018, 0.2581932916202488]
+This is loss function:  0.6917644079778025
+
+Range of energy: -179.80352167683614 -- -19.30714466040946
+Range of energy: -204.22107282343302 -- -18.744702388728086
+Range of energy: -231.55239141623213 -- -58.3366157795316
+This is before derivative [ 0.40789451  7.21379602  1.08833696 14.44697771  5.75661672  4.39112013]
+This is 50th time  Loss: 0.438069963604563 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.66305434 0.43979    0.18436    0.02421215 0.65757    0.22469   ]
+51 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+This is the final pk values:  578958
+[0.3156249999933293, 0.4512638888904626, 0.5589583332881867]
+[0.12809589661779805, 0.18814084815739018, 0.2581932916202488]
+This is loss function:  0.7514171857765415
+
+Range of energy: -173.10204889963717 -- 0.0
+Range of energy: -157.38865148151461 -- -30.424002806020667
+Range of energy: -174.27310366239055 -- -63.071815705428094
+This is before derivative [0.25232339 4.35233061 0.64868931 9.11787995 3.43439041 2.63086349]
+This is 51th time  Loss: 0.375569963604563 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.65494942 0.43979    0.18436    0.02421215 0.65757    0.22469   ]
+52 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+This is the final pk values:  579246
+[0.33934722219282804, 0.42129166669109597, 0.5454444443884723]
+[0.12809589661779805, 0.18814084815739018, 0.2581932916202488]
+This is loss function:  0.7316532968769593
+
+Range of energy: -169.86317666108187 -- 0.0
+Range of energy: -145.80858956831167 -- -20.40423980403935
+Range of energy: -216.05691473357905 -- -52.62662239684717
+This is before derivative [0.26819574 4.61844072 0.37870161 9.21294604 3.6121809  2.75248312]
+This is 52th time  Loss: 0.348069963604563 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.64698233 0.43979    0.18436    0.02421215 0.65757    0.22469   ]
+53 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+This is the final pk values:  579549
+[0.3205416666932253, 0.3991666666915636, 0.5464027777884518]
+[0.12809589661779805, 0.18814084815739018, 0.2581932916202488]
+This is loss function:  0.6916810747778037
+
+Range of energy: -136.87407737379908 -- -11.631667087659272
+Range of energy: -227.86883154233573 -- -45.351442316078995
+Range of energy: -248.81438670740138 -- -35.93025298474325
+This is before derivative [ 0.49218871  8.07030909  1.19436329 16.21765807  6.44351482  5.04814901]
+This is 53th time  Loss: 0.44806996360456297 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.638681   0.43979    0.18436    0.02421215 0.65757    0.22469   ]
+54 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+This is the final pk values:  579848
+[0.315833333293325, 0.42008333329112174, 0.5553333332882633]
+[0.12809589661779805, 0.18814084815739018, 0.2581932916202488]
+This is loss function:  0.716819963477273
+
+Range of energy: -144.77583957825033 -- -26.02786976779692
+Range of energy: -173.9751775591534 -- 0.0
+Range of energy: -224.5934033897659 -- -35.65523885593464
+This is before derivative [ 0.35947346  6.16535779  1.00617691 13.97054965  4.85885164  3.7002384 ]
+This is 54th time  Loss: 0.420569963604563 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.63034527 0.43979    0.18436    0.02421215 0.65757    0.22469   ]
+55 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+This is the final pk values:  580136
+[0.32251388889318366, 0.4151944443912251, 0.5353888888886846]
+[0.12809589661779805, 0.18814084815739018, 0.2581932916202488]
+This is loss function:  0.6986671857776563
+
+Range of energy: -190.34937261079193 -- 0.0
+Range of energy: -228.0314479566341 -- -22.972443416052357
+Range of energy: -204.641105012193 -- -17.717937496833233
+This is before derivative [ 0.37376969  6.54080531  1.13732211 13.61406092  5.24630196  3.9441395 ]
+This is 55th time  Loss: 0.39556996360456304 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.62194759 0.43979    0.18436    0.02421215 0.65757    0.22469   ]
+56 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+This is the final pk values:  580430
+[0.31363888889337127, 0.42919444439092924, 0.5389583332886093]
+[0.12809589661779805, 0.18814084815739018, 0.2581932916202488]
+This is loss function:  0.7073616301774728
+
+Range of energy: -185.41164770333728 -- -15.772481772438699
+Range of energy: -149.47440536074754 -- -30.373799563871003
+Range of energy: -247.7765265781249 -- -52.769469932695635
+This is before derivative [ 0.29678844  5.19229901  1.00405725 10.22408482  4.241875    3.12326847]
+This is 56th time  Loss: 0.468069963604563 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.61365325 0.43979    0.18436    0.02421215 0.65757    0.22469   ]
+57 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+This is the final pk values:  580718
+[0.32516666669312755, 0.40773611109138264, 0.5083611110892559]
+[0.12809589661779805, 0.18814084815739018, 0.2581932916202488]
+This is loss function:  0.666833852478329
+
+Range of energy: -159.2110475830802 -- -35.99256641442828
+Range of energy: -152.4936061929966 -- -37.85130211177271
+Range of energy: -190.23417352536038 -- -33.373989604342285
+This is before derivative [0.22919654 4.23297068 0.94321742 8.2110767  3.39176365 2.54390927]
+This is 57th time  Loss: 0.353069963604563 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.6055965  0.43979    0.18436    0.02421215 0.65757    0.22469   ]
+58 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+This is the final pk values:  581022
+[0.31384722219336697, 0.40044444439153687, 0.5143611110891291]
+[0.12809589661779805, 0.18814084815739018, 0.2581932916202488]
+This is loss function:  0.6542227412785959
+
+Range of energy: -178.95780769669773 -- -19.073941436078123
+Range of energy: -146.8255032847607 -- -10.958440908200089
+Range of energy: -213.1950089496649 -- -40.774609649027184
+This is before derivative [ 0.30611071  5.08348438  0.88057524 12.52235753  4.12979643  3.05518469]
+This is 58th time  Loss: 0.315569963604563 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.59758445 0.43979    0.18436    0.02421215 0.65757    0.22469   ]
+59 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+This is the final pk values:  581329
+[0.3232222221931688, 0.4208055555911062, 0.517388888889065]
+[0.12809589661779805, 0.18814084815739018, 0.2581932916202488]
+This is loss function:  0.6869866302779031
+
+Range of energy: -122.40481177026587 -- 0.0
+Range of energy: -174.77280489042852 -- -35.30727258144977
+Range of energy: -188.35601964557475 -- -28.192589805324253
+This is before derivative [0.20173359 3.53314368 0.46068858 7.7203887  2.73318194 1.99682126]
+This is 59th time  Loss: 0.33056996360456303 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.58984109 0.43979    0.18436    0.02421215 0.65757    0.22469   ]
+60 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+This is the final pk values:  581618
+[0.3056249999935407, 0.4055138888914295, 0.510013888889221]
+[0.12809589661779805, 0.18814084815739018, 0.2581932916202488]
+This is loss function:  0.6467227413787542
+
+Range of energy: -141.36917185393503 -- 0.0
+Range of energy: -140.223372177516 -- -15.196627722035494
+Range of energy: -249.6429810341464 -- 0.0
+This is before derivative [ 0.33220331  6.03173588  0.95650061 13.03030419  4.73236234  3.47171437]
+This is 60th time  Loss: 0.290569963604563 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.58204932 0.43979    0.18436    0.02421215 0.65757    0.22469   ]
+61 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+This is the final pk values:  581924
+[0.32991666669302716, 0.4154444443912198, 0.5245694443889135]
+[0.12809589661779805, 0.18814084815739018, 0.2581932916202488]
+This is loss function:  0.6955005190777235
+
+Range of energy: -178.06595883731956 -- -17.25946060082413
+Range of energy: -214.33396302006065 -- -14.185752822056653
+Range of energy: -245.91530461985647 -- -48.66157418621735
+This is before derivative [ 0.41816719  6.56638983  1.02887778 16.77031014  5.4780247   4.1793479 ]
+This is 61th time  Loss: 0.3755699636045631 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.57402888 0.43979    0.18436    0.02421215 0.65757    0.22469   ]
+62 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+This is the final pk values:  582224
+[0.30572222219353873, 0.40540277779143186, 0.5239305555889266]
+[0.12809589661779805, 0.18814084815739018, 0.2581932916202488]
+This is loss function:  0.6606255191784602
+
+Range of energy: -108.87528593140746 -- -15.690808385036052
+Range of energy: -163.20911732377965 -- -18.244169780225683
+Range of energy: -194.7267677085928 -- -34.36778028931006
+This is before derivative [0.24601906 4.31189852 0.69246978 9.18086583 3.38345266 2.60100871]
+This is 62th time  Loss: 0.23806996360456298 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.56617567 0.43979    0.18436    0.02421215 0.65757    0.22469   ]
+63 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+This is the final pk values:  582523
+[0.3067083332935179, 0.39740277779160094, 0.5155138888891047]
+[0.12809589661779805, 0.18814084815739018, 0.2581932916202488]
+This is loss function:  0.6451949635787864
+
+Range of energy: -124.10143505007804 -- 0.0
+Range of energy: -132.07660196095807 -- -13.91055226351505
+Range of energy: -198.59598257947982 -- -35.61132776959292
+This is before derivative [ 0.29576937  5.01743     0.67762132 12.49449488  3.96965966  3.01730912]
+This is 63th time  Loss: 0.338069963604563 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.55836006 0.43979    0.18436    0.02421215 0.65757    0.22469   ]
+64 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+This is the final pk values:  582801
+[0.3127916666933891, 0.40668055559140476, 0.5223333332889607]
+[0.12809589661779805, 0.18814084815739018, 0.2581932916202488]
+This is loss function:  0.6673755191783175
+
+Range of energy: -134.29357693250725 -- 0.0
+Range of energy: -147.37829694783818 -- -39.27395999087621
+Range of energy: -258.1325947858805 -- -37.14617585754288
+This is before derivative [0.30427254 5.175103   0.90506429 8.40865347 4.11283512 3.20629148]
+This is 64th time  Loss: 0.290569963604563 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.55055738 0.43979    0.18436    0.02421215 0.65757    0.22469   ]
+65 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+This is the final pk values:  583110
+[0.3116111110934142, 0.39113888889173337, 0.5295972221888072]
+[0.12809589661779805, 0.18814084815739018, 0.2581932916202488]
+This is loss function:  0.6579171857785178
+
+Range of energy: -143.74964080851407 -- -17.987919306907795
+Range of energy: -138.96859588293208 -- -22.36445259627182
+Range of energy: -232.87803496868764 -- -53.51483436558566
+This is before derivative [ 0.29322672  4.61018519  0.77726194 11.2046792   3.73822344  2.80179581]
+This is 65th time  Loss: 0.328069963604563 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.54278902 0.43979    0.18436    0.02421215 0.65757    0.22469   ]
+66 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+This is the final pk values:  583407
+[0.2990694443936794, 0.39469444439165835, 0.5121249999891764]
+[0.12809589661779805, 0.18814084815739018, 0.2581932916202488]
+This is loss function:  0.6314588523790772
+
+Range of energy: -168.7390919354306 -- 0.0
+Range of energy: -155.13383291021427 -- -29.846766671319394
+Range of energy: -207.93690853150946 -- -16.72948547516758
+This is before derivative [ 0.34186726  5.46852872  1.00472754 12.72366354  4.47689408  3.37755894]
+This is 66th time  Loss: 0.31806996360456297 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.53494108 0.43979    0.18436    0.02421215 0.65757    0.22469   ]
+67 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+This is the final pk values:  583696
+[0.3174166666932914, 0.4123333332912856, 0.51148611108919]
+[0.12809589661779805, 0.18814084815739018, 0.2581932916202488]
+This is loss function:  0.66680607467833
+
+Range of energy: -98.18566999229552 -- -17.561418910282917
+Range of energy: -149.55575706658476 -- -28.207934229655354
+Range of energy: -198.9431745338435 -- -17.766933007275025
+This is before derivative [0.21730778 3.30769786 0.58899569 8.37667745 2.65645017 2.04401899]
+This is 67th time  Loss: 0.31056996360456296 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.52730237 0.43979    0.18436    0.02421215 0.65757    0.22469   ]
+68 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+This is the final pk values:  583994
+[0.3133055555933782, 0.40248611109149357, 0.5223472221889603]
+[0.12809589661779805, 0.18814084815739018, 0.2581932916202488]
+This is loss function:  0.6637088524783952
+
+Range of energy: -141.84916554803277 -- -31.321042377421847
+Range of energy: -160.48322960324538 -- -17.516970572989933
+Range of energy: -239.88627192844774 -- -51.94462194527519
+This is before derivative [0.25222378 4.40552762 1.00223723 9.70733358 3.63709369 2.57329445]
+This is 68th time  Loss: 0.34056996360456293 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.51976967 0.43979    0.18436    0.02421215 0.65757    0.22469   ]
+69 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+This is the final pk values:  584271
+[0.28734722219392705, 0.4004027777915375, 0.49759722218948343]
+[0.12809589661779805, 0.18814084815739018, 0.2581932916202488]
+This is loss function:  0.610917185779511
+
+Range of energy: -149.36729952284907 -- -17.362767856020163
+Range of energy: -179.40223778021254 -- -33.41035379119478
+Range of energy: -230.28164712666836 -- -16.141154189979833
+This is before derivative [ 0.27805867  4.52917913  0.78518494 10.26906879  3.6139054   2.74760178]
+This is 69th time  Loss: 0.340569963604563 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.51227084 0.43979    0.18436    0.02421215 0.65757    0.22469   ]
+70 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+This is the final pk values:  584559
+[0.2958333332937477, 0.3774166666920233, 0.49647222218950726]
+[0.12809589661779805, 0.18814084815739018, 0.2581932916202488]
+This is loss function:  0.5952921857798412
+
+Range of energy: -144.60206390328807 -- 0.0
+Range of energy: -131.17011059019742 -- -20.096449561975678
+Range of energy: -176.12262621070727 -- -17.681633239449468
+This is before derivative [ 0.25729683  4.33578684  0.40822974 10.09754512  3.35921513  2.59091467]
+This is 70th time  Loss: 0.28806996360456305 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.50484871 0.43979    0.18436    0.02421215 0.65757    0.22469   ]
+71 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+This is the final pk values:  584850
+[0.29615277779374083, 0.39298611109169435, 0.5008888888894137]
+[0.12809589661779805, 0.18814084815739018, 0.2581932916202488]
+This is loss function:  0.6155977413794118
+
+Range of energy: -129.88497766197676 -- -16.4502811536538
+Range of energy: -188.88222067461072 -- -31.794819732060873
+Range of energy: -223.70502599406288 -- -37.59123248891022
+This is before derivative [ 0.31193357  5.53863043  0.82776787 12.08560436  4.37363349  3.36780974]
+This is 71th time  Loss: 0.348069963604563 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.49736689 0.43979    0.18436    0.02421215 0.65757    0.22469   ]
+72 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+This is the final pk values:  585151
+[0.30213888889361434, 0.3939444443916742, 0.511861111089182]
+[0.12809589661779805, 0.18814084815739018, 0.2581932916202488]
+This is loss function:  0.6335144079790336
+
+Range of energy: -119.30625195295079 -- -15.901447783488152
+Range of energy: -133.5030034411558 -- -22.88874255573584
+Range of energy: -210.83533468875174 -- -39.331202521267386
+This is before derivative [0.21791232 3.75804394 0.49572602 8.67446619 2.95569196 2.22417166]
+This is 72th time  Loss: 0.328069963604563 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.49004981 0.43979    0.18436    0.02421215 0.65757    0.22469   ]
+73 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+This is the final pk values:  585455
+[0.2929305555938088, 0.393041666691693, 0.5019027777893923]
+[0.12809589661779805, 0.18814084815739018, 0.2581932916202488]
+This is loss function:  0.613444963679457
+
+Range of energy: -131.53055293751046 -- -17.382432376289202
+Range of energy: -195.59888266355367 -- -15.45842946622922
+Range of energy: -200.63765689020448 -- -33.08005348234729
+This is before derivative [0.25194289 4.15216395 0.8959913  8.45513071 3.29424207 2.46811914]
+This is 73th time  Loss: 0.32306996360456297 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.48279851 0.43979    0.18436    0.02421215 0.65757    0.22469   ]
+74 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+This is the final pk values:  585762
+[0.30634722219352545, 0.37176388889214285, 0.5100833332892196]
+[0.12809589661779805, 0.18814084815739018, 0.2581932916202488]
+This is loss function:  0.6137644079794509
+
+Range of energy: -132.81989207729373 -- -16.5181434141132
+Range of energy: -147.33167091610824 -- 0.0
+Range of energy: -200.5618797712296 -- -55.04512333538304
+This is before derivative [0.25392153 4.10271431 0.53538461 8.87522945 3.17994918 2.45863104]
+This is 74th time  Loss: 0.305569963604563 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.47559982 0.43979    0.18436    0.02421215 0.65757    0.22469   ]
+75 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+This is the final pk values:  586050
+[0.3097499999934535, 0.3894305555917693, 0.49654166668950556]
+[0.12809589661779805, 0.18814084815739018, 0.2581932916202488]
+This is loss function:  0.6212921858792914
+
+Range of energy: -130.38796537086606 -- 0.0
+Range of energy: -176.7857209267123 -- 0.0
+Range of energy: -198.67846854996395 -- -19.275579243182545
+This is before derivative [ 0.31929076  5.34002838  0.99605244 10.92862774  4.20494633  3.17275676]
+This is 75th time  Loss: 0.29806996360456306 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.46829173 0.43979    0.18436    0.02421215 0.65757    0.22469   ]
+76 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+This is the final pk values:  586350
+[0.30538888889354565, 0.3949027777916537, 0.48899999998966515]
+[0.12809589661779805, 0.18814084815739018, 0.2581932916202488]
+This is loss function:  0.6148616302794274
+
+Range of energy: -168.47822614471056 -- -17.469662092906418
+Range of energy: -185.21246998545558 -- 0.0
+Range of energy: -182.89925635562804 -- -32.76409726029004
+This is before derivative [ 0.29522618  5.52754928  1.06601868 11.44163323  4.37550858  3.25548812]
+This is 76th time  Loss: 0.350569963604563 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.46094017 0.43979    0.18436    0.02421215 0.65757    0.22469   ]
+77 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+This is the final pk values:  586638
+[0.29240277779382007, 0.3814166666919387, 0.517444444389064]
+[0.12809589661779805, 0.18814084815739018, 0.2581932916202488]
+This is loss function:  0.6168338524793857
+
+Range of energy: -138.87600150746437 -- 0.0
+Range of energy: -151.66515068820058 -- -40.85143188701022
+Range of energy: -233.86982546576195 -- -17.32789172538074
+This is before derivative [ 0.30469725  5.29862373  0.56951929 10.39491873  4.07504467  3.0070714 ]
+This is 77th time  Loss: 0.30806996360456296 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.45352514 0.43979    0.18436    0.02421215 0.65757    0.22469   ]
+78 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+This is the final pk values:  586937
+[0.30374999999358027, 0.3939305555916742, 0.513472222189148]
+[0.12809589661779805, 0.18814084815739018, 0.2581932916202488]
+This is loss function:  0.6367227413789656
+
+Range of energy: -117.84746794805973 -- -33.04731048064813
+Range of energy: -147.9512547842731 -- -18.125813482803807
+Range of energy: -175.9902348067509 -- -35.481905050594065
+This is before derivative [0.2614403  4.74666184 0.75954874 9.00249797 3.59065925 2.74107975]
+This is 78th time  Loss: 0.293069963604563 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.44615454 0.43979    0.18436    0.02421215 0.65757    0.22469   ]
+79 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+This is the final pk values:  587225
+[0.303999999993575, 0.3939583332916739, 0.5015138888894006]
+[0.12809589661779805, 0.18814084815739018, 0.2581932916202488]
+This is loss function:  0.6250421857792126
+
+Range of energy: -142.15332700116653 -- -16.112863032568292
+Range of energy: -175.8380539862648 -- -23.28177115109029
+Range of energy: -186.6154831079856 -- -33.56460959833825
+This is before derivative [0.26421338 4.26579236 0.63143341 9.88575251 3.3217912  2.51682891]
+This is 79th time  Loss: 0.31306996360456296 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.43881542 0.43979    0.18436    0.02421215 0.65757    0.22469   ]
+80 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+This is the final pk values:  587513
+[0.2954027777937567, 0.37606944439205203, 0.5086249999892503]
+[0.12809589661779805, 0.18814084815739018, 0.2581932916202488]
+This is loss function:  0.6056671857796219
+
+Range of energy: -120.40542860819201 -- -15.555234820694924
+Range of energy: -197.82282880354165 -- -13.451638798181285
+Range of energy: -224.88346584933902 -- -19.180281828993728
+This is before derivative [ 0.31935075  5.30215755  0.98433919 11.24604322  4.18512658  3.20964093]
+This is 80th time  Loss: 0.325569963604563 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.43137019 0.43979    0.18436    0.02421215 0.65757    0.22469   ]
+81 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+This is the final pk values:  587832
+[0.2981111110936995, 0.382916666691907, 0.4871249999897047]
+[0.12809589661779805, 0.18814084815739018, 0.2581932916202488]
+This is loss function:  0.5937227413798742
+
+Range of energy: -156.82176095053666 -- -18.833937342923484
+Range of energy: -176.69470935493584 -- -36.45828523441825
+Range of energy: -196.80424572509565 -- -37.11122961558746
+This is before derivative [ 0.35939778  5.90389698  1.16721973 12.25768252  4.51917328  3.48162942]
+This is 81th time  Loss: 0.373069963604563 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.4237329  0.43979    0.18436    0.02421215 0.65757    0.22469   ]
+82 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+This is the final pk values:  588151
+[0.29068055559385636, 0.37676388889203716, 0.5040138888893477]
+[0.12809589661779805, 0.18814084815739018, 0.2581932916202488]
+This is loss function:  0.5970282969798042
+
+Range of energy: -171.5548200345422 -- -12.965517990717036
+Range of energy: -173.78546143652727 -- -16.015995786536774
+Range of energy: -175.89219003803555 -- -36.361866616603145
+This is before derivative [ 0.30173658  4.7003559   0.60875078 10.50626555  3.81253087  2.96551875]
+This is 82th time  Loss: 0.30306996360456295 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.4160591  0.43979    0.18436    0.02421215 0.65757    0.22469   ]
+83 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+This is the final pk values:  588449
+[0.2904444443938617, 0.36755555559223163, 0.4930416666895796]
+[0.12809589661779805, 0.18814084815739018, 0.2581932916202488]
+This is loss function:  0.576611630280236
+
+Range of energy: -100.77256634073935 -- -11.040228186861679
+Range of energy: -177.0301296950774 -- -31.78912658029415
+Range of energy: -181.9880228815178 -- -17.345251769436622
+This is before derivative [0.24444231 4.16642713 0.58739772 8.93231053 3.24091173 2.50070858]
+This is 83th time  Loss: 0.26806996360456303 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.40848996 0.43979    0.18436    0.02421215 0.65757    0.22469   ]
+84 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+This is the final pk values:  588737
+[0.2682638888943303, 0.36791666669222406, 0.49372222218956535]
+[0.12809589661779805, 0.18814084815739018, 0.2581932916202488]
+This is loss function:  0.5554727413806827
+
+Range of energy: -181.97503283945454 -- 0.0
+Range of energy: -181.85778148957806 -- -21.28196548046758
+Range of energy: -210.49760944450387 -- -25.54753023016059
+This is before derivative [ 0.34650228  6.37089111  1.27589243 12.16919818  4.96351398  3.65941116]
+This is 84th time  Loss: 0.278069963604563 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.40076601 0.43979    0.18436    0.02421215 0.65757    0.22469   ]
+85 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+This is the final pk values:  589035
+[0.28699999999393433, 0.3738749999920983, 0.4981388888894719]
+[0.12809589661779805, 0.18814084815739018, 0.2581932916202488]
+This is loss function:  0.5845838524800675
+
+Range of energy: -121.43065553319221 -- -16.666238867463196
+Range of energy: -201.4557817918025 -- -17.633586230818928
+Range of energy: -235.33589729970143 -- -16.544150796035808
+This is before derivative [ 0.38979541  5.93031032  0.62204588 14.07660201  4.67014818  3.51430602]
+This is 85th time  Loss: 0.318069963604563 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.39279915 0.43979    0.18436    0.02421215 0.65757    0.22469   ]
+86 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+This is the final pk values:  589323
+[0.29333333329380057, 0.3673749999922356, 0.4679722221901096]
+[0.12809589661779805, 0.18814084815739018, 0.2581932916202488]
+This is loss function:  0.5542505190807088
+
+Range of energy: -164.442333360865 -- 0.0
+Range of energy: -183.31185691715015 -- -19.000078620429015
+Range of energy: -200.04499657075345 -- -18.469834429283857
+This is before derivative [ 0.36367004  6.49121854  1.10645534 14.72017427  5.19915933  3.74586992]
+This is 86th time  Loss: 0.32556996360456303 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.38467549 0.43979    0.18436    0.02421215 0.65757    0.22469   ]
+87 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+This is the final pk values:  589642
+[0.27990277779408423, 0.36372222219231287, 0.4832499999897866]
+[0.12809589661779805, 0.18814084815739018, 0.2581932916202488]
+This is loss function:  0.5524449635807467
+
+Range of energy: -132.87580486319018 -- 0.0
+Range of energy: -200.67250781113972 -- -19.730932315743743
+Range of energy: -173.90051903075647 -- -18.757754396025103
+This is before derivative [ 0.34594206  5.2970584   0.72172164 12.75465914  4.10609429  3.17266039]
+This is 87th time  Loss: 0.24056996360456298 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.37645229 0.43979    0.18436    0.02421215 0.65757    0.22469   ]
+88 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+This is the final pk values:  589949
+[0.29086111109385276, 0.3640277777923063, 0.4721666666900207]
+[0.12809589661779805, 0.18814084815739018, 0.2581932916202488]
+This is loss function:  0.5526255191807428
+
+Range of energy: -141.01973906388434 -- 0.0
+Range of energy: -202.76974879367674 -- -16.607094616437447
+Range of energy: -202.24263724838778 -- -15.984517010733136
+This is before derivative [ 0.31783654  5.40700428  0.7306912  11.62256598  4.21597415  3.11734136]
+This is 88th time  Loss: 0.22306996360456302 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.36820594 0.43979    0.18436    0.02421215 0.65757    0.22469   ]
+89 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+This is the final pk values:  590249
+[0.2913888888938415, 0.3542638888925127, 0.47599999998993986]
+[0.12809589661779805, 0.18814084815739018, 0.2581932916202488]
+This is loss function:  0.547222741380857
+
+Range of energy: -160.78744795479452 -- -16.330628938512696
+Range of energy: -121.49841973377147 -- -16.29560236343655
+Range of energy: -170.11106876241956 -- -22.50473122960765
+This is before derivative [0.27239233 4.60583201 0.70881786 9.96859784 3.53989242 2.74119174]
+This is 89th time  Loss: 0.235569963604563 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.36004791 0.43979    0.18436    0.02421215 0.65757    0.22469   ]
+90 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+This is the final pk values:  590552
+[0.28631944439394885, 0.374402777792087, 0.49076388888962774]
+[0.12809589661779805, 0.18814084815739018, 0.2581932916202488]
+This is loss function:  0.5770560746802267
+
+Range of energy: -160.20316272703752 -- 0.0
+Range of energy: -187.2669957986451 -- -17.709953581421704
+Range of energy: -252.18490215679986 -- -51.39736778274171
+This is before derivative [ 0.35037269  6.02409978  1.23581989 13.2037233   4.91878382  3.67329267]
+This is 90th time  Loss: 0.275569963604563 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.35177861 0.43979    0.18436    0.02421215 0.65757    0.22469   ]
+91 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+This is the final pk values:  590865
+[0.2859999999939555, 0.36987499999218276, 0.4825972221898005]
+[0.12809589661779805, 0.18814084815739018, 0.2581932916202488]
+This is loss function:  0.5640421857805018
+
+Range of energy: -154.5798725837281 -- -16.526824069045684
+Range of energy: -159.56638891737524 -- -18.131290247861553
+Range of energy: -195.84945689157013 -- -32.00918477645039
+This is before derivative [ 0.31409233  4.52396453  0.70837749 10.705033    3.55357277  2.68897324]
+This is 91th time  Loss: 0.37056996360456296 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.34349595 0.43979    0.18436    0.02421215 0.65757    0.22469   ]
+92 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+This is the final pk values:  591172
+[0.2765972221941543, 0.36488888889228815, 0.47144444439003624]
+[0.12809589661779805, 0.18814084815739018, 0.2581932916202488]
+This is loss function:  0.5385005190810417
+
+Range of energy: -92.35467499910794 -- 0.0
+Range of energy: -171.7457820743728 -- -16.851692183491178
+Range of energy: -158.1384660010437 -- -12.377796630515395
+This is before derivative [0.24220593 3.64102021 0.43270478 8.52405388 2.78854338 2.17213355]
+This is 92th time  Loss: 0.18556996360456302 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.33537689 0.43979    0.18436    0.02421215 0.65757    0.22469   ]
+93 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+This is the final pk values:  591447
+[0.28808333329391156, 0.3610833332923687, 0.4831666666897883]
+[0.12809589661779805, 0.18814084815739018, 0.2581932916202488]
+This is loss function:  0.5579032968806316
+
+Range of energy: -156.52250416543097 -- 0.0
+Range of energy: -171.2147638800216 -- -37.81955251746102
+Range of energy: -249.0114329134518 -- -45.38211830642386
+This is before derivative [ 0.31712708  4.98127981  0.66452824 13.23834121  3.96363488  2.9085274 ]
+This is 93th time  Loss: 0.328069963604563 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.32721862 0.43979    0.18436    0.02421215 0.65757    0.22469   ]
+94 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+This is the final pk values:  591647
+[0.28269444439402547, 0.35088888889258396, 0.4769583332899197]
+[0.12809589661779805, 0.18814084815739018, 0.2581932916202488]
+This is loss function:  0.5361116301810921
+
+Range of energy: -135.80698772618553 -- -18.927307784940936
+Range of energy: -154.90084362831513 -- -33.84314334958772
+Range of energy: -185.69153251995448 -- -40.44012852111307
+This is before derivative [0.25654391 4.18594028 0.97743343 8.0522593  3.29012778 2.47836412]
+This is 94th time  Loss: 0.310569963604563 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.31917355 0.43979    0.18436    0.02421215 0.65757    0.22469   ]
+95 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+This is the final pk values:  591791
+[0.27572222219417275, 0.3649861110922861, 0.4799444443898566]
+[0.12809589661779805, 0.18814084815739018, 0.2581932916202488]
+This is loss function:  0.5462227412808784
+
+Range of energy: -133.618494386679 -- -16.41591511491585
+Range of energy: -144.96956234841326 -- 0.0
+Range of energy: -172.01513350924398 -- -49.71764627060016
+This is before derivative [0.20697311 3.4919699  0.58717441 7.24115119 2.72131193 2.06235607]
+This is 95th time  Loss: 0.170569963604563 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.31135397 0.43979    0.18436    0.02421215 0.65757    0.22469   ]
+96 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+This is the final pk values:  591935
+[0.28038888889407404, 0.37284722219212, 0.48979166668964824]
+[0.12809589661779805, 0.18814084815739018, 0.2581932916202488]
+This is loss function:  0.5685977413804053
+
+Range of energy: -156.43544527774793 -- 0.0
+Range of energy: -141.52554602709438 -- -17.20060419447213
+Range of energy: -191.37097163460038 -- -35.97585465432515
+This is before derivative [ 0.31395494  5.22126509  1.0375846  11.44936086  4.14559445  3.10605669]
+This is 96th time  Loss: 0.23056996360456297 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.30346729 0.43979    0.18436    0.02421215 0.65757    0.22469   ]
+97 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+This is the final pk values:  592079
+[0.2746388888941955, 0.35670833329246115, 0.47049999999005604]
+[0.12809589661779805, 0.18814084815739018, 0.2581932916202488]
+This is loss function:  0.5274171857812757
+
+Range of energy: -95.7186127657071 -- 0.0
+Range of energy: -151.19731860575274 -- 0.0
+Range of energy: -202.57646252603382 -- -38.60765287046266
+This is before derivative [0.25739954 3.99996644 0.72756074 7.73243182 3.07928107 2.33268353]
+This is 97th time  Loss: 0.265569963604563 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.29566047 0.43979    0.18436    0.02421215 0.65757    0.22469   ]
+98 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+This is the final pk values:  592223
+[0.2742916666942028, 0.3578055555924377, 0.45798611109032056]
+[0.12809589661779805, 0.18814084815739018, 0.2581932916202488]
+This is loss function:  0.5156532969815241
+
+Range of energy: -132.652049963914 -- -16.443748069148484
+Range of energy: -214.89774361806784 -- -34.32935260141
+Range of energy: -184.98393502496867 -- -31.511905922493703
+This is before derivative [ 0.31975441  5.11376889  0.80042143 12.25049479  4.12061869  3.05311462]
+This is 98th time  Loss: 0.338069963604563 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.28776763 0.43979    0.18436    0.02421215 0.65757    0.22469   ]
+99 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+This is the final pk values:  592367
+[0.27170833329425764, 0.36745833329223393, 0.4618055555902397]
+[0.12809589661779805, 0.18814084815739018, 0.2581932916202488]
+This is loss function:  0.5265421857812942
+
+Range of energy: -111.81662335962241 -- -17.525370528254918
+Range of energy: -163.52029379002755 -- -13.283523448580949
+Range of energy: -183.51806410521795 -- -49.61324746591802
+This is before derivative [0.29826778 4.48696098 0.8777224  9.44110987 3.45881246 2.63327221]
+This is 99th time  Loss: 0.24306996360456298 and Parameters:  [0.40082 0.34309 0.25711 0.31181 0.305   0.28   ] [1.27984991 0.43979    0.18436    0.02421215 0.65757    0.22469   ]

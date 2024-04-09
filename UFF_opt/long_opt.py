@@ -190,13 +190,13 @@ def detect_parameter_change(paramset_new, paramset_old, error_threshold=0.4):
     
     return sigma_indices, epsilon_indices
 
-def fix_changed_parameters(paramset_new, sigma_indices, epsilon_indices):
+def fix_changed_parameters(paramset, sigma_indices, epsilon_indices):
     for idx in sigma_indices:
         paramset.mask['LennardJonesForce']['sigma'] = paramset.mask['LennardJonesForce']['sigma'].at[idx].set(0)
     for idx in epsilon_indices:
         if idx==0:continue
         paramset.mask['LennardJonesForce']['epsilon'] = paramset.mask['LennardJonesForce']['epsilon'].at[idx].set(0)
-    return paramset_new
+    return paramset
 
 
 import json

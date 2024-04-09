@@ -313,7 +313,7 @@ lj_gen = LennardJonesGenerator(ffinfo, paramset_old)
 
 xmlio = XMLIO()
 #xmlio.loadXML("data/init.xml")
-xmlio.loadXML("transition_0228.xml")
+xmlio.loadXML("transition_0229.xml")
 #xmlio.loadXML("0219.xml")
 ffinfo = xmlio.parseXML()
 paramset = ParamSet()
@@ -339,9 +339,9 @@ scalar_epsilon = paramset_old.parameters['LennardJonesForce']['epsilon']
 scalar_epsilon = scalar_epsilon/jnp.max(scalar_epsilon)
 
 #os.system("cp /home/yutao/project/aiida/applications/UFF.json /home/yutao/project/aiida/applications/ff_1.json")
-os.system("cp transition_0228.json /home/yutao/project/aiida/applications/ff_1.json")
+os.system("cp transition_0229.json /home/yutao/project/aiida/applications/ff_1.json")
 print("Story starts")
-for nloop in range(50):
+for nloop in range(100):
     '''
     t = threading.Thread(target=sample, args=("/home/yutao/project/aiida/applications/sample.sh",))
     t.start()

@@ -1,0 +1,44 @@
+REMARK   1 CREATED WITH OPENMM 8.0, 2024-03-21
+HETATM    1  O17 GAS A   1      20.287   2.336   7.884  1.00  0.00           O  
+HETATM    2  C18 GAS A   1      20.749   2.440   6.825  1.00  0.00           C  
+HETATM    3  O19 GAS A   1      21.212   2.544   5.766  1.00  0.00           O  
+TER       4      GAS A   1
+HETATM    5  O17 GAS B   1      12.946   4.886   4.195  1.00  0.00           O  
+HETATM    6  C18 GAS B   1      12.477   5.409   3.272  1.00  0.00           C  
+HETATM    7  O19 GAS B   1      12.007   5.932   2.349  1.00  0.00           O  
+TER       8      GAS B   1
+HETATM    9  O17 GAS C   1      -0.800   3.310  17.481  1.00  0.00           O  
+HETATM   10  C18 GAS C   1       0.124   3.312  16.779  1.00  0.00           C  
+HETATM   11  O19 GAS C   1       1.047   3.314  16.077  1.00  0.00           O  
+TER      12      GAS C   1
+HETATM   13  O17 GAS D   1      20.626   7.425   4.977  1.00  0.00           O  
+HETATM   14  C18 GAS D   1      20.490   8.007   5.971  1.00  0.00           C  
+HETATM   15  O19 GAS D   1      20.355   8.589   6.966  1.00  0.00           O  
+TER      16      GAS D   1
+HETATM   17  O17 GAS E   1      11.167   8.594  20.695  1.00  0.00           O  
+HETATM   18  C18 GAS E   1      11.117   8.401  19.552  1.00  0.00           C  
+HETATM   19  O19 GAS E   1      11.067   8.208  18.409  1.00  0.00           O  
+TER      20      GAS E   1
+HETATM   21  O17 GAS F   1       1.148  18.474   4.365  1.00  0.00           O  
+HETATM   22  C18 GAS F   1       0.841  18.775   3.288  1.00  0.00           C  
+HETATM   23  O19 GAS F   1       0.534  19.076   2.210  1.00  0.00           O  
+TER      24      GAS F   1
+CONECT    1    2
+CONECT    2    1    3
+CONECT    3    2
+CONECT    5    6
+CONECT    6    5    7
+CONECT    7    6
+CONECT    9   10
+CONECT   10    9   11
+CONECT   11   10
+CONECT   13   14
+CONECT   14   13   15
+CONECT   15   14
+CONECT   17   18
+CONECT   18   17   19
+CONECT   19   18
+CONECT   21   22
+CONECT   22   21   23
+CONECT   23   22
+END

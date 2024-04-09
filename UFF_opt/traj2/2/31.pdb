@@ -1,80 +1,28 @@
-REMARK   1 CREATED WITH OPENMM 8.0, 2024-02-19
-HETATM    1  O17 GAS A   1      12.143  14.839   1.847  1.00  0.00           O  
-HETATM    2  C18 GAS A   1      12.443  13.744   1.613  1.00  0.00           C  
-HETATM    3  O19 GAS A   1      12.743  12.648   1.379  1.00  0.00           O  
+REMARK   1 CREATED WITH OPENMM 8.0, 2024-04-03
+HETATM    1  O17 GAS A   1       0.855   7.740  16.056  1.00  0.00           O  
+HETATM    2  C18 GAS A   1       0.549   7.980  17.149  1.00  0.00           C  
+HETATM    3  O19 GAS A   1       0.244   8.220  18.242  1.00  0.00           O  
 TER       4      GAS A   1
-HETATM    5  O17 GAS B   1       4.526  -3.964  11.711  1.00  0.00           O  
-HETATM    6  C18 GAS B   1       4.155  -2.870  11.817  1.00  0.00           C  
-HETATM    7  O19 GAS B   1       3.785  -1.776  11.922  1.00  0.00           O  
+HETATM    5  O17 GAS B   1       0.102   2.767  18.566  1.00  0.00           O  
+HETATM    6  C18 GAS B   1      -0.014   2.584  17.426  1.00  0.00           C  
+HETATM    7  O19 GAS B   1      -0.131   2.402  16.287  1.00  0.00           O  
 TER       8      GAS B   1
-HETATM    9  O17 GAS C   1      -1.766  15.270   1.254  1.00  0.00           O  
-HETATM   10  C18 GAS C   1      -1.724  14.114   1.331  1.00  0.00           C  
-HETATM   11  O19 GAS C   1      -1.681  12.957   1.408  1.00  0.00           O  
+HETATM    9  O17 GAS C   1      20.241  13.641   4.470  1.00  0.00           O  
+HETATM   10  C18 GAS C   1      20.963  13.753   5.371  1.00  0.00           C  
+HETATM   11  O19 GAS C   1      21.684  13.865   6.273  1.00  0.00           O  
 TER      12      GAS C   1
-HETATM   13  O17 GAS D   1      -1.703  13.393  18.195  1.00  0.00           O  
-HETATM   14  C18 GAS D   1      -1.530  14.533  18.073  1.00  0.00           C  
-HETATM   15  O19 GAS D   1      -1.358  15.674  17.950  1.00  0.00           O  
+HETATM   13  O17 GAS D   1       0.242   4.512  14.670  1.00  0.00           O  
+HETATM   14  C18 GAS D   1       0.899   4.774  13.751  1.00  0.00           C  
+HETATM   15  O19 GAS D   1       1.557   5.036  12.831  1.00  0.00           O  
 TER      16      GAS D   1
-HETATM   17  O17 GAS E   1      -0.324   4.945  18.488  1.00  0.00           O  
-HETATM   18  C18 GAS E   1      -0.477   6.086  18.342  1.00  0.00           C  
-HETATM   19  O19 GAS E   1      -0.630   7.226  18.195  1.00  0.00           O  
+HETATM   17  O17 GAS E   1       7.950  16.745   7.097  1.00  0.00           O  
+HETATM   18  C18 GAS E   1       8.390  16.072   7.934  1.00  0.00           C  
+HETATM   19  O19 GAS E   1       8.829  15.399   8.770  1.00  0.00           O  
 TER      20      GAS E   1
-HETATM   21  O17 GAS F   1      18.061   4.498   8.161  1.00  0.00           O  
-HETATM   22  C18 GAS F   1      17.845   3.403   8.476  1.00  0.00           C  
-HETATM   23  O19 GAS F   1      17.628   2.308   8.792  1.00  0.00           O  
+HETATM   21  O17 GAS F   1      20.233   4.490   3.621  1.00  0.00           O  
+HETATM   22  C18 GAS F   1      20.392   4.247   4.744  1.00  0.00           C  
+HETATM   23  O19 GAS F   1      20.551   4.003   5.867  1.00  0.00           O  
 TER      24      GAS F   1
-HETATM   25  O17 GAS G   1      14.194   1.619   1.395  1.00  0.00           O  
-HETATM   26  C18 GAS G   1      14.387   0.476   1.380  1.00  0.00           C  
-HETATM   27  O19 GAS G   1      14.580  -0.668   1.366  1.00  0.00           O  
-TER      28      GAS G   1
-HETATM   29  O17 GAS H   1      -0.776  -0.492   1.691  1.00  0.00           O  
-HETATM   30  C18 GAS H   1      -0.292   0.561   1.738  1.00  0.00           C  
-HETATM   31  O19 GAS H   1       0.191   1.615   1.785  1.00  0.00           O  
-TER      32      GAS H   1
-HETATM   33  O17 GAS I   1       2.845   4.559   8.758  1.00  0.00           O  
-HETATM   34  C18 GAS I   1       2.895   3.418   8.559  1.00  0.00           C  
-HETATM   35  O19 GAS I   1       2.944   2.276   8.360  1.00  0.00           O  
-TER      36      GAS I   1
-HETATM   37  O17 GAS J   1       6.146  13.736   1.522  1.00  0.00           O  
-HETATM   38  C18 GAS J   1       5.924  14.860   1.705  1.00  0.00           C  
-HETATM   39  O19 GAS J   1       5.703  15.984   1.887  1.00  0.00           O  
-TER      40      GAS J   1
-HETATM   41  O17 GAS K   1      -0.931   5.260   1.541  1.00  0.00           O  
-HETATM   42  C18 GAS K   1      -1.085   6.339   1.142  1.00  0.00           C  
-HETATM   43  O19 GAS K   1      -1.239   7.417   0.743  1.00  0.00           O  
-TER      44      GAS K   1
-HETATM   45  O17 GAS L   1      13.957  -0.781  18.127  1.00  0.00           O  
-HETATM   46  C18 GAS L   1      14.331   0.317  18.149  1.00  0.00           C  
-HETATM   47  O19 GAS L   1      14.705   1.415  18.172  1.00  0.00           O  
-TER      48      GAS L   1
-HETATM   49  O17 GAS M   1       6.289   8.786   1.907  1.00  0.00           O  
-HETATM   50  C18 GAS M   1       6.380   7.704   1.500  1.00  0.00           C  
-HETATM   51  O19 GAS M   1       6.471   6.621   1.094  1.00  0.00           O  
-TER      52      GAS M   1
-HETATM   53  O17 GAS N   1      16.411  16.273   8.247  1.00  0.00           O  
-HETATM   54  C18 GAS N   1      16.361  17.364   8.639  1.00  0.00           C  
-HETATM   55  O19 GAS N   1      16.311  18.454   9.030  1.00  0.00           O  
-TER      56      GAS N   1
-HETATM   57  O17 GAS O   1       6.223   7.107  18.072  1.00  0.00           O  
-HETATM   58  C18 GAS O   1       6.184   8.265  18.015  1.00  0.00           C  
-HETATM   59  O19 GAS O   1       6.145   9.423  17.959  1.00  0.00           O  
-TER      60      GAS O   1
-HETATM   61  O17 GAS P   1       9.706  12.623   8.092  1.00  0.00           O  
-HETATM   62  C18 GAS P   1       9.497  11.491   8.229  1.00  0.00           C  
-HETATM   63  O19 GAS P   1       9.289  10.358   8.367  1.00  0.00           O  
-TER      64      GAS P   1
-HETATM   65  O17 GAS Q   1      12.933  12.970  18.040  1.00  0.00           O  
-HETATM   66  C18 GAS Q   1      12.739  14.111  18.118  1.00  0.00           C  
-HETATM   67  O19 GAS Q   1      12.545  15.252  18.195  1.00  0.00           O  
-TER      68      GAS Q   1
-HETATM   69  O17 GAS R   1       5.346  20.390   1.770  1.00  0.00           O  
-HETATM   70  C18 GAS R   1       5.092  21.519   1.705  1.00  0.00           C  
-HETATM   71  O19 GAS R   1       4.837  22.649   1.640  1.00  0.00           O  
-TER      72      GAS R   1
-HETATM   73  O17 GAS S   1      16.303  11.236  10.385  1.00  0.00           O  
-HETATM   74  C18 GAS S   1      16.286  10.157  10.810  1.00  0.00           C  
-HETATM   75  O19 GAS S   1      16.270   9.078  11.235  1.00  0.00           O  
-TER      76      GAS S   1
 CONECT    1    2
 CONECT    2    1    3
 CONECT    3    2
@@ -93,43 +41,4 @@ CONECT   19   18
 CONECT   21   22
 CONECT   22   21   23
 CONECT   23   22
-CONECT   25   26
-CONECT   26   25   27
-CONECT   27   26
-CONECT   29   30
-CONECT   30   29   31
-CONECT   31   30
-CONECT   33   34
-CONECT   34   33   35
-CONECT   35   34
-CONECT   37   38
-CONECT   38   37   39
-CONECT   39   38
-CONECT   41   42
-CONECT   42   41   43
-CONECT   43   42
-CONECT   45   46
-CONECT   46   45   47
-CONECT   47   46
-CONECT   49   50
-CONECT   50   49   51
-CONECT   51   50
-CONECT   53   54
-CONECT   54   53   55
-CONECT   55   54
-CONECT   57   58
-CONECT   58   57   59
-CONECT   59   58
-CONECT   61   62
-CONECT   62   61   63
-CONECT   63   62
-CONECT   65   66
-CONECT   66   65   67
-CONECT   67   66
-CONECT   69   70
-CONECT   70   69   71
-CONECT   71   70
-CONECT   73   74
-CONECT   74   73   75
-CONECT   75   74
 END

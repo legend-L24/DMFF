@@ -276,6 +276,262 @@ def cutoff_topology(topo):
     subset_topologies = sorted(subset_topologies, key=lambda x:x.getNumAtoms())
     return subset_topologies
 
+'''
+
+This part is in order to read cif file with charge information in order to 
+generate reasonable PDB files and Lenard-Jones force field file.
+
+Input parameters:
+
+cif_path: the path of the cif file
+
+'''
+
+from ase.io import read
+
+def read_cif_file(file_path):
+    atom_info = []
+    with open(file_path, 'r') as f:
+        lines = f.readlines()
+        atom_data_started = False
+        for line in lines:
+            if '_atom_site_label' in line:
+                atom_info.append(line.split())
+                atom_data_started = True
+                continue
+            if atom_data_started:
+                if line.strip():
+                    atom_info.append(line.split())
+
+    return atom_info
+
+def extract_atom_info(atom_info):
+    extracted_info = []
+    for i, atom in enumerate(atom_info):
+        name = f"Al{i+1}" if atom[1] == 'Al' else f"H{i+1}" if atom[1] == 'H' else f"C{i+1}"
+        extracted_info.append({
+            "name": name,
+            "type": atom[1],
+            "charge": atom[5]
+        })
+
+    return extracted_info
+
+def rename_atoms(cif_info, carterisian_pos):
+    # Find the index where the atom information starts
+    start_index = next(i for i, sublist in enumerate(cif_info) if len(sublist) > 1)
+
+    # Iterate over the cif_info list starting from the start_index
+    for i, atom_info in enumerate(cif_info[start_index:], start=1):
+        # Change the atom label to include the index
+        # Change the atom element as original lable
+        atom_info[1] = atom_info[0]
+        atom_info[0] += str(i)
+        atom_info[2] = carterisian_pos[i-1][0]
+        atom_info[3] = carterisian_pos[i-1][1]
+        atom_info[4] = carterisian_pos[i-1][2]
+
+
+    return cif_info
+
+def transform_cif_info(cif_info):
+    # Find the index where the atom information starts
+    start_index = next(i for i, sublist in enumerate(cif_info) if len(sublist) > 1)
+
+    # Initialize an empty list to store the dictionaries
+    transformed_info = []
+
+    # Iterate over the cif_info list starting from the start_index
+    for i, atom_info in enumerate(cif_info[start_index:], start=1):
+        # Create a dictionary for each atom and append it to the list
+        atom_name = atom_info[0] + str(i)
+        if len(atom_name) >4:
+            atom_name = atom_name[0]+atom_name[-3:]
+        atom_dict = {
+            "name": atom_name,
+            "type": atom_info[0],
+            "charge": atom_info[-1]
+        }
+        transformed_info.append(atom_dict)
+
+    return transformed_info
+# Function to pretty print XML
+def prettify(elem, level=0):
+    """Indentation function"""
+    indent = "\n" + level * "  "
+    if len(elem):
+        if not elem.text or not elem.text.strip():
+            elem.text = indent + "  "
+        if not elem.tail or not elem.tail.strip():
+            elem.tail = indent
+        for subelem in elem:
+            prettify(subelem, level + 1)
+        if not elem.tail or not elem.tail.strip():
+            elem.tail = indent
+    else:
+        if level and (not elem.tail or not elem.tail.strip()):
+            elem.tail = indent
+import xml.etree.ElementTree as ET
+
+def write_force_field(frame_info, gas_info,path, suplement_info=None):
+    '''
+
+    This function is only suitable for Al, C, H, O system, default value is suitable for co2 adsorption 
+    HarmonicAngleForce is only suitable for CO2, if necessary, please modify this part
+    atom type data only suitable for Al, C, H, O, if necessary, please add new atoms
+    '''
+    # Create the root element
+    forcefield = ET.Element("ForceField")
+
+    # Add AtomTypes
+    atomtypes = ET.SubElement(forcefield, "AtomTypes")
+    atom_type_data = [
+        {"class": "Al", "element": "Al", "mass": "0.0", "name": "Al"},
+        {"class": "C", "element": "C", "mass": "0.0", "name": "C"},
+        {"class": "H", "element": "H", "mass": "0.0", "name": "H"},
+        {"class": "O", "element": "O", "mass": "0.0", "name": "O"},
+        {"class": "C1_co2", "element": "C", "mass": "12.010", "name": "C_co2"},
+        {"class": "O1_co2", "element": "O", "mass": "15.999", "name": "O_co2"},
+    ]
+    if suplement_info:
+        atom_type_data += suplement_info["AtomTypes"]
+    for atom_type in atom_type_data:
+        ET.SubElement(atomtypes, "Type", **atom_type)
+
+    # Add Residues
+    residues = ET.SubElement(forcefield, "Residues")
+    residue_data = [
+        {
+            "name": "MOL",
+            "atoms": frame_info
+        },
+        {
+            "name": "GAS",
+            "atoms": gas_info
+        },
+    ]
+    for residue_info in residue_data:
+        residue = ET.SubElement(residues, "Residue", name=residue_info["name"])
+        for atom in residue_info["atoms"]:
+            ET.SubElement(residue, "Atom", **atom)
+
+    # Add HarmonicBondForce for CO2
+    harmonic_bond_force = ET.SubElement(forcefield, "HarmonicBondForce")
+    ET.SubElement(
+        harmonic_bond_force,
+        "Bond",
+        class1="C1_co2",
+        class2="O1_co2",
+        length="0.115999",
+        k="943153.3808",
+        mask="true"
+    )
+
+    # Add HarmonicAngleForce for CO2
+    harmonic_angle_force = ET.SubElement(forcefield, "HarmonicAngleForce")
+    ET.SubElement(
+        harmonic_angle_force,
+        "Angle",
+        class1="O1_co2",
+        class2="C1_co2",
+        class3="O1_co2",
+        angle="3.141593",
+        k="817.5656",
+        mask="true"
+    )
+
+    # Add NonbondedForce
+    nonbonded_force = ET.SubElement(forcefield, "NonbondedForce", coulomb14scale="0.8333333333333334", lj14scale="0.5")
+    ET.SubElement(nonbonded_force, "UseAttributeFromResidue", name="charge")
+    atom_data = [
+        {"epsilon": "2.11525", "sigma": "0.40082", "type": "Al"},
+        {"epsilon": "0.43979", "sigma": "0.34309", "type": "C"},
+        {"epsilon": "0.18436", "sigma": "0.25711", "type": "H"},
+        {"epsilon": "0.25079", "sigma": "0.31181", "type": "O"},
+        {"epsilon": "0.65757", "sigma": "0.305", "type": "O_co2"},
+        {"epsilon": "0.22469", "sigma": "0.28", "type": "C_co2"},
+    ]
+    if suplement_info:
+        atom_data += suplement_info["NonbonedForce"]
+    for atom_info in atom_data:
+        ET.SubElement(nonbonded_force, "Atom", **atom_info)
+    prettify(forcefield)
+    xml_str = ET.tostring(forcefield, encoding="utf-8")
+    with open(path, "wb") as f:
+        f.write(xml_str)
+
+'''
+
+The Protein Data Bank (PDB) format has specific requirements for the atom name and coordinates in the ATOM records:
+
+Atom Name (columns 13-16): This field should contain the atom name. The atom name should be right-justified within these columns. For example, the carbon alpha atom of alanine would have the atom name " CA " in columns 13-16.
+
+Atom Coordinates (columns 31-54): These columns should contain the x, y, and z coordinates of the atom in Ångströms. The format is as follows:
+
+x-coordinate (columns 31-38)
+y-coordinate (columns 39-46)
+z-coordinate (columns 47-54)
+Each coordinate should be right-justified and fit within its respective columns. The coordinates are typically represented as floating-point numbers with a precision of 3 decimal places.
+
+# the code to check whether the atom names and coordinates are in correct format
+
+frame = app.PDBFile(Framework_path)
+atom_names = [atom.name for atom in frame.topology.atoms()]
+print(atom_names)
+
+'''
+
+def write_pdb_file(cif_info, cell_parameters, filename):
+    with open(filename, 'w') as f:
+        f.write("REMARK   For DMFF workflow PDB file\n")
+        
+        
+        # Format and write the crystal parameters
+        try:
+            a, b, c, alpha, beta, gamma = [float(param) for param in cell_parameters]
+        except ValueError:
+            raise ValueError("Invalid crystal parameters provided.")
+        
+        f.write(f"CRYST1 {a:8.3f} {b:8.3f} {c:8.3f} {alpha:6.2f} {beta:6.2f} {gamma:6.2f}\n")
+        
+        # Find the index where the atom information starts
+        start_index = next(i for i, sublist in enumerate(cif_info) if len(sublist) > 1)
+
+        # Get the maximum length of atom names for consistent padding
+        #max_atom_name_length = max(len(atom_info[0]) for atom_info in cif_info[start_index:])
+        
+        # Iterate over the cif_info list starting from the start_index
+        for i, atom_info in enumerate(cif_info[start_index:], start=1):
+            # PDB only allow 4 characters for atom name
+            atom_name = atom_info[0]
+            if len(atom_name) >4:
+                atom_name = atom_name[0]+atom_name[-3:]
+            atom_name = f"{atom_name:<4}"
+            serial_number = f"{i:>5}"
+            # Write the atom information to the file
+            # atom_info[0] is the atom name, atom_info[1] is the element symbol
+            f.write(f"ATOM  {serial_number} {atom_name} MOL A   1    {atom_info[2]:8.3f}{atom_info[3]:8.3f}{atom_info[4]:8.3f}  1.00  1.00          {atom_info[1]:>2}\n")
+        f.write("END\n")
+
+# co2 form TraPPE File, O17, C18 are just inherited from the first example: MIL-120 
+co2_info = [{"name": "O17", "type": "O_co2", "charge": "-0.35"},
+            {"name": "C18", "type": "C_co2", "charge": "0.70"}]
+
+
+import os
+
 if __name__ == '__main__':
+    os.chdir("/home/yutao/project/github/DMFF/UFF_opt")
     pdb=app.PDBFile("MIL120_loading.pdb") #the working directory must be the UFF_opt directory
     frame_top, gas_top = cutoff_topology(pdb.topology)
+    Example_cif_path = "/home/yutao/project/Al-MOF/nott300/RSM0516.cif"
+    atoms = read(Example_cif_path)
+    cell_parameters = atoms.get_cell_lengths_and_angles() # Get the cell parameters
+    carterisian_pos = atoms.get_positions()
+    cif_info = read_cif_file(Example_cif_path)
+    transformed_info = transform_cif_info(cif_info)
+    pos_info = rename_atoms(cif_info, carterisian_pos)
+
+    write_force_field(transformed_info, co2_info, "/home/yutao/project/Al-MOF/nott300/forcefield.xml")
+    write_pdb_file(pos_info,cell_parameters, "/home/yutao/project/Al-MOF/nott300/structure.pdb")
+    app.PDBFile("/home/yutao/project/Al-MOF/nott300/structure.pdb")
