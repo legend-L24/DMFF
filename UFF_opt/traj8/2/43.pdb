@@ -1,0 +1,9 @@
+REMARK   1 CREATED WITH OPENMM 8.0, 2024-04-10
+HETATM    1  O17 GAS A   1      17.087   9.238  17.256  1.00  0.00           O  
+HETATM    2  C18 GAS A   1      16.155   8.873  16.668  1.00  0.00           C  
+HETATM    3  O19 GAS A   1      15.224   8.509  16.081  1.00  0.00           O  
+TER       4      GAS A   1
+CONECT    1    2
+CONECT    2    1    3
+CONECT    3    2
+END

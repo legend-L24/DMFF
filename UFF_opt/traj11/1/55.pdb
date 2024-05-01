@@ -1,0 +1,51 @@
+REMARK   1 CREATED WITH OPENMM 8.0, 2024-04-12
+HETATM    1  O17 GAS A   1      24.679  16.674   3.605  1.00  0.00           O  
+HETATM    2  C18 GAS A   1      25.151  16.463   4.643  1.00  0.00           C  
+HETATM    3  O19 GAS A   1      25.624  16.252   5.681  1.00  0.00           O  
+TER       4      GAS A   1
+HETATM    5  O17 GAS B   1      22.131  16.431   6.013  1.00  0.00           O  
+HETATM    6  C18 GAS B   1      21.529  16.703   5.060  1.00  0.00           C  
+HETATM    7  O19 GAS B   1      20.927  16.974   4.106  1.00  0.00           O  
+TER       8      GAS B   1
+HETATM    9  O17 GAS C   1       9.143  11.424  15.988  1.00  0.00           O  
+HETATM   10  C18 GAS C   1       9.446  10.773  16.899  1.00  0.00           C  
+HETATM   11  O19 GAS C   1       9.750  10.122  17.810  1.00  0.00           O  
+TER      12      GAS C   1
+HETATM   13  O17 GAS D   1       9.575  18.031   6.932  1.00  0.00           O  
+HETATM   14  C18 GAS D   1       8.990  18.475   6.035  1.00  0.00           C  
+HETATM   15  O19 GAS D   1       8.404  18.920   5.138  1.00  0.00           O  
+TER      16      GAS D   1
+HETATM   17  O17 GAS E   1      19.238  21.641  15.004  1.00  0.00           O  
+HETATM   18  C18 GAS E   1      20.288  21.295  14.653  1.00  0.00           C  
+HETATM   19  O19 GAS E   1      21.337  20.949  14.301  1.00  0.00           O  
+TER      20      GAS E   1
+HETATM   21  O17 GAS F   1      22.907  10.932  15.742  1.00  0.00           O  
+HETATM   22  C18 GAS F   1      23.443  10.323  14.913  1.00  0.00           C  
+HETATM   23  O19 GAS F   1      23.978   9.713  14.084  1.00  0.00           O  
+TER      24      GAS F   1
+HETATM   25  O17 GAS G   1      12.914   9.230  16.780  1.00  0.00           O  
+HETATM   26  C18 GAS G   1      13.666   9.168  15.899  1.00  0.00           C  
+HETATM   27  O19 GAS G   1      14.418   9.105  15.018  1.00  0.00           O  
+TER      28      GAS G   1
+CONECT    1    2
+CONECT    2    1    3
+CONECT    3    2
+CONECT    5    6
+CONECT    6    5    7
+CONECT    7    6
+CONECT    9   10
+CONECT   10    9   11
+CONECT   11   10
+CONECT   13   14
+CONECT   14   13   15
+CONECT   15   14
+CONECT   17   18
+CONECT   18   17   19
+CONECT   19   18
+CONECT   21   22
+CONECT   22   21   23
+CONECT   23   22
+CONECT   25   26
+CONECT   26   25   27
+CONECT   27   26
+END

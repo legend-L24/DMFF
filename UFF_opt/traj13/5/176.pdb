@@ -1,0 +1,58 @@
+REMARK   1 CREATED WITH OPENMM 8.0, 2024-04-26
+HETATM    1  O17 GAS A   1       8.516  17.178   2.505  1.00  0.00           O  
+HETATM    2  C18 GAS A   1       8.967  16.110   2.514  1.00  0.00           C  
+HETATM    3  O19 GAS A   1       9.418  15.041   2.524  1.00  0.00           O  
+TER       4      GAS A   1
+HETATM    5  O17 GAS B   1      13.002  39.564   2.486  1.00  0.00           O  
+HETATM    6  C18 GAS B   1      13.035  39.092   3.545  1.00  0.00           C  
+HETATM    7  O19 GAS B   1      13.068  38.620   4.604  1.00  0.00           O  
+TER       8      GAS B   1
+HETATM    9  O17 GAS C   1      17.313  26.706  22.836  1.00  0.00           O  
+HETATM   10  C18 GAS C   1      17.747  27.552  22.171  1.00  0.00           C  
+HETATM   11  O19 GAS C   1      18.180  28.398  21.506  1.00  0.00           O  
+TER      12      GAS C   1
+HETATM   13  O17 GAS D   1      20.177  -4.782  14.185  1.00  0.00           O  
+HETATM   14  C18 GAS D   1      19.204  -5.190  14.668  1.00  0.00           C  
+HETATM   15  O19 GAS D   1      18.232  -5.597  15.152  1.00  0.00           O  
+TER      16      GAS D   1
+HETATM   17  O17 GAS E   1       5.036  38.788   3.196  1.00  0.00           O  
+HETATM   18  C18 GAS E   1       4.048  38.645   3.786  1.00  0.00           C  
+HETATM   19  O19 GAS E   1       3.059  38.501   4.376  1.00  0.00           O  
+TER      20      GAS E   1
+HETATM   21  O17 GAS F   1       5.437  17.519   4.142  1.00  0.00           O  
+HETATM   22  C18 GAS F   1       5.228  17.025   3.113  1.00  0.00           C  
+HETATM   23  O19 GAS F   1       5.020  16.531   2.085  1.00  0.00           O  
+TER      24      GAS F   1
+HETATM   25  O17 GAS G   1      10.294  15.583  16.258  1.00  0.00           O  
+HETATM   26  C18 GAS G   1      11.197  16.157  15.811  1.00  0.00           C  
+HETATM   27  O19 GAS G   1      12.101  16.730  15.364  1.00  0.00           O  
+TER      28      GAS G   1
+HETATM   29  O17 GAS H   1      20.307   5.357  34.851  1.00  0.00           O  
+HETATM   30  C18 GAS H   1      21.309   5.048  35.347  1.00  0.00           C  
+HETATM   31  O19 GAS H   1      22.311   4.738  35.844  1.00  0.00           O  
+TER      32      GAS H   1
+CONECT    1    2
+CONECT    2    1    3
+CONECT    3    2
+CONECT    5    6
+CONECT    6    5    7
+CONECT    7    6
+CONECT    9   10
+CONECT   10    9   11
+CONECT   11   10
+CONECT   13   14
+CONECT   14   13   15
+CONECT   15   14
+CONECT   17   18
+CONECT   18   17   19
+CONECT   19   18
+CONECT   21   22
+CONECT   22   21   23
+CONECT   23   22
+CONECT   25   26
+CONECT   26   25   27
+CONECT   27   26
+CONECT   29   30
+CONECT   30   29   31
+CONECT   31   30
+END

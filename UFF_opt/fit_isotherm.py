@@ -118,17 +118,6 @@ Transfer_unit = 15.9036500000/5.0184135189 #It also depends on different structu
 SET_temperature = 298
 scaling_factors = (1,1,2)          # This is read from aiida workflow 2,2,2 for NOTT-300
 
-structure_folder = "/home/yutao/project/Al-MOF/mil121"
-experiment_path = os.path.join(structure_folder, "273K_short.csv")
-cif_path = os.path.join(structure_folder, "RSM0112.cif")
-dest_path = "/home/yutao/project/MIL-120/traj4/"
-copy_to_path = "./traj4/"
-ff_path = '/home/yutao/project/aiida/applications/ff_4.json'
-Transfer_unit =  1.5487312500/2.6419895880 #It also depends on different structure, it also contains transfer from STP to mol/Kg
-SET_temperature = 273
-scaling_factors = (4,2,2)          # This is read from aiida workflow 2,2,2 for NOTT-300
-'''
-
 structure_folder = "/home/yutao/project/Al-MOF/nott300/"
 experiment_path = os.path.join(structure_folder, "273K.csv")
 cif_path = os.path.join(structure_folder, "RSM0516.cif")
@@ -138,6 +127,39 @@ ff_path = '/home/yutao/project/aiida/applications/ff_1.json'
 Transfer_unit =  1.5487312500/2.6419895880 #It also depends on different structure, it also contains transfer from STP to mol/Kg
 SET_temperature = 273
 scaling_factors = (2,2,2)         # This is read from aiida workflow 2,2,2 for NOTT-300
+
+structure_folder = "/home/yutao/project/Al-MOF/mil121"
+experiment_path = os.path.join(structure_folder, "273K_short.csv")
+cif_path = os.path.join(structure_folder, "RSM0112.cif")
+dest_path = "/home/yutao/project/MIL-120/traj4/"
+copy_to_path = "./traj4/"
+ff_path = '/home/yutao/project/aiida/applications/ff_4.json'
+Transfer_unit =  1.5487312500/2.6419895880 #It also depends on different structure, it also contains transfer from STP to mol/Kg
+SET_temperature = 273
+scaling_factors = (3,2,2)          # This is read from aiida workflow 2,2,2 for NOTT-300
+
+
+structure_folder = "/home/yutao/project/Al-MOF/WOJJOV"
+experiment_path = os.path.join(structure_folder, "195K_short.csv")
+cif_path = os.path.join(structure_folder, "RSM2706.cif")
+dest_path = "/home/yutao/project/MIL-120/traj12/"
+copy_to_path = "./traj12/"
+ff_path = '/home/yutao/project/aiida/applications/ff_12.json'
+Transfer_unit =  14.2718750000/6.9103028630 #It also depends on different structure, it also contains transfer from STP to mol/Kg
+SET_temperature = 195
+scaling_factors = (3,1,1)          # This is read from aiida workflow 2,2,2 for NOTT-300
+
+'''
+
+structure_folder = "/home/yutao/project/Al-MOF/mil121"
+experiment_path = os.path.join(structure_folder, "273K_short.csv")
+cif_path = os.path.join(structure_folder, "RSM0112.cif")
+dest_path = "/home/yutao/project/MIL-120/traj4/"
+copy_to_path = "./traj4/"
+ff_path = '/home/yutao/project/aiida/applications/ff_4.json'
+Transfer_unit =  1.5487312500/2.6419895880 #It also depends on different structure, it also contains transfer from STP to mol/Kg
+SET_temperature = 273
+scaling_factors = (3,2,2)          # This is read from aiida workflow 2,2,2 for NOTT-300
 
 """
 
@@ -403,14 +425,15 @@ write_pdb_file(pos_info,cell_parameters, Framework_path)
 
 # Initial Optimized parameters
 xmlio = XMLIO()
-xmlio.loadXML("data/init.xml")
+xmlio.loadXML("data/init_C.xml")
+#xmlio.loadXML("data/try_0226.xml")
 ffinfo = xmlio.parseXML()
 paramset_old = ParamSet()
 lj_gen = LennardJonesGenerator(ffinfo, paramset_old)
 
 xmlio = XMLIO()
-#xmlio.loadXML("data/init.xml")
-xmlio.loadXML("data/init.xml")
+xmlio.loadXML("data/init_C.xml")
+#xmlio.loadXML("data/try_0226.xml")
 #xmlio.loadXML("0219.xml")
 ffinfo = xmlio.parseXML()
 paramset = ParamSet()
@@ -422,20 +445,22 @@ paramset.mask['LennardJonesForce']['sigma'] = paramset.mask['LennardJonesForce']
 paramset.mask['LennardJonesForce']['sigma'] = paramset.mask['LennardJonesForce']['sigma'].at[2].set(0)
 paramset.mask['LennardJonesForce']['sigma'] = paramset.mask['LennardJonesForce']['sigma'].at[3].set(0)
 
+
+paramset.mask['LennardJonesForce']['epsilon'] = paramset.mask['LennardJonesForce']['epsilon'].at[0].set(0)
 paramset.mask['LennardJonesForce']['epsilon'] = paramset.mask['LennardJonesForce']['epsilon'].at[1].set(0)
 paramset.mask['LennardJonesForce']['epsilon'] = paramset.mask['LennardJonesForce']['epsilon'].at[2].set(0)
 #paramset.mask['LennardJonesForce']['epsilon'] = paramset.mask['LennardJonesForce']['epsilon'].at[3].set(0)
 
-optimizer = optax.adam(0.01)
+optimizer = optax.adam(0.02)
 opt_state = optimizer.init(paramset)
 
-
-os.system(f"cp /home/yutao/project/aiida/applications/UFF.json {ff_path}")
+#os.system(f"cp /home/yutao/project/aiida/applications/try_0226.json {ff_path}")
+os.system(f"cp /home/yutao/project/aiida/applications/UFF_C.json {ff_path}")
 for nloop in range(100):
     print(f"{nloop} optimization started")
     sample(cif_path, picked_pressure)
     move_traj(dest_path,picked_pressure, copy_to_path)
-    traj_dict = analyse_traj(paramset=paramset, lj_gen=lj_gen, dest_path=copy_to_path, numframe=atomic_number, cutoff=cutoff, interval=5)
+    traj_dict = analyse_traj(paramset=paramset, lj_gen=lj_gen, dest_path=copy_to_path, numframe=atomic_number, cutoff=cutoff, interval=15)
     
     for i in range(1,Number_points+1):
     #print(np.average(traj_dict[i]['experiment']['loading']))

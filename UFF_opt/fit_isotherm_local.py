@@ -107,14 +107,15 @@ Transfer_unit = 15.9036500000/5.0184135189 #It also depends on different structu
 SET_temperature = 298
 '''
 
-structure_folder = "/home/yutao/project/local/Al-MOF/MIL-160"
-experiment_path = os.path.join(structure_folder, "298K_short.csv")
-cif_path = os.path.join(structure_folder, "MIL-160-Al.cif")
-dest_path = "/home/yutao/project/MIL-120/traj9/"
-copy_to_path = "./traj9/"
-ff_path = '/home/yutao/project/aiida/applications/ff_9.json'
-Transfer_unit = 15.9036500000/5.0184135189 #It also depends on different structure, it also contains transfer from STP to mol/Kg
-SET_temperature = 298
+structure_folder = "/home/yutao/project/local/Al-MOF/mil121-O"
+experiment_path = os.path.join(structure_folder, "273K_short.csv")
+cif_path = os.path.join(structure_folder, "RSM0112.cif")
+dest_path = "/home/yutao/project/MIL-120/traj11/"
+copy_to_path = "./traj11/"
+ff_path = '/home/yutao/project/aiida/applications/ff_11.json'
+Transfer_unit =  1.5487312500/2.6419895880 #It also depends on different structure, it also contains transfer from STP to mol/Kg
+SET_temperature = 273
+scaling_factors = (3,2,2)          # This is read from aiida workflow 2,2,2 for NOTT-300
 
 """
 
@@ -134,7 +135,7 @@ Trajectory_length = 250#250          #液体pdb文件的个数
 loop_time =   100                  #迭代循环次数    推荐50-100
 
 
-scaling_factors = (1,1,2)          # This is read from aiida workflow 2,2,2 for NOTT-300
+
 cutoff = 0.905     #This value need to check. Because Openmm a little weired to compute the cutoff, for aiida, the cutoff is 12.0
 
 
@@ -427,7 +428,7 @@ for nloop in range(100):
     print(f"{nloop} optimization started")
     sample(cif_path, picked_pressure)
     move_traj(dest_path,picked_pressure, copy_to_path)
-    traj_dict = analyse_traj(paramset=paramset, lj_gen=lj_gen, dest_path=copy_to_path, numframe=atomic_number, cutoff=cutoff, interval=6)
+    traj_dict = analyse_traj(paramset=paramset, lj_gen=lj_gen, dest_path=copy_to_path, numframe=atomic_number, cutoff=cutoff, interval=10)
     
     for i in range(1,Number_points+1):
     #print(np.average(traj_dict[i]['experiment']['loading']))

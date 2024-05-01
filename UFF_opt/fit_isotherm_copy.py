@@ -136,7 +136,6 @@ Trajectory_length = 250#250          #液体pdb文件的个数
 loop_time =   100                  #迭代循环次数    推荐50-100
 
 
-scaling_factors = (1,1,2)          # This is read from aiida workflow 2,2,2 for NOTT-300
 cutoff = 0.905     #This value need to check. Because Openmm a little weired to compute the cutoff, for aiida, the cutoff is 12.0
 
 

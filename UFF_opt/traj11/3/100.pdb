@@ -1,0 +1,93 @@
+REMARK   1 CREATED WITH OPENMM 8.0, 2024-04-12
+HETATM    1  O17 GAS A   1      25.165  21.515  14.051  1.00  0.00           O  
+HETATM    2  C18 GAS A   1      24.016  21.357  14.075  1.00  0.00           C  
+HETATM    3  O19 GAS A   1      22.867  21.199  14.099  1.00  0.00           O  
+TER       4      GAS A   1
+HETATM    5  O17 GAS B   1      23.083  17.291   5.548  1.00  0.00           O  
+HETATM    6  C18 GAS B   1      23.862  16.704   6.176  1.00  0.00           C  
+HETATM    7  O19 GAS B   1      24.641  16.117   6.804  1.00  0.00           O  
+TER       8      GAS B   1
+HETATM    9  O17 GAS C   1      10.024  16.788   4.811  1.00  0.00           O  
+HETATM   10  C18 GAS C   1       8.882  16.670   4.643  1.00  0.00           C  
+HETATM   11  O19 GAS C   1       7.741  16.552   4.475  1.00  0.00           O  
+TER      12      GAS C   1
+HETATM   13  O17 GAS D   1      23.207   9.716  16.964  1.00  0.00           O  
+HETATM   14  C18 GAS D   1      22.798  10.263  16.027  1.00  0.00           C  
+HETATM   15  O19 GAS D   1      22.389  10.810  15.089  1.00  0.00           O  
+TER      16      GAS D   1
+HETATM   17  O17 GAS E   1      24.004  17.934   2.604  1.00  0.00           O  
+HETATM   18  C18 GAS E   1      24.776  18.632   3.117  1.00  0.00           C  
+HETATM   19  O19 GAS E   1      25.547  19.329   3.631  1.00  0.00           O  
+TER      20      GAS E   1
+HETATM   21  O17 GAS F   1      25.236  10.762  13.977  1.00  0.00           O  
+HETATM   22  C18 GAS F   1      26.315  11.176  13.868  1.00  0.00           C  
+HETATM   23  O19 GAS F   1      27.393  11.590  13.759  1.00  0.00           O  
+TER      24      GAS F   1
+HETATM   25  O17 GAS G   1      19.087  11.795  13.349  1.00  0.00           O  
+HETATM   26  C18 GAS G   1      17.985  11.528  13.105  1.00  0.00           C  
+HETATM   27  O19 GAS G   1      16.883  11.260  12.861  1.00  0.00           O  
+TER      28      GAS G   1
+HETATM   29  O17 GAS H   1      22.773   9.241   4.987  1.00  0.00           O  
+HETATM   30  C18 GAS H   1      23.196   8.328   5.564  1.00  0.00           C  
+HETATM   31  O19 GAS H   1      23.620   7.415   6.141  1.00  0.00           O  
+TER      32      GAS H   1
+HETATM   33  O17 GAS I   1       9.476   6.921   6.041  1.00  0.00           O  
+HETATM   34  C18 GAS I   1       8.548   6.529   6.617  1.00  0.00           C  
+HETATM   35  O19 GAS I   1       7.621   6.138   7.193  1.00  0.00           O  
+TER      36      GAS I   1
+HETATM   37  O17 GAS J   1      18.303   6.607   6.114  1.00  0.00           O  
+HETATM   38  C18 GAS J   1      18.603   7.330   5.258  1.00  0.00           C  
+HETATM   39  O19 GAS J   1      18.902   8.052   4.401  1.00  0.00           O  
+TER      40      GAS J   1
+HETATM   41  O17 GAS K   1      19.250  21.415  14.680  1.00  0.00           O  
+HETATM   42  C18 GAS K   1      18.355  20.966  15.267  1.00  0.00           C  
+HETATM   43  O19 GAS K   1      17.460  20.517  15.853  1.00  0.00           O  
+TER      44      GAS K   1
+HETATM   45  O17 GAS L   1      19.230  17.965   4.352  1.00  0.00           O  
+HETATM   46  C18 GAS L   1      18.504  17.136   4.715  1.00  0.00           C  
+HETATM   47  O19 GAS L   1      17.779  16.307   5.078  1.00  0.00           O  
+TER      48      GAS L   1
+HETATM   49  O17 GAS M   1      14.617  16.208   4.658  1.00  0.00           O  
+HETATM   50  C18 GAS M   1      14.310  16.700   5.663  1.00  0.00           C  
+HETATM   51  O19 GAS M   1      14.003  17.191   6.668  1.00  0.00           O  
+TER      52      GAS M   1
+CONECT    1    2
+CONECT    2    1    3
+CONECT    3    2
+CONECT    5    6
+CONECT    6    5    7
+CONECT    7    6
+CONECT    9   10
+CONECT   10    9   11
+CONECT   11   10
+CONECT   13   14
+CONECT   14   13   15
+CONECT   15   14
+CONECT   17   18
+CONECT   18   17   19
+CONECT   19   18
+CONECT   21   22
+CONECT   22   21   23
+CONECT   23   22
+CONECT   25   26
+CONECT   26   25   27
+CONECT   27   26
+CONECT   29   30
+CONECT   30   29   31
+CONECT   31   30
+CONECT   33   34
+CONECT   34   33   35
+CONECT   35   34
+CONECT   37   38
+CONECT   38   37   39
+CONECT   39   38
+CONECT   41   42
+CONECT   42   41   43
+CONECT   43   42
+CONECT   45   46
+CONECT   46   45   47
+CONECT   47   46
+CONECT   49   50
+CONECT   50   49   51
+CONECT   51   50
+END
