@@ -117,18 +117,21 @@ scaling_factors = (2,2,1)
 
 '''
 
-structure_folder = "/home/yutao/project/In-MOF/mil-68/"
-experiment_path = os.path.join(structure_folder, "273K.csv")
-cif_path = os.path.join(structure_folder, "RSM1292.cif")
-dest_path = "/home/yutao/project/MIL-120/traj13/"
-copy_to_path = "./traj13/"
-ff_path = '/home/yutao/project/aiida/applications/ff_13.json'
-Transfer_unit = 7.1974500000/4.0534302809 #It also depends on different structure, it also contains transfer from STP to mol/Kg
-SET_temperature = 273
-scaling_factors = (3,1,1)  
+structure_folder = "/home/yutao/project/Mg-MOF/Mg-HCOO/"
+SET_temperature = 275
+Index = 1
+Transfer_unit = 14.835925/4.398046  #It also depends on different structure, it also contains transfer from STP to mol/Kg
+cif_path = os.path.join(structure_folder, "HIBGEF_clean.cif")
+scaling_factors = (2,2,2)  
+experiment_path = os.path.join(structure_folder, f"{SET_temperature}K_short.csv")
+dest_path = f"/home/yutao/project/MIL-120/traj{Index}/"
+copy_to_path = f"./traj{Index}/"
+ff_path = f'/home/yutao/project/aiida/applications/ff_{Index}.json'
 
 
- 
+
+
+
 
 """
 
@@ -137,8 +140,8 @@ Superparameters for Lenard-Jone Potential optimization, some parameters need to 
 """
 # When I try to change metal element, reset four metal elements
 
-element_list = ['In_', 'C_', 'H_', 'O_']
-Number_points = 4          ## must be smaller than len(picked_ls)
+element_list = ['Mg_', 'C_', 'H_', 'O_']
+Number_points = 3          ## must be smaller than len(picked_ls)
 Trajectory_length = 250#250          #液体pdb文件的个数
 loop_time =   50                 #迭代循环次数    推荐50-100
 
@@ -153,12 +156,31 @@ Forcefiled_path = os.path.join(structure_folder,"forcefield.xml")
 aiida_path = "/home/yutao/project/aiida/applications/"
 Scaled_frame_path = os.path.join(structure_folder,"scaled_frame.pdb")
 
-for direct in [dest_path, copy_to_path]:
-    if not os.path.exists(direct):
-        os.makedirs(direct)
-        print("Create directory: ", direct)
 
 
+
+import shutil
+
+'''
+I clean all data in before sampling which cause problems sometimes
+
+'''
+
+for path in [dest_path, copy_to_path]:
+    if os.path.exists(path):
+        for filename in os.listdir(path):
+            file_path = os.path.join(dest_path, filename)
+            try:
+                if os.path.isfile(file_path) or os.path.islink(file_path):
+                    os.unlink(file_path)
+                elif os.path.isdir(file_path):
+                    shutil.rmtree(file_path)
+            except Exception as e:
+                print('Failed to delete %s. Reason: %s' % (file_path, e))
+        print("Clean directory: ", path)
+    else:
+        os.makedirs(path)
+        print("Create directory: ", path)
 
 '''
 
@@ -398,14 +420,14 @@ write_pdb_file(pos_info,cell_parameters, Framework_path)
 # Initial Optimized parameters
 xmlio = XMLIO()
 #xmlio.loadXML("data/init.xml")
-xmlio.loadXML("data/In_CO.xml")
+xmlio.loadXML("data/init_Mg.xml")
 ffinfo = xmlio.parseXML()
 paramset_old = ParamSet()
 lj_gen = LennardJonesGenerator(ffinfo, paramset_old)
 
 xmlio = XMLIO()
 #xmlio.loadXML("data/init.xml")
-xmlio.loadXML("data/In_CO.xml")
+xmlio.loadXML("data/init_Mg.xml")
 #xmlio.loadXML("0219.xml")
 ffinfo = xmlio.parseXML()
 paramset = ParamSet()
@@ -427,7 +449,8 @@ optimizer = optax.adam(0.01)
 opt_state = optimizer.init(paramset)
 
 #os.system(f"cp /home/yutao/project/aiida/applications/UFF_In.json {ff_path}")
-os.system(f"cp /home/yutao/project/aiida/applications/In_CO.json {ff_path}")
+#os.system(f"cp /home/yutao/project/aiida/applications/UFF_Mg.json {ff_path}")
+#os.system(f"cp /home/yutao/project/aiida/applications/Mg_CO.json {ff_path}")
 
 
 
@@ -473,8 +496,8 @@ for nloop in range(loop_time):
     paramset = jax.tree_map(lambda x: jnp.clip(x, 0.0, 1e8), paramset)
     update_ff(paramset, ff_path)
     lj_gen.overwrite(paramset)
-    sigma_indices, epsilon_indices = detect_parameter_change(paramset, paramset_old,0.9)
-    paramset = fix_changed_parameters(paramset, sigma_indices, epsilon_indices)
+    #sigma_indices, epsilon_indices = detect_parameter_change(paramset, paramset_old,0.9)
+    #paramset = fix_changed_parameters(paramset, sigma_indices, epsilon_indices)
     print(f"This is {nloop}th time", f" Loss: {v} and Parameters: ",paramset.parameters['LennardJonesForce']['sigma'], paramset.parameters['LennardJonesForce']['epsilon'])
     clear_caches()
     clear_backends()  

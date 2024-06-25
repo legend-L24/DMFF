@@ -1,0 +1,27 @@
+Warning on use of the timeseries module: If the inherent timescales of the system are long compared to those being analyzed, this statistical inefficiency may be an underestimate.  The estimate presumes the use of many statistically independent samples.  Tests should be performed to assess whether this condition is satisfied.   Be cautious in the interpretation of the data.
+/home/yutao/anaconda3/envs/dmff/lib/python3.11/site-packages/ase/utils/__init__.py:62: FutureWarning: Please use atoms.cell.cellpar() instead
+  warnings.warn(warning)
+Clean directory:  /home/yutao/project/MIL-120/traj1/
+Clean directory:  ./traj1/
+0 optimization started
+As long as it finishes, 0
+Script finished successfully!
+Script output:
+This is the final pk values:  836036
+[3.8099062880272845, 4.394461102872164, 4.6435754868796995]
+[1.1217460982818728, 1.6321562541530321, 2.0811602813101624]
+This is loss function:  8.01288024403408
+
+Traceback (most recent call last):
+  File "/home/yutao/project/github/DMFF/UFF_opt/fit_isotherm_InN.py", line 461, in <module>
+    traj_dict = analyse_traj(paramset=paramset, lj_gen=lj_gen, dest_path=copy_to_path, numframe=atomic_number, cutoff=cutoff, interval=10)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yutao/project/github/DMFF/UFF_opt/fit_isotherm_InN.py", line 348, in analyse_traj
+    ener_lj = compute_binding_energy(paramset,topo, pos, lj_gen, numframe,cutoff)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yutao/project/github/DMFF/UFF_opt/fit_isotherm_InN.py", line 273, in compute_binding_energy
+    lj_force = lj_gen.createPotential(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yutao/project/github/DMFF/dmff/generators/classical.py", line 1330, in createPotential
+    raise DMFFException(f"Atom type {atype} not found.")
+dmff.utils.DMFFException: Atom type In not found.
